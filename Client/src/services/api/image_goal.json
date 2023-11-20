@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1,
+        "goal": "Arm Definition",
+        "description": "This goal focuses on developing defined and toned arms. It involves exercises that target the muscles in the arms, such as bicep curls, tricep dips, and push-ups.",
+        "image": "https://fitgearplan.com/wp-content/uploads/2020/01/How-To-Get-Definition-In-Arms-.jpeg"
+    },
+    {
+        "id": 2,
+        "goal": "Lower Body Strength",
+        "description": "This goal aims to build strength and muscle in the lower body. It includes exercises like squats, lunges, and deadlifts to target the muscles in the legs, glutes, and hips.",
+        "image": "https://gymmembershipfees.com/wp-content/uploads/2020/01/Leg-and-Knee-Post-injury-Closed-Chain-Exercises-1024x682.jpeg"
+    },
+    {
+        "id": 3,
+        "goal": "Core Strength",
+        "description": "Core strength is essential for stability and proper movement. This goal focuses on exercises that engage the muscles in the abdomen, lower back, and pelvis, such as planks, crunches, and Russian twists.",
+        "image": "https://images.pexels.com/photos/14240049/pexels-photo-14240049.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    },
+    {
+        "id": 4,
+        "goal": "Core Stability",
+        "description": "Core stability refers to the ability to maintain control and balance during movement. This goal includes exercises like side planks, bird dogs, and stability ball exercises to improve core stability.",
+        "image": "https://i.pinimg.com/originals/1f/a2/98/1fa29866719e2bf753892789a35bd083.jpg"
+    },
+    {
+        "id": 5,
+        "goal": "Cardiovascular Endurance",
+        "description": "Cardiovascular endurance focuses on improving the health and efficiency of the cardiovascular system. It includes activities like running, cycling, and swimming that elevate the heart rate and increase endurance.",
+        "image": "https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 6,
+        "goal": "Core and Upper Body Strength",
+        "description": "This goal aims to develop strength in both the core muscles and the upper body. It includes exercises like push-ups, pull-ups, and shoulder presses to target the muscles in the chest, back, and arms.",
+        "image": "https://images.pexels.com/photos/50597/man-male-boy-a-person-50597.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 7,
+        "goal": "Flexibility",
+        "description": "Flexibility focuses on improving the range of motion and suppleness of the muscles and joints. This goal includes exercises like stretching, yoga, and Pilates to enhance flexibility and joint mobility.",
+        "image": "https://images.pexels.com/photos/6648591/pexels-photo-6648591.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    },
+    {
+        "id": 8,
+        "goal": "Balance and Stability",
+        "description": "Balance and stability are crucial for functional movement and injury prevention. This goal involves exercises like single-leg balances, Bosu ball exercises, and yoga poses to improve balance and stability.",
+        "image": "https://images.pexels.com/photos/2294363/pexels-photo-2294363.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 9,
+        "goal": "Full Body Strength",
+        "description": "Full body strength focuses on building strength and muscle in all major muscle groups. It includes compound exercises like squats, deadlifts, bench presses, and overhead presses to work multiple muscle groups simultaneously.",
+        "image": "https://images.pexels.com/photos/5611633/pexels-photo-5611633.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 10,
+        "goal": "Muscle Building",
+        "description": "This goal is centered around increasing muscle size and hypertrophy. It includes exercises like weightlifting, resistance training, and progressive overload to stimulate muscle growth.",
+        "image": "https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    },
+    {
+        "id": 11,
+        "goal": "Weight Loss",
+        "description": "Weight loss focuses on burning calories and reducing body fat. This goal includes exercises that elevate the heart rate and promote calorie expenditure, such as running, HIIT workouts, and circuit training.",
+        "image": "https://images.pexels.com/photos/3076516/pexels-photo-3076516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 12,
+        "goal": "Strength and Power",
+        "description": "This goal emphasizes building strength and explosive power. It includes exercises like powerlifting, Olympic lifting, and plyometrics to develop strength, speed, and power.",
+        "image": "https://images.pexels.com/photos/4162548/pexels-photo-4162548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 13,
+        "goal": "Muscle Endurance",
+        "description": "Muscle endurance focuses on improving the ability of the muscles to sustain repeated contractions over an extended period. This goal includes high-repetition exercises and endurance-based activities like cycling and swimming.",
+        "image": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 14,
+        "goal": "Agility and Speed",
+        "description": "Agility and speed aim to enhance quickness, reaction time, and coordination. This goal includes exercises like ladder drills, agility cone drills, and sprint training to improve agility and speed.",
+        "image": "https://images.pexels.com/photos/6008980/pexels-photo-6008980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 15,
+        "goal": "HIIT and Circuit Training",
+        "description": "HIIT (High-Intensity Interval Training) and circuit training involve short bursts of intense exercises followed by periods of rest or lower-intensity exercises. This goal is designed to improve cardiovascular fitness and burn calories.",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/bare-chested-caucasian-man-with-hands-on-hips-royalty-free-image-148249078-1544129428.jpg?crop=1xw:1xh;center,top&resize=980:*"
+    },
+    {
+        "id": 16,
+        "goal": "Plyometrics",
+        "description": "Plyometrics, also known as jump training, focuses on explosive movements to improve power and athletic performance. This goal includes exercises like box jumps, jump squats, and medicine ball throws.",
+        "image": "https://media.gq.com/photos/5ebe98c2a46438436d8229f0/16:9/w_2560%2Cc_limit/GQ-Plyo-051520.jpg"
+    },
+    {
+        "id": 17,
+        "goal": "Olympic Lifting",
+        "description": "Olympic lifting involves two main lifts: the snatch and the clean and jerk. This goal focuses on mastering these lifts and developing explosive power, strength, and technique.",
+        "image": "https://images.pexels.com/photos/720456/pexels-photo-720456.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 18,
+        "goal": "Functional Training",
+        "description": "Functional training emphasizes movements and exercises that mimic real-life activities and improve overall fitness for daily tasks. This goal includes exercises like squats, lunges, and kettlebell swings.",
+        "image": "https://images.pexels.com/photos/416747/pexels-photo-416747.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 19,
+        "goal": "Sports Specific Training",
+        "description": "Sports-specific training focuses on improving performance and skills for a particular sport. This goal includes exercises and drills that simulate the movements and demands of the specific sport.",
+        "image": "http://tcboost.com/wp-content/uploads/2015/05/TCBOOST3-1318.jpg"
+    }
+]

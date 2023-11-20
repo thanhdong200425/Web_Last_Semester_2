@@ -1,0 +1,1802 @@
+[
+    {
+        "id": 1,
+        "name": "Push-Ups",
+        "description": "Start in a plank position with your hands slightly wider than shoulder-width apart. Lower your body by bending your elbows until your chest nearly touches the floor. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Chest", "Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Strength"
+    },
+    {
+        "id": 2,
+        "name": "Squats",
+        "description": "Stand with your feet shoulder-width apart. Lower your body by bending your knees and pushing your hips back. Keep your chest up and your knees in line with your toes. Push through your heels to return to the starting position and repeat.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 12 reps",
+        "level": "Beginner",
+        "goal": "Strength"
+    },
+    {
+        "id": 3,
+        "name": "Plank",
+        "description": "Start in a push-up position with your hands directly under your shoulders. Engage your core and hold your body in a straight line from head to heels. Hold the position for the desired duration.",
+        "muscle_groups": ["Core"],
+        "time": "30 seconds",
+        "level": "Beginner",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 4,
+        "name": "Lunges",
+        "description": "Stand with your feet hip-width apart. Take a step forward with your right foot and lower your body until your right knee is bent at a 90-degree angle. Push through your right heel to return to the starting position and repeat on the other side.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 5,
+        "name": "Crunches",
+        "description": "Lie on your back with your knees bent and your feet flat on the floor. Place your hands behind your head, contract your abdominal muscles, and lift your shoulder blades off the ground. Lower back down and repeat.",
+        "muscle_groups": ["Abdominals"],
+        "time": "2 sets of 15 reps",
+        "level": "Beginner",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 6,
+        "name": "Burpees",
+        "description": "Stand with your feet shoulder-width apart. Drop down into a squat position and place your hands on the floor in front of you. Kick your feet back, while keeping your arms extended, to get into a push-up position. Immediately return your feet to the squat position. Jump up explosively from the squat position, reaching your arms overhead. Repeat the entire sequence.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Cardiovascular Endurance"
+    },
+    {
+        "id": 7,
+        "name": "Mountain Climbers",
+        "description": "Start in a plank position with your hands directly under your shoulders. Drive one knee toward your chest, then quickly switch legs, bringing the other knee toward your chest. Continue alternating legs at a quick pace.",
+        "muscle_groups": ["Core", "Shoulders", "Legs"],
+        "time": "3 sets of 20 reps",
+        "level": "Intermediate",
+        "goal": "Cardiovascular Endurance"
+    },
+    {
+        "id": 8,
+        "name": "Dumbbell Shoulder Press",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand at shoulder level, palms facing forward. Press the dumbbells overhead until your arms are fully extended. Lower the dumbbells back to shoulder level and repeat.",
+        "muscle_groups": ["Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 9,
+        "name": "Bridge",
+        "description": "Lie on your back with your knees bent and your feet flat on the floor, hip-width apart. Press your feet into the floor and lift your hips off the ground until your knees, hips, and shoulders form a straight line. Hold the position for the desired duration, then lower your hips back down and repeat.",
+        "muscle_groups": ["Glutes", "Hamstrings", "Core"],
+        "time": "30 seconds",
+        "level": "Intermediate",
+        "goal": "Glute Activation"
+    },
+    {
+        "id": 10,
+        "name": "Side Plank",
+        "description": "Start by lying on your side with your forearm resting on the ground, elbow directly below your shoulder. Lift your hips off the ground, creating a straight line from your head to your feet. Hold the position for the desired duration, then switch sides and repeat.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "30 seconds per side",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 11,
+        "name": "Jumping Jacks",
+        "description": "Start standing with your feet together and your arms by your sides. Jump your feet out wide as you raise your arms overhead. Quickly jump back to the starting position and repeat.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 15 reps",
+        "level": "Beginner",
+        "goal": "Cardiovascular Fitness"
+    },
+    {
+        "id": 12,
+        "name": "Russian Twists",
+        "description": "Sit on the ground with your knees bent and your heels on the floor. Lean back slightly, balancing on your glutes. Interlace your fingers and extend your arms straight in front of you. Twist your torso to one side, bringing your clasped hands to touch the ground beside your hip. Twist to the other side and repeat.",
+        "muscle_groups": ["Obliques", "Abdominals"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Intermediate",
+        "goal": "Core Strength"
+    },
+    {
+        "id": 13,
+        "name": "Bicycle Crunches",
+        "description": "Lie on your back with your knees bent and your hands behind your head. Lift your shoulder blades off the ground and bring your right elbow to your left knee while straightening your right leg. Switch sides, bringing your left elbow to your right knee while straightening your left leg. Continue alternating sides in a pedaling motion.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "2 sets of 15 reps per side",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 14,
+        "name": "Jump Squats",
+        "description": "Stand with your feet shoulder-width apart. Lower your body into a squat position, then explosively jump up into the air. Land softly back in the squat position and repeat.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Lower Body Power"
+    },
+    {
+        "id": 15,
+        "name": "Superman",
+        "description": "Lie facedown on the ground with your arms extended in front of you and your legs straight. Lift your arms, chest, and legs off the ground simultaneously, squeezing your glutes and lower back. Hold the position for a few seconds, then lower back down and repeat.",
+        "muscle_groups": ["Back", "Glutes"],
+        "time": "3 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Posterior Chain Strength"
+    },
+    {
+        "id": 16,
+        "name": "Tricep Dips",
+        "description": "Sit on the edge of a sturdy chair or bench with your hands gripping the edge beside your hips. Walk your feet forward a few steps and straighten your arms, supporting your weight with your hands. Bend your elbows to lower your body toward the ground, then press back up to the starting position and repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 17,
+        "name": "Incline Push-Ups",
+        "description": "Place your hands on a raised surface such as a bench or step, with your feet on the ground and your body in a straight line. Lower your chest toward the raised surface by bending your elbows, then push back up to the starting position and repeat.",
+        "muscle_groups": ["Chest", "Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 18,
+        "name": "Lateral Lunges",
+        "description": "Stand with your feet hip-width apart. Take a wide step to the side with your right foot, keeping your left foot planted. Shift your body weight to the right, bending your right knee and pushing your hips back. Return to the starting position and repeat on the other side.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 19,
+        "name": "Reverse Crunches",
+        "description": "Lie on your back with your knees bent and your hands resting on the floor beside you. Lift your feet off the ground and bring your knees toward your chest, curling your hips off the ground. Slowly lower your legs back down to the starting position and repeat.",
+        "muscle_groups": ["Abdominals"],
+        "time": "2 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 20,
+        "name": "Jumping Lunges",
+        "description": "Start in a lunge position with your right leg forward and your left leg extended behind you. Jump up explosively, switching your legs in mid-air so that you land with your left leg forward and your right leg extended behind you. Continue alternating legs in a jumping motion.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Power"
+    },
+    {
+        "id": 21,
+        "name": "High Plank Shoulder Taps",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Lift your right hand and touch your left shoulder, then place it back down. Lift your left hand and touch your right shoulder, then place it back down. Continue alternating sides at a controlled pace.",
+        "muscle_groups": ["Core", "Shoulders"],
+        "time": "3 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 22,
+        "name": "Dumbbell Bent-Over Rows",
+        "description": "Stand with your feet hip-width apart and hold a dumbbell in each hand, palms facing your body. Bend forward at the waist, keeping your back straight and your core engaged. Lift the dumbbells up towards your chest, squeezing your shoulder blades together, then lower them back down and repeat.",
+        "muscle_groups": ["Back", "Biceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 23,
+        "name": "Single-Leg Glute Bridge",
+        "description": "Lie on your back with your knees bent and your feet flat on the floor, hip-width apart. Lift one leg off the ground and extend it straight up. Press your other foot into the floor and lift your hips off the ground, driving through your heel. Hold the position for a few seconds, then lower your hips back down and repeat on the other leg.",
+        "muscle_groups": ["Glutes", "Hamstrings", "Core"],
+        "time": "3 sets of 12 reps per leg",
+        "level": "Intermediate",
+        "goal": "Glute Activation"
+    },
+    {
+        "id": 24,
+        "name": "Diamond Push-Ups",
+        "description": "Start in a plank position with your hands close together, forming a diamond shape with your thumbs and index fingers. Lower your body by bending your elbows, keeping them close to your sides, until your chest nearly touches your hands. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Chest", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 25,
+        "name": "Flutter Kicks",
+        "description": "Lie on your back with your legs extended and your arms by your sides. Lift your feet a few inches off the ground and alternate kicking them up and down in a quick, scissor-like motion.",
+        "muscle_groups": ["Abdominals", "Hip Flexors"],
+        "time": "3 sets of 20 reps",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 26,
+        "name": "Mountain Climber Twist",
+        "description": "Start in a plank position with your hands directly under your shoulders. Drive one knee toward your chest, then rotate your hips to bring that knee across your body toward the opposite elbow. Return to the plank position and repeat on the other side. Continue alternating sides at a quick pace.",
+        "muscle_groups": ["Core", "Shoulders", "Legs"],
+        "time": "3 sets of 12 reps per side",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 27,
+        "name": "Alternating Dumbbell Bicep Curls",
+        "description": "Stand with your feet hip-width apart and hold a dumbbell in each hand, palms facing forward. Keeping your elbows close to your sides, curl one dumbbell up towards your shoulder while keeping the other arm extended. Lower the first dumbbell back down, then curl the other dumbbell up. Continue alternating sides.",
+        "muscle_groups": ["Biceps"],
+        "time": "3 sets of 10 reps per arm",
+        "level": "Intermediate",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 28,
+        "name": "Plyometric Push-Ups",
+        "description": "Start in a plank position with your hands slightly wider than shoulder-width apart. Lower your body by bending your elbows, then explosively push yourself off the ground so that your hands leave the floor. Land softly back in the starting position and repeat.",
+        "muscle_groups": ["Chest", "Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Power"
+    },
+    {
+        "id": 29,
+        "name": "Romanian Deadlifts",
+        "description": "Stand with your feet hip-width apart and hold a dumbbell or barbell in front of your thighs, palms facing your body. Hinge forward at the hips, keeping your back straight and your core engaged. Lower the weight towards the ground, keeping it close to your legs, until you feel a stretch in your hamstrings. Squeeze your glutes to return to the upright position and repeat.",
+        "muscle_groups": ["Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 30,
+        "name": "V-Ups",
+        "description": "Lie on your back with your legs extended and your arms extended overhead. Simultaneously lift your upper body and legs off the ground, reaching your hands towards your feet. Lower your body back down to the starting position and repeat.",
+        "muscle_groups": ["Abdominals"],
+        "time": "2 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 31,
+        "name": "Box Jumps",
+        "description": "Stand in front of a sturdy box or step with your feet shoulder-width apart. Bend your knees, then explosively jump onto the box, landing softly with both feet. Step back down to the starting position and repeat.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Lower Body Power"
+    },
+    {
+        "id": 32,
+        "name": "Plank with Leg Lift",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Lift one leg off the ground, keeping it straight and squeezing your glutes. Hold the position for a few seconds, then lower your leg back down and repeat with the other leg. Continue alternating legs.",
+        "muscle_groups": ["Core", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 33,
+        "name": "Seated Dumbbell Shoulder Press",
+        "description": "Sit on a bench or chair with a dumbbell in each hand, palms facing forward. Start with the dumbbells at shoulder level, then press them overhead until your arms are fully extended. Lower the dumbbells back to shoulder level and repeat.",
+        "muscle_groups": ["Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 34,
+        "name": "Single-Leg Romanian Deadlifts",
+        "description": "Stand with your feet hip-width apart and hold a dumbbell or kettlebell in one hand, palm facing your body. Shift your weight onto one leg and hinge forward at the hips, extending your other leg straight behind you. Lower the weight towards the ground while keeping your back straight, then squeeze your glutes to return to the upright position. Repeat on the other leg.",
+        "muscle_groups": ["Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 35,
+        "name": "Plank Jacks",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Jump your feet out wide and then back together, maintaining a strong plank position. Continue the jumping motion at a quick pace.",
+        "muscle_groups": ["Core", "Legs"],
+        "time": "3 sets of 15 reps",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 36,
+        "name": "Hamstring Curls",
+        "description": "Lie facedown on a leg curl machine or stability ball with your legs extended. Bend your knees, curling your heels towards your glutes. Slowly lower your legs back down to the starting position and repeat.",
+        "muscle_groups": ["Hamstrings"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Hamstring Development"
+    },
+    {
+        "id": 37,
+        "name": "Commando Plank",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Lower yourself onto your right forearm, followed by your left forearm, so that you are in a forearm plank position. Push yourself back up onto your right hand, followed by your left hand, returning to the high plank position. Continue alternating between the high plank and forearm plank positions.",
+        "muscle_groups": ["Core", "Shoulders"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 38,
+        "name": "Russian Twists",
+        "description": "Sit on the ground with your knees bent and your feet elevated off the ground. Lean back slightly, keeping your back straight and your core engaged. Twist your torso to the right, touching your hands to the ground beside your hip, then twist to the left, touching your hands to the ground beside your hip. Continue alternating sides in a controlled motion.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "2 sets of 15 reps per side",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 39,
+        "name": "Step-Ups",
+        "description": "Stand in front of a sturdy step or bench. Step onto the step with your right foot, driving through your heel to lift your body up. Step back down and repeat with your left foot. Continue alternating sides.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 40,
+        "name": "Hanging Leg Raises",
+        "description": "Hang from a pull-up bar with your arms fully extended and your shoulders engaged. Lift your legs up, keeping them straight, until they are parallel to the ground. Lower your legs back down to the starting position and repeat.",
+        "muscle_groups": ["Abdominals", "Hip Flexors"],
+        "time": "2 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 41,
+        "name": "Burpees",
+        "description": "Start in a standing position. Drop into a squat position with your hands on the ground. Kick your feet back, landing in a plank position. Jump your feet forward to return to the squat position, then jump up explosively with your arms overhead. Land softly and repeat.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Full Body Conditioning"
+    },
+    {
+        "id": 42,
+        "name": "Side Plank with Hip Dips",
+        "description": "Start in a side plank position with your forearm on the ground and your body in a straight line. Lower your hip towards the ground, then lift it back up to the starting position. Repeat on the other side. Continue alternating sides.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 43,
+        "name": "Wide-Grip Pull-Ups",
+        "description": "Hang from a pull-up bar with your hands slightly wider than shoulder-width apart, palms facing away from you. Pull yourself up by bending your elbows and squeezing your shoulder blades together. Lower yourself back down to the starting position and repeat.",
+        "muscle_groups": ["Back", "Biceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 44,
+        "name": "Walking Lunges",
+        "description": "Start standing with your feet hip-width apart. Take a step forward with your right foot and lower your body into a lunge position, keeping your front knee aligned with your ankle. Push off with your back foot and bring it forward to take a step, lowering into a lunge with your left leg forward. Continue walking forward, alternating legs.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 45,
+        "name": "Tricep Dips",
+        "description": "Sit on the edge of a bench or chair with your hands gripping the edge, fingers pointing forward. Walk your feet forward, extending your legs in front of you. Lower your body by bending your elbows, keeping them close to your sides, until your upper arms are parallel to the ground. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 46,
+        "name": "Supermans",
+        "description": "Lie facedown on the ground with your arms extended in front of you. Lift your arms, chest, and legs off the ground as high as you can, squeezing your glutes and lower back. Hold the position for a few seconds, then lower back down and repeat.",
+        "muscle_groups": ["Back", "Glutes"],
+        "time": "2 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Back Strength"
+    },
+    {
+        "id": 47,
+        "name": "Calf Raises",
+        "description": "Stand on the edge of a step or platform with your heels hanging off and your toes on the step. Raise your heels up as high as you can, then lower them back down below the step. Repeat the movement in a controlled manner.",
+        "muscle_groups": ["Calves"],
+        "time": "3 sets of 15 reps",
+        "level": "Intermediate",
+        "goal": "Calf Development"
+    },
+    {
+        "id": 48,
+        "name": "Incline Dumbbell Bench Press",
+        "description": "Lie on an incline bench with a dumbbell in each hand, palms facing forward. Start with the dumbbells at shoulder level, then press them up towards the ceiling until your arms are fully extended. Lower the dumbbells back to shoulder level and repeat.",
+        "muscle_groups": ["Chest", "Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 49,
+        "name": "Russian Twists with Medicine Ball",
+        "description": "Sit on the ground with your knees bent and your feet elevated off the ground. Hold a medicine ball or weight with both hands, extending your arms in front of you. Lean back slightly, keeping your back straight and your core engaged. Twist your torso to the right, touching the medicine ball to the ground beside your hip, then twist to the left, touching the medicine ball to the ground beside your hip. Continue alternating sides in a controlled motion.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "2 sets of 15 reps per side",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 50,
+        "name": "Jumping Lunges",
+        "description": "Start in a lunge position with your right leg forward and your left leg back, both knees bent at 90-degree angles. Jump up explosively and switch the positions of your legs mid-air, landing with your left leg forward and your right leg back. Continue jumping and switching legs at a quick pace.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Power"
+    },
+    {
+        "id": 51,
+        "name": "Dumbbell Shoulder Press",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward. Start with the dumbbells at shoulder level, then press them overhead until your arms are fully extended. Lower the dumbbells back to shoulder level and repeat.",
+        "muscle_groups": ["Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 52,
+        "name": "Bulgarian Split Squats",
+        "description": "Stand in a staggered stance with your right foot forward and your left foot resting on a bench or step behind you. Lower your body by bending your right knee, keeping your knee aligned with your ankle. Push through your right heel to return to the starting position and repeat. Complete the desired number of reps on one side before switching to the other side.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 53,
+        "name": "Plank with Arm Lift",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Lift one arm off the ground, extending it straight in front of you while maintaining a strong plank position. Hold the position for a few seconds, then lower your arm back down and repeat with the other arm. Continue alternating arms.",
+        "muscle_groups": ["Core", "Shoulders"],
+        "time": "3 sets of 10 reps per arm",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 54,
+        "name": "Chest Press",
+        "description": "Lie on a flat bench with a dumbbell in each hand, palms facing forward. Start with the dumbbells at chest level, then press them up towards the ceiling until your arms are fully extended. Lower the dumbbells back to chest level and repeat.",
+        "muscle_groups": ["Chest", "Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 55,
+        "name": "Lateral Lunges",
+        "description": "Stand with your feet hip-width apart. Take a wide step to the right, shifting your weight onto your right foot and bending your right knee. Keep your left leg straight and your left foot flat on the ground. Push off with your right foot and return to the starting position. Repeat on the left side. Continue alternating sides.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 56,
+        "name": "Dumbbell Bicep Curls",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward. Start with your arms fully extended and your elbows close to your sides. Curl the dumbbells towards your shoulders, keeping your upper arms stationary. Lower the dumbbells back down to the starting position and repeat.",
+        "muscle_groups": ["Biceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 57,
+        "name": "Mountain Climbers",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Bring one knee towards your chest, then quickly switch and bring the other knee towards your chest. Continue alternating legs at a quick pace, as if you are running in place while in a plank position.",
+        "muscle_groups": ["Core", "Legs"],
+        "time": "3 sets of 15 reps per leg",
+        "level": "Intermediate",
+        "goal": "Core Conditioning"
+    },
+    {
+        "id": 58,
+        "name": "Reverse Lunges",
+        "description": "Stand with your feet hip-width apart. Take a step back with your right foot and lower your body into a lunge position, keeping your front knee aligned with your ankle. Push off with your back foot and bring it forward to return to the starting position. Repeat on the other leg. Continue alternating legs.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 59,
+        "name": "Tricep Pushdowns",
+        "description": "Stand facing a cable machine with a rope attachment. Grasp the rope with your palms facing each other and your elbows bent at 90 degrees. Keep your upper arms stationary and press the rope downward by straightening your elbows. Pause for a moment, then return to the starting position and repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 60,
+        "name": "Bicycle Crunches",
+        "description": "Lie on your back with your knees bent and your hands behind your head. Lift your shoulder blades off the ground and bring your right elbow towards your left knee while straightening your right leg. Return to the starting position and repeat on the other side, bringing your left elbow towards your right knee. Continue alternating sides in a pedaling motion.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "2 sets of 15 reps per side",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 61,
+        "name": "Side Plank",
+        "description": "Lie on your side with your legs straight and stacked on top of each other. Prop yourself up on your forearm, with your elbow directly under your shoulder. Lift your hips off the ground, creating a straight line from your head to your feet. Hold the position for a specified duration, then switch sides and repeat.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "3 sets of 30 seconds per side",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 62,
+        "name": "Burpees",
+        "description": "Start in a standing position. Drop down into a squat position with your hands on the ground. Kick your feet back, while keeping your arms extended. Quickly bring your feet back to the squat position. Jump up explosively from the squat position, reaching your arms overhead. Repeat the sequence in a fluid motion.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Full Body Conditioning"
+    },
+    {
+        "id": 63,
+        "name": "Calf Raises",
+        "description": "Stand with your feet hip-width apart. Rise up onto the balls of your feet, lifting your heels off the ground. Hold the position for a moment, then lower your heels back down. Repeat the movement in a controlled manner.",
+        "muscle_groups": ["Calves"],
+        "time": "3 sets of 15 reps",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 64,
+        "name": "Superman",
+        "description": "Lie face down on the ground with your arms extended overhead and your legs straight. Lift your arms, chest, and legs off the ground simultaneously, creating a gentle arch in your back. Hold the position for a moment, then lower your arms and legs back down. Repeat the movement in a controlled manner.",
+        "muscle_groups": ["Back", "Glutes"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Back Strength"
+    },
+    {
+        "id": 65,
+        "name": "Bridge",
+        "description": "Lie on your back with your knees bent and your feet flat on the ground. Lift your hips off the ground, creating a straight line from your knees to your shoulders. Hold the position for a specified duration, then lower your hips back down. Repeat the movement in a controlled manner.",
+        "muscle_groups": ["Glutes", "Hamstrings"],
+        "time": "3 sets of 30 seconds",
+        "level": "Beginner",
+        "goal": "Glute Activation"
+    },
+    {
+        "id": 66,
+        "name": "Plank Jacks",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Jump your feet out wide, then jump them back together. Continue jumping your feet in and out at a quick pace while maintaining a strong plank position.",
+        "muscle_groups": ["Core", "Legs"],
+        "time": "3 sets of 15 reps",
+        "level": "Intermediate",
+        "goal": "Cardiovascular Fitness"
+    },
+    {
+        "id": 67,
+        "name": "Russian Twists",
+        "description": "Sit on the ground with your knees bent and your heels on the floor. Lean back slightly, balancing on your glutes. Interlace your hands or hold a weight in front of your chest. Twist your torso to one side, bringing your hands or weight towards the ground beside your hip. Twist to the other side and repeat.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 68,
+        "name": "Standing Calf Raises",
+        "description": "Stand with your feet shoulder-width apart. Rise up onto the balls of your feet, lifting your heels off the ground. Hold the position for a moment, then lower your heels back down. Repeat the movement in a controlled manner.",
+        "muscle_groups": ["Calves"],
+        "time": "3 sets of 15 reps",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 69,
+        "name": "Tricep Dips",
+        "description": "Sit on the edge of a chair or bench with your hands gripping the edge beside your hips. Walk your feet forward, extending your legs in front of you. Lower your body by bending your elbows, keeping your back close to the chair or bench. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 70,
+        "name": "Lateral Lunges",
+        "description": "Stand with your feet hip-width apart. Take a step to the side with your right foot, bending your right knee and pushing your hips back. Keep your left leg straight. Push off with your right foot to return to the starting position. Repeat on the other side, alternating between right and left lunges.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 71,
+        "name": "Jumping Lunges",
+        "description": "Start in a lunge position with your right foot forward and your knee bent at a 90-degree angle. Jump up explosively, switching the position of your feet in mid-air. Land softly with your left foot forward and immediately lower into a lunge position. Continue alternating sides.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Power"
+    },
+    {
+        "id": 72,
+        "name": "Plank Hold",
+        "description": "Start in a high plank position with your hands directly under your shoulders and your body in a straight line from head to heels. Engage your core and hold the position for a specified duration, keeping your back flat and your abs tight. Rest as needed and repeat for multiple sets.",
+        "muscle_groups": ["Core"],
+        "time": "3 sets of 30 seconds",
+        "level": "Beginner",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 73,
+        "name": "Dumbbell Shoulder Press",
+        "description": "Stand tall with your feet shoulder-width apart and hold a dumbbell in each hand at shoulder level, palms facing forward. Press the dumbbells overhead until your arms are fully extended. Lower the dumbbells back to shoulder level and repeat.",
+        "muscle_groups": ["Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Shoulder Strength"
+    },
+    {
+        "id": 74,
+        "name": "Lying Leg Raises",
+        "description": "Lie on your back with your legs extended and your hands resting by your sides. Keeping your legs straight, lift them up towards the ceiling until your hips are fully flexed. Slowly lower your legs back down to the starting position without touching the ground. Repeat the movement in a controlled manner.",
+        "muscle_groups": ["Abdominals", "Hip Flexors"],
+        "time": "3 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Core Strength"
+    },
+    {
+        "id": 75,
+        "name": "Incline Push-Ups",
+        "description": "Assume a push-up position with your hands on an elevated surface, such as a bench or step, and your feet on the ground. Keeping your body in a straight line, lower your chest towards the elevated surface by bending your elbows. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Chest", "Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Upper Body Strength"
+    },
+    {
+        "id": 76,
+        "name": "Single-Leg Deadlifts",
+        "description": "Stand with your feet hip-width apart and hold a dumbbell or kettlebell in your right hand. Lift your left foot slightly off the ground and hinge at the hips, lowering the weight towards the ground while extending your left leg behind you. Keep your back flat and your right knee slightly bent. Return to the starting position and repeat on the other leg.",
+        "muscle_groups": ["Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Stability"
+    },
+    {
+        "id": 77,
+        "name": "Mountain Climbers",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Drive one knee towards your chest, then quickly switch and bring the other knee towards your chest. Continue alternating between legs, moving at a quick pace while maintaining a strong plank position.",
+        "muscle_groups": ["Core", "Shoulders", "Legs"],
+        "time": "3 sets of 20 reps",
+        "level": "Intermediate",
+        "goal": "Cardiovascular Endurance"
+    },
+    {
+        "id": 78,
+        "name": "Bicep Curls",
+        "description": "Stand tall with your feet hip-width apart and hold a dumbbell in each hand, palms facing forward. Keeping your upper arms stationary, curl the weights up towards your shoulders. Pause for a moment at the top, then slowly lower the weights back down to the starting position. Repeat.",
+        "muscle_groups": ["Biceps"],
+        "time": "3 sets of 12 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 79,
+        "name": "Reverse Lunges",
+        "description": "Stand with your feet hip-width apart. Step your right foot back and lower your body into a lunge position, keeping your front knee directly above your ankle. Push off with your right foot and return to the starting position. Repeat on the other side, alternating between right and left lunges.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 80,
+        "name": "Plank Knee to Elbow",
+        "description": "Start in a high plank position with your hands directly under your shoulders and your body in a straight line from head to heels. Lift your right foot off the ground and bring your right knee towards your right elbow, squeezing your abs. Return to the starting position and repeat on the other side. Continue alternating sides.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Intermediate",
+        "goal": "Core Strength"
+    },
+    {
+        "id": 81,
+        "name": "Box Jumps",
+        "description": "Stand facing a sturdy box or platform. Bend your knees and jump explosively onto the box, landing softly with both feet. Step or jump back down to the starting position and repeat.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Calves"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Lower Body Power"
+    },
+    {
+        "id": 82,
+        "name": "Russian Twists with Medicine Ball",
+        "description": "Sit on the ground with your knees bent and your heels on the floor. Lean back slightly, balancing on your glutes. Hold a medicine ball or a weighted object with both hands, palms together. Twist your torso to one side, bringing the weight towards the ground beside your hip. Twist to the other side and repeat.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "3 sets of 12 reps per side",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 83,
+        "name": "Single-Leg Glute Bridges",
+        "description": "Lie on your back with your knees bent and your feet flat on the floor. Extend one leg straight up towards the ceiling. Press your other foot into the floor and lift your hips off the ground, squeezing your glutes at the top. Lower your hips back down and repeat on the other leg.",
+        "muscle_groups": ["Glutes", "Hamstrings"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 84,
+        "name": "Seated Dumbbell Shoulder Press",
+        "description": "Sit on a chair or bench with your feet flat on the floor. Hold a dumbbell in each hand at shoulder level, palms facing forward. Press the dumbbells overhead until your arms are fully extended. Lower the dumbbells back to shoulder level and repeat.",
+        "muscle_groups": ["Shoulders", "Triceps"],
+        "time": "3 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Shoulder Strength"
+    },
+    {
+        "id": 85,
+        "name": "Superman",
+        "description": "Lie face down on the floor with your arms extended in front of you. Simultaneously lift your arms, chest, and legs off the ground, squeezing your glutes and lower back. Hold the position for a few seconds, then lower back down and repeat.",
+        "muscle_groups": ["Back", "Glutes"],
+        "time": "3 sets of 12 reps",
+        "level": "Beginner",
+        "goal": "Back Strength"
+    },
+    {
+        "id": 86,
+        "name": "Jumping Jacks",
+        "description": "Stand with your feet together and your arms by your sides. Jump your feet out wide while simultaneously raising your arms above your head. Quickly jump back to the starting position and repeat.",
+        "muscle_groups": ["Cardiovascular"],
+        "time": "3 sets of 20 reps",
+        "level": "Beginner",
+        "goal": "Cardiovascular Endurance"
+    },
+    {
+        "id": 87,
+        "name": "Tricep Push-Ups",
+        "description": "Assume a high plank position with your hands directly under your shoulders. Keep your elbows close to your body as you lower your chest towards the ground, bending your elbows to a 90-degree angle. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Triceps", "Chest", "Shoulders"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 88,
+        "name": "Lateral Lunges",
+        "description": "Stand with your feet hip-width apart. Take a wide step to the right, bending your right knee and pushing your hips back. Keep your left leg straight. Push off with your right foot to return to the starting position and repeat on the other side.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 89,
+        "name": "Reverse Crunches",
+        "description": "Lie on your back with your knees bent and your feet flat on the floor. Place your hands on the floor beside you for support. Engage your core and lift your hips off the ground, bringing your knees towards your chest. Lower your hips back down to the starting position and repeat.",
+        "muscle_groups": ["Abdominals", "Hip Flexors"],
+        "time": "3 sets of 12 reps",
+        "level": "Beginner",
+        "goal": "Core Strength"
+    },
+    {
+        "id": 90,
+        "name": "Side Plank",
+        "description": "Lie on your side with your elbow directly under your shoulder and your legs stacked on top of each other. Lift your hips off the ground, creating a straight line from head to heels. Hold the position for a specified duration, then switch sides and repeat.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "3 sets of 30 seconds per side",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 91,
+        "name": "Step-Ups",
+        "description": "Find a sturdy step or platform. Step your right foot onto the platform, pressing through your heel. Step your left foot onto the platform and fully extend your legs. Step back down with your right foot, followed by your left. Repeat, leading with the opposite leg.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 92,
+        "name": "Plank Jacks",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Jump both of your feet out wide, then jump them back together. Continue jumping your feet in and out, maintaining a strong plank position.",
+        "muscle_groups": ["Core", "Shoulders", "Legs"],
+        "time": "3 sets of 20 reps",
+        "level": "Intermediate",
+        "goal": "Cardiovascular Endurance"
+    },
+    {
+        "id": 93,
+        "name": "Tricep Dips",
+        "description": "Sit on the edge of a sturdy chair or bench with your hands gripping the edge, fingers pointing forward. Walk your feet forward, sliding your hips off the chair. Bend your elbows to lower your body towards the ground, then straighten your arms to lift your body back up. Repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 12 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 94,
+        "name": "Sumo Squats",
+        "description": "Stand with your feet wider than shoulder-width apart and toes pointed out at a 45-degree angle. Keeping your chest up and core engaged, lower your body down by bending your knees and pushing your hips back. Push through your heels to return to the starting position and repeat.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 95,
+        "name": "Russian Twists",
+        "description": "Sit on the ground with your knees bent and your feet flat on the floor. Lean back slightly, balancing on your glutes. Clasp your hands together in front of your chest. Twist your torso to one side, bringing your hands to touch the ground beside your hip. Twist to the other side and repeat.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "3 sets of 12 reps per side",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 96,
+        "name": "Dumbbell Shoulder Press",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand at shoulder level, palms facing forward. Press the dumbbells overhead until your arms are fully extended. Lower the dumbbells back to shoulder level and repeat.",
+        "muscle_groups": ["Shoulders", "Triceps"],
+        "time": "3 sets of 12 reps",
+        "level": "Intermediate",
+        "goal": "Shoulder Strength"
+    },
+    {
+        "id": 97,
+        "name": "Mountain Climbers",
+        "description": "Assume a high plank position with your hands directly under your shoulders. Engage your core and bring one knee towards your chest, then quickly switch legs, alternating the movement. Continue alternating at a fast pace, as if you're running in place.",
+        "muscle_groups": ["Core", "Shoulders", "Legs"],
+        "time": "3 sets of 20 reps",
+        "level": "Intermediate",
+        "goal": "Cardiovascular Endurance"
+    },
+    {
+        "id": 98,
+        "name": "Bicycle Crunches",
+        "description": "Lie on your back with your knees bent and your hands behind your head. Lift your feet off the ground and bring your right elbow towards your left knee, simultaneously straightening your right leg. Switch sides, bringing your left elbow towards your right knee, and continue alternating in a pedaling motion.",
+        "muscle_groups": ["Abdominals", "Obliques"],
+        "time": "3 sets of 20 reps",
+        "level": "Intermediate",
+        "goal": "Abdominal Strength"
+    },
+    {
+        "id": 99,
+        "name": "Reverse Lunges",
+        "description": "Stand with your feet hip-width apart. Step your right foot back and lower your body into a lunge position, keeping your front knee at a 90-degree angle. Push through your front heel to return to the starting position and repeat on the other side.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 100,
+        "name": "Plank",
+        "description": "Start in a high plank position with your hands directly under your shoulders and your toes on the ground. Engage your core and maintain a straight line from head to heels. Hold the position for a specified duration.",
+        "muscle_groups": ["Core", "Shoulders"],
+        "time": "3 sets of 30 seconds",
+        "level": "Intermediate",
+        "goal": "Core Strength"
+    },
+    {
+        "id": 101,
+        "name": "Dumbbell Bicep Curls",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward. Keeping your elbows close to your body, curl the dumbbells up towards your shoulders. Slowly lower them back down to the starting position and repeat.",
+        "muscle_groups": ["Biceps"],
+        "time": "3 sets of 12 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 102,
+        "name": "Glute Bridges",
+        "description": "Lie on your back with your knees bent and your feet flat on the floor, hip-width apart. Engage your core and squeeze your glutes as you lift your hips off the ground until your knees, hips, and shoulders form a straight line. Hold for a moment, then lower your hips back down and repeat.",
+        "muscle_groups": ["Glutes", "Hamstrings"],
+        "time": "3 sets of 12 reps",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 103,
+        "name": "Leg Raises",
+        "description": "Lie on your back with your legs extended and your hands by your sides. Engage your core and lift your legs off the ground, keeping them straight. Slowly lower them back down without touching the ground and repeat.",
+        "muscle_groups": ["Abdominals", "Hip Flexors"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Core Strength"
+    },
+    {
+        "id": 104,
+        "name": "Plank Shoulder Taps",
+        "description": "Assume a high plank position with your hands directly under your shoulders. Lift one hand and tap the opposite shoulder, then return to the starting position. Repeat on the other side, alternating shoulder taps.",
+        "muscle_groups": ["Core", "Shoulders"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Beginner",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 105,
+        "name": "Jumping Jacks",
+        "description": "Stand with your feet together and your arms by your sides. Jump your feet out wide while simultaneously raising your arms overhead. Quickly jump back to the starting position and repeat.",
+        "muscle_groups": ["Cardiovascular"],
+        "time": "3 sets of 20 reps",
+        "level": "Beginner",
+        "goal": "Cardiovascular Endurance"
+    },
+    {
+        "id": 106,
+        "name": "Walking Lunges",
+        "description": "Start standing with your feet hip-width apart. Take a step forward with your right foot, lowering your body into a lunge position. Push off with your right foot and bring your left foot forward into the next lunge. Continue walking forward, alternating legs.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 107,
+        "name": "Plank to Push-Up",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Lower one forearm at a time to come into a forearm plank position. Then, push back up, one hand at a time, into the high plank position. Repeat, alternating the lead hand.",
+        "muscle_groups": ["Core", "Chest", "Shoulders"],
+        "time": "3 sets of 8 reps per side",
+        "level": "Intermediate",
+        "goal": "Core and Upper Body Strength"
+    },
+    {
+        "id": 108,
+        "name": "Side Plank",
+        "description": "Lie on your side with your forearm on the ground, elbow directly under your shoulder. Stack your feet on top of each other and lift your hips off the ground, creating a straight line from your head to your heels. Hold this position for a specified duration, then switch sides.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "3 sets of 30 seconds per side",
+        "level": "Intermediate",
+        "goal": "Core Stability"
+    },
+    {
+        "id": 109,
+        "name": "Lateral Lunges",
+        "description": "Stand with your feet hip-width apart. Take a step to the side with your right foot, keeping your left foot planted. Bend your right knee and push your hips back, lowering your body into a lunge position. Push off with your right foot and return to the starting position. Repeat on the other side.",
+        "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 110,
+        "name": "Single-Leg Deadlifts",
+        "description": "Stand with your feet hip-width apart. Shift your weight onto your right leg and hinge forward at the hips, extending your left leg behind you for balance. Keep your back flat and reach your hands towards the ground as you lower your torso. Return to the starting position and repeat on the other side.",
+        "muscle_groups": ["Hamstrings", "Glutes"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Intermediate",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 111,
+        "name": "Tricep Dips",
+        "description": "Sit on a bench with your hands gripping the edge, fingers facing forward. Walk your feet forward and slide your hips off the bench. Lower your body by bending your elbows until your upper arms are parallel to the floor. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 112,
+        "name": "Hammer Curls",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing your body. Keeping your elbows close to your sides, curl the dumbbells up towards your shoulders. Slowly lower them back down to the starting position and repeat.",
+        "muscle_groups": ["Biceps", "Forearms"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 113,
+        "name": "Push-ups",
+        "description": "Assume a high plank position with your hands slightly wider than shoulder-width apart. Lower your body by bending your elbows until your chest is just above the ground. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Chest", "Triceps", "Shoulders"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 114,
+        "name": "Bench Press",
+        "description": "Lie on a flat bench with your feet flat on the floor. Hold a barbell with an overhand grip, hands slightly wider than shoulder-width apart. Lower the bar towards your chest, keeping your elbows at a 45-degree angle. Push the bar back up to the starting position and repeat.",
+        "muscle_groups": ["Chest", "Triceps", "Shoulders"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 115,
+        "name": "Dumbbell Shoulder Press",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing forward. Lift the dumbbells to shoulder height, then press them overhead until your arms are fully extended. Lower them back down to shoulder height and repeat.",
+        "muscle_groups": ["Shoulders", "Triceps"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 116,
+        "name": "Tricep Kickbacks",
+        "description": "Hold a dumbbell in your right hand and place your left knee and left hand on a bench for support. Keeping your back straight, hinge forward at the hips. Bend your right elbow and bring the dumbbell up towards your chest. Extend your arm straight back, squeezing your triceps. Lower the dumbbell back to the starting position and repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 10 reps per arm",
+        "level": "Beginner",
+        "goal": "Arm Definition"
+    },
+    {
+        "id": 117,
+        "name": "Hamstring Curls",
+        "description": "Lie face down on a leg curl machine with your ankles hooked under the roller pads. Curl your legs up towards your glutes by flexing your knees. Slowly lower your legs back down to the starting position and repeat.",
+        "muscle_groups": ["Hamstrings"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 118,
+        "name": "Goblet Squats",
+        "description": "Hold a dumbbell vertically against your chest, with your elbows pointing down. Stand with your feet shoulder-width apart. Push your hips back and bend your knees to lower into a squat position. Keep your chest up and your weight on your heels. Rise back up to the starting position and repeat.",
+        "muscle_groups": ["Quadriceps", "Glutes"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 119,
+        "name": "Reverse Lunges",
+        "description": "Stand with your feet hip-width apart. Take a step backward with your right foot and lower your body into a lunge position. Push off with your right foot and return to the starting position. Repeat on the other side.",
+        "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+        "time": "3 sets of 10 reps per leg",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 120,
+        "name": "Calf Raises",
+        "description": "Stand on the edge of a step or a raised platform with your heels hanging off. Slowly raise your heels as high as possible, then lower them back down below the step. Repeat.",
+        "muscle_groups": ["Calves"],
+        "time": "3 sets of 10 reps",
+        "level": "Beginner",
+        "goal": "Lower Body Strength"
+    },
+    {
+        "id": 121,
+        "name": "Barbell Squats",
+        "description": "Stand with your feet shoulder-width apart and position a barbell on your upper back. Lower your body into a squat position by bending your knees and pushing your hips back. Keep your chest up and your weight on your heels. Rise back up to the starting position and repeat.",
+        "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 122,
+        "name": "Deadlifts",
+        "description": "Stand with your feet hip-width apart and position a barbell in front of you. Bend your knees and hinge forward at the hips to grip the barbell with an overhand grip. Keeping your back flat, lift the barbell by extending your hips and knees. Lower the barbell back down to the starting position and repeat.",
+        "muscle_groups": ["Hamstrings", "Glutes", "Lower Back"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 123,
+        "name": "Bench Press",
+        "description": "Lie on a flat bench with your feet flat on the floor. Hold a barbell with an overhand grip, hands slightly wider than shoulder-width apart. Lower the bar towards your chest, keeping your elbows at a 45-degree angle. Push the bar back up to the starting position and repeat.",
+        "muscle_groups": ["Chest", "Triceps", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 124,
+        "name": "Pull-ups",
+        "description": "Hang from a pull-up bar with your palms facing away from you and your hands shoulder-width apart. Pull your body up towards the bar until your chin is above the bar. Lower your body back down to the starting position and repeat.",
+        "muscle_groups": ["Back", "Biceps"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 125,
+        "name": "Barbell Clean and Press",
+        "description": "Stand with your feet shoulder-width apart and a barbell on the floor in front of you. Bend your knees and grip the barbell with an overhand grip, hands slightly wider than shoulder-width apart. Explosively pull the barbell up towards your shoulders, then press it overhead. Lower the barbell back down to the starting position and repeat.",
+        "muscle_groups": ["Shoulders", "Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 126,
+        "name": "Plyometric Push-ups",
+        "description": "Assume a high plank position with your hands slightly wider than shoulder-width apart. Lower your body by bending your elbows until your chest is just above the ground. Push yourself up explosively so that your hands leave the ground. Land softly and immediately lower yourself back into another push-up. Repeat.",
+        "muscle_groups": ["Chest", "Triceps", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 127,
+        "name": "Box Jumps",
+        "description": "Stand in front of a sturdy box or platform. Bend your knees and swing your arms back, then jump onto the box, extending your hips and knees. Land softly with both feet on the box, then step or jump back down to the starting position. Repeat.",
+        "muscle_groups": ["Legs", "Glutes", "Calves"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 128,
+        "name": "Dumbbell Snatch",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in one hand between your legs. Explosively extend your hips, knees, and ankles while shrugging your shoulders. As the dumbbell rises, pull it overhead by rotating your elbow and shoulder. Lower the dumbbell back down to the starting position and repeat.",
+        "muscle_groups": ["Shoulders", "Legs", "Core"],
+        "time": "3 sets of 6-8 reps per arm",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 129,
+        "name": "Barbell Bent-Over Rows",
+        "description": "Stand with your feet shoulder-width apart and hold a barbell with an overhand grip, hands slightly wider than shoulder-width apart. Hinge forward at the hips, keeping your back flat. Pull the barbell towards your lower chest, squeezing your shoulder blades together. Lower the barbell back down to the starting position and repeat.",
+        "muscle_groups": ["Back", "Biceps"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 130,
+        "name": "Russian Twists",
+        "description": "Sit on the ground with your knees bent and your heels on the floor. Lean back slightly and lift your feet off the ground, balancing on your glutes. Hold a dumbbell or a medicine ball in front of your chest. Twist your torso to the right, then to the left, while keeping your balance. Repeat.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "3 sets of 10 reps per side",
+        "level": "Advanced",
+        "goal": "Strength and Power"
+    },
+    {
+        "id": 131,
+        "name": "Push-up Variations",
+        "description": "Perform different variations of push-ups, such as diamond push-ups, decline push-ups, or wide-grip push-ups, to target your chest, triceps, and shoulders. Follow the proper form for each variation and perform as many reps as you can.",
+        "muscle_groups": ["Chest", "Triceps", "Shoulders"],
+        "time": "3 sets of maximum reps",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 132,
+        "name": "Dumbbell Lateral Raises",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing your body. Lift the dumbbells out to the sides until they are at shoulder level. Lower them back down to the starting position and repeat.",
+        "muscle_groups": ["Shoulders"],
+        "time": "3 sets of 12-15 reps",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 133,
+        "name": "Bodyweight Squats",
+        "description": "Stand with your feet shoulder-width apart and lower your body into a squat position by bending your knees and pushing your hips back. Keep your chest up and your weight on your heels. Rise back up to the starting position and repeat.",
+        "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+        "time": "3 sets of 20 reps",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 134,
+        "name": "Tricep Dips",
+        "description": "Sit on a bench with your hands gripping the edge, fingers facing forward. Walk your feet forward and slide your hips off the bench. Lower your body by bending your elbows until your upper arms are parallel to the floor. Push yourself back up to the starting position and repeat.",
+        "muscle_groups": ["Triceps"],
+        "time": "3 sets of 12-15 reps",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 135,
+        "name": "Mountain Climbers",
+        "description": "Assume a high plank position with your hands directly under your shoulders. Bring your right knee towards your chest, then quickly switch legs, bringing your left knee towards your chest. Continue alternating your legs as if you are running in place.",
+        "muscle_groups": ["Core", "Legs", "Shoulders"],
+        "time": "3 sets of 20 reps",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 136,
+        "name": "Plank",
+        "description": "Assume a high plank position with your hands directly under your shoulders and your body in a straight line from head to heels. Hold this position for as long as you can while maintaining proper form.",
+        "muscle_groups": ["Core"],
+        "time": "3 sets of maximum hold",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 137,
+        "name": "Dumbbell Hammer Curls",
+        "description": "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing your body. Keeping your elbows close to your sides, curl the dumbbells up towards your shoulders. Slowly lower them back down to the starting position and repeat.",
+        "muscle_groups": ["Biceps", "Forearms"],
+        "time": "3 sets of 12-15 reps",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 138,
+        "name": "Walking Lunges",
+        "description": "Stand with your feet together. Take a step forward with your right foot and lower your body into a lunge position. Push off with your right foot and bring your left foot forward, stepping into a lunge with your left leg. Continue alternating your steps.",
+        "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+        "time": "3 sets of 12-15 reps per leg",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 139,
+        "name": "Seated Russian Twists",
+        "description": "Sit on the ground with your knees bent and your heels on the floor. Lean back slightly and lift your feet off the ground, balancing on your glutes. Hold a dumbbell or a medicine ball in front of your chest. Twist your torso to the right, then to the left, while keeping your balance. Repeat.",
+        "muscle_groups": ["Core", "Obliques"],
+        "time": "3 sets of 12-15 reps per side",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 140,
+        "name": "Jumping Jacks",
+        "description": "Stand with your feet together and your arms by your sides. Jump your feet out to the sides and simultaneously raise your arms above your head. Quickly jump your feet back together and lower your arms. Repeat.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 20 reps",
+        "level": "Advanced",
+        "goal": "Muscle Endurance"
+    },
+    {
+        "id": 141,
+        "name": "Ladder Drills",
+        "description": "Set up a ladder on the ground and perform various footwork drills, such as high knees, lateral shuffles, and quick steps. Focus on quickness, agility, and coordination as you move through the ladder.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 10-15 seconds per drill",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 142,
+        "name": "Agility Hurdles",
+        "description": "Set up a series of hurdles at different heights. Jump over the hurdles with quick, explosive movements. Focus on clearing the hurdles with speed and precision.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 143,
+        "name": "Sprint Intervals",
+        "description": "Mark a distance, such as 100 meters. Sprint at maximum effort for the designated distance, then rest for a set amount of time before repeating. Repeat for the desired number of sets.",
+        "muscle_groups": ["Legs"],
+        "time": "3 sets of 100 meters",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 144,
+        "name": "Lateral Agility Ladder Drills",
+        "description": "Set up an agility ladder on the ground and perform lateral movements through the ladder, such as side shuffles or lateral hops. Focus on quickness, agility, and coordination as you move laterally.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 10-15 seconds per drill",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 145,
+        "name": "Tuck Jumps",
+        "description": "Stand with your feet hip-width apart. Squat down and explosively jump up, bringing your knees towards your chest and tucking them in. Land softly and immediately go into the next jump.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 146,
+        "name": "Cone Drills",
+        "description": "Set up cones in a zigzag pattern. Sprint to the first cone, touch it, then change direction and sprint to the next cone. Continue the pattern, focusing on quick changes of direction and speed.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 10-15 seconds per drill",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 147,
+        "name": "Bounding",
+        "description": "Start with a slight squat and explosively jump forward, driving your knees up and extending your arms for momentum. Land on the opposite foot and immediately go into the next jump, alternating legs.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 148,
+        "name": "Speed Skaters",
+        "description": "Start by standing with your feet shoulder-width apart. Jump to the right, landing on your right foot with your left foot crossed behind you. Immediately jump to the left, landing on your left foot with your right foot crossed behind you. Continue the side-to-side motion, focusing on speed and balance.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 10-15 seconds",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 149,
+        "name": "Carioca",
+        "description": "Stand with your feet hip-width apart. Cross your right foot over your left foot, then step your left foot out to the side. Cross your right foot behind your left foot, then step your left foot out to the side. Continue the crossing and stepping motion, moving laterally.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 10-15 seconds",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 150,
+        "name": "Lateral Bounds",
+        "description": "Start by standing with your feet hip-width apart. Leap to the right, pushing off with your left foot and landing on your right foot. Immediately leap to the left, pushing off with your right foot and landing on your left foot. Continue the side-to-side leaping motion, focusing on power and control.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Agility and Speed"
+    },
+    {
+        "id": 151,
+        "name": "Burpees",
+        "description": "Start in a standing position. Drop down into a squat position and place your hands on the floor in front of you. Kick your feet back into a push-up position. Immediately jump your feet back to the squat position. Jump up as high as you can from the squat position, reaching your arms overhead. Repeat the sequence.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 152,
+        "name": "Jumping Lunges",
+        "description": "Start by standing with your feet together. Jump up and land in a lunge position with your right leg forward and your left leg back. Immediately jump again and switch legs in mid-air, landing with your left leg forward and your right leg back. Continue alternating legs.",
+        "muscle_groups": ["Legs", "Glutes"],
+        "time": "3 sets of 10-12 reps per leg",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 153,
+        "name": "Mountain Climbers",
+        "description": "Assume a high plank position with your hands directly under your shoulders. Bring your right knee towards your chest, then quickly switch legs, bringing your left knee towards your chest. Continue alternating your legs as if you are running in place.",
+        "muscle_groups": ["Core", "Legs", "Shoulders"],
+        "time": "3 sets of 20 reps",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 154,
+        "name": "High Knees",
+        "description": "Stand with your feet hip-width apart. Run in place, lifting your knees as high as possible, while pumping your arms vigorously.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 30 seconds",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 155,
+        "name": "Plank Jacks",
+        "description": "Assume a high plank position with your hands directly under your shoulders. Jump your feet out to the sides and then back together, similar to the motion of a jumping jack. Keep your core engaged and maintain a strong plank position.",
+        "muscle_groups": ["Core", "Legs", "Shoulders"],
+        "time": "3 sets of 20 reps",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 156,
+        "name": "Jumping Squats",
+        "description": "Start with your feet shoulder-width apart. Lower your body into a squat position by bending your knees. Explosively jump up as high as you can from the squat position, reaching your arms overhead. Land softly and immediately go into the next jump.",
+        "muscle_groups": ["Legs", "Glutes"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 157,
+        "name": "Bicycle Crunches",
+        "description": "Lie on your back with your knees bent and your hands behind your head. Lift your shoulders off the ground and bring your right elbow towards your left knee, while straightening your right leg. Immediately switch sides, bringing your left elbow towards your right knee, while straightening your left leg. Continue alternating sides in a pedaling motion.",
+        "muscle_groups": ["Core"],
+        "time": "3 sets of 20 reps",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 158,
+        "name": "Squat Jumps",
+        "description": "Start with your feet shoulder-width apart. Lower your body into a squat position by bending your knees. Explosively jump up as high as you can from the squat position, reaching your arms overhead. Land softly and immediately go into the next jump.",
+        "muscle_groups": ["Legs", "Glutes"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 159,
+        "name": "Plank Up-Downs",
+        "description": "Start in a high plank position with your hands directly under your shoulders. Lower your right forearm to the ground, followed by your left forearm, so you are in a low plank position. Push back up into a high plank position, starting with your right hand, followed by your left hand. Continue alternating between high and low plank positions.",
+        "muscle_groups": ["Core", "Shoulders"],
+        "time": "3 sets of 10-12 reps per side",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 160,
+        "name": "Lateral Bounds",
+        "description": "Start by standing with your feet hip-width apart. Leap to the right, pushing off with your left foot and landing on your right foot. Immediately leap to the left, pushing off with your right foot and landing on your left foot. Continue the side-to-side leaping motion, focusing on power and control.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "HIIT and Circuit Training"
+    },
+    {
+        "id": 161,
+        "name": "Box Jumps",
+        "description": "Stand facing a sturdy box or platform. Squat down and explosively jump up onto the box, landing with both feet. Step or jump back down and immediately go into the next jump.",
+        "muscle_groups": ["Legs", "Glutes"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 162,
+        "name": "Depth Jumps",
+        "description": "Start by standing on a sturdy box or platform. Step off the box and immediately upon landing, jump as high as possible. Focus on a quick and explosive takeoff.",
+        "muscle_groups": ["Legs"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 163,
+        "name": "Squat Jumps",
+        "description": "Start with your feet shoulder-width apart. Lower your body into a squat position by bending your knees. Explosively jump up as high as you can from the squat position, reaching your arms overhead. Land softly and immediately go into the next jump.",
+        "muscle_groups": ["Legs", "Glutes"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 164,
+        "name": "Power Skips",
+        "description": "Start by standing with your feet hip-width apart. Drive your right knee up towards your chest, then explosively jump up from your left leg, driving your right knee forward and upward. Land softly on your left leg and immediately repeat on the other side, driving your left knee up towards your chest.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 10-15 seconds",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 165,
+        "name": "Tuck Jumps",
+        "description": "Start with your feet hip-width apart. Lower your body into a squat position by bending your knees. Explosively jump up as high as you can from the squat position, bringing your knees towards your chest and tucking them in. Land softly and immediately go into the next jump.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 166,
+        "name": "Single-Leg Bounds",
+        "description": "Start by standing on your right leg with your knee slightly bent. Leap forward as far as you can, landing on your left leg with your knee slightly bent. Immediately leap forward again, landing on your right leg. Continue alternating legs.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps per leg",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 167,
+        "name": "Split Jumps",
+        "description": "Start in a lunge position with your right leg forward and your left leg back. Explosively jump up, switching the positions of your legs mid-air, so you land in a lunge position with your left leg forward and your right leg back. Continue alternating legs.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 10-12 reps per leg",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 168,
+        "name": "Depth Push-Ups",
+        "description": "Start in a push-up position with your hands slightly wider than shoulder-width apart. Lower your chest towards the ground, then explosively push yourself up with enough force to lift your hands off the ground. Land softly and immediately go into the next push-up.",
+        "muscle_groups": ["Chest", "Shoulders", "Triceps"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 169,
+        "name": "Bounding",
+        "description": "Start with a slight squat and explosively jump forward, driving your knees up and extending your arms for momentum. Land on the opposite foot and immediately go into the next jump, alternating legs.",
+        "muscle_groups": ["Legs", "Core"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 170,
+        "name": "Medicine Ball Slams",
+        "description": "Stand with your feet shoulder-width apart, holding a medicine ball with both hands. Lift the ball overhead, then slam it down onto the ground with as much force as possible. Catch the ball on the bounce and immediately repeat the movement.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "Plyometrics"
+    },
+    {
+        "id": 171,
+        "name": "Clean and Jerk",
+        "description": "Start with a barbell on the ground in front of you. Bend your knees and grip the bar with an overhand grip, slightly wider than shoulder-width apart. Explosively extend your hips, shrug your shoulders, and pull the barbell up, catching it in a front squat position. Stand up and then jerk the barbell overhead, locking out your arms. Lower the barbell back to the starting position and repeat.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 172,
+        "name": "Snatch",
+        "description": "Start with a barbell on the ground in front of you. Bend your knees and grip the bar with a wide overhand grip. Explosively extend your hips, shrug your shoulders, and pull the barbell up, catching it in an overhead squat position. Stand up and lower the barbell back to the starting position. Repeat the movement in a fluid motion.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 173,
+        "name": "Clean Pull",
+        "description": "Start with a barbell on the ground in front of you. Bend your knees and grip the bar with an overhand grip, slightly wider than shoulder-width apart. Explosively extend your hips and shrug your shoulders, pulling the barbell up as high as possible without catching it in a front squat position. Lower the barbell back to the starting position and repeat.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 174,
+        "name": "Jerk",
+        "description": "Start with a barbell on the front of your shoulders in a front squat position. Dip your knees slightly and then explosively extend your hips and push the barbell overhead, locking out your arms. Lower the barbell back to the front squat position and repeat.",
+        "muscle_groups": ["Legs", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 175,
+        "name": "Hang Clean",
+        "description": "Start with a barbell at thigh level, standing with your feet shoulder-width apart. Bend your knees and hips, then explosively extend them to generate upward momentum on the barbell. As the barbell reaches chest level, pull yourself under it and catch it in a front squat position. Stand up and repeat the movement.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 176,
+        "name": "Hang Snatch",
+        "description": "Start with a barbell at thigh level, standing with your feet shoulder-width apart. Bend your knees and hips, then explosively extend them to generate upward momentum on the barbell. As the barbell reaches overhead, pull yourself under it and catch it in an overhead squat position. Stand up and repeat the movement.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 177,
+        "name": "Push Press",
+        "description": "Start with a barbell on the front of your shoulders in a front squat position. Dip your knees slightly and then explosively extend your hips and legs, using the momentum to push the barbell overhead. Lock out your arms and lower the barbell back to the front squat position. Repeat the movement.",
+        "muscle_groups": ["Legs", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 178,
+        "name": "Power Clean",
+        "description": "Start with a barbell on the ground in front of you. Bend your knees and grip the bar with an overhand grip, slightly wider than shoulder-width apart. Explosively extend your hips, shrug your shoulders, and pull the barbell up, catching it in a front squat position. Stand up and repeat the movement in a fluid motion.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 179,
+        "name": "Power Snatch",
+        "description": "Start with a barbell on the ground in front of you. Bend your knees and grip the bar with a wide overhand grip. Explosively extend your hips, shrug your shoulders, and pull the barbell up, catching it in an overhead squat position. Stand up and repeat the movement in a fluid motion.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 180,
+        "name": "Clean and Press",
+        "description": "Start with a barbell on the ground in front of you. Bend your knees and grip the bar with an overhand grip, slightly wider than shoulder-width apart. Explosively extend your hips, shrug your shoulders, and pull the barbell up, catching it in a front squat position. Stand up and press the barbell overhead, locking out your arms. Lower the barbell back to the front squat position and repeat the movement.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Olympic Lifting"
+    },
+    {
+        "id": 181,
+        "name": "Turkish Get-Up",
+        "description": "Start lying on your back with a kettlebell in your right hand, arm extended towards the ceiling. Bend your right knee and plant your right foot on the ground. Roll onto your left side and prop yourself up on your left elbow. Push off with your left hand and bring your left leg underneath you, coming up to a kneeling position. Stand up while keeping the kettlebell extended overhead. Reverse the movement to return to the starting position.",
+        "muscle_groups": ["Full Body"],
+        "time": "3 sets of 6-8 reps per side",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 182,
+        "name": "Single-Arm Dumbbell Snatch",
+        "description": "Start with a dumbbell on the ground between your feet. Bend your knees and grip the dumbbell with your right hand. Explosively extend your hips, shrug your shoulder, and pull the dumbbell up, catching it overhead in a standing position. Lower the dumbbell back to the ground and repeat with the left hand.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 6-8 reps per side",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 183,
+        "name": "Battle Rope Slams",
+        "description": "Stand with your feet shoulder-width apart, holding the ends of a battle rope in each hand. Bend your knees slightly and explosively lift your arms, slamming the rope onto the ground with as much force as possible. Continue to slam the rope in a fluid motion for the desired number of reps.",
+        "muscle_groups": ["Arms", "Shoulders", "Core"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 184,
+        "name": "Kettlebell Swings",
+        "description": "Start with a kettlebell on the ground in front of you. Stand with your feet slightly wider than shoulder-width apart and hinge at the hips, grabbing the kettlebell with both hands. Swing the kettlebell back between your legs, then explosively extend your hips and swing the kettlebell up to chest level. Allow the kettlebell to swing back down and repeat the movement.",
+        "muscle_groups": ["Legs", "Back", "Shoulders"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 185,
+        "name": "Bulgarian Split Squat",
+        "description": "Start by standing with your back to a bench or step. Place the top of your left foot on the bench and step forward with your right foot. Lower your body into a lunge position, bending your right knee until it forms a 90-degree angle. Push through your right heel to return to the starting position and repeat on the other side.",
+        "muscle_groups": ["Legs"],
+        "time": "3 sets of 10-12 reps per leg",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 186,
+        "name": "Sandbag Squats",
+        "description": "Start by standing with your feet shoulder-width apart, holding a sandbag in front of your chest. Squat down by bending your knees and hips, keeping your chest up and back straight. Push through your heels to return to the starting position and repeat the movement.",
+        "muscle_groups": ["Legs", "Back"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 187,
+        "name": "Sledgehammer Slams",
+        "description": "Stand with your feet shoulder-width apart, holding a sledgehammer with both hands. Lift the sledgehammer overhead and forcefully bring it down, slamming it onto a tire or the ground. Continue to alternate sides and repeat for the desired number of reps.",
+        "muscle_groups": ["Arms", "Shoulders", "Core"],
+        "time": "3 sets of 10-12 reps per side",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 188,
+        "name": "Medicine Ball Throws",
+        "description": "Stand with your feet shoulder-width apart, holding a medicine ball in front of your chest. Squat down and explosively extend your hips, throwing the medicine ball as high as possible against a wall or to a partner. Catch the medicine ball and repeat the movement.",
+        "muscle_groups": ["Legs", "Shoulders", "Core"],
+        "time": "3 sets of 10-12 reps",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 189,
+        "name": "Plyometric Push-Ups",
+        "description": "Start in a push-up position with your hands shoulder-width apart. Lower your chest towards the ground, then explosively push off the ground with enough force to lift your hands off the ground. Clap your hands together and quickly place them back on the ground to catch your fall. Repeat the movement in a fluid motion.",
+        "muscle_groups": ["Chest", "Arms", "Shoulders"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 190,
+        "name": "Plyometric Box Jumps",
+        "description": "Start by standing in front of a sturdy box or platform. Bend your knees and hips, then explosively jump onto the box, landing softly with your knees slightly bent. Step down from the box and repeat the movement in a fluid motion.",
+        "muscle_groups": ["Legs"],
+        "time": "3 sets of 6-8 reps",
+        "level": "Advanced",
+        "goal": "Functional Training"
+    },
+    {
+        "id": 191,
+        "name": "Soccer Dribbling Drills",
+        "description": "Set up a series of cones or markers and practice dribbling the soccer ball through them using different footwork techniques. Focus on controlling the ball with both feet and maintaining close control while changing direction quickly.",
+        "muscle_groups": ["Legs", "Feet"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 192,
+        "name": "Basketball Shooting Drills",
+        "description": "Set up a basketball hoop and practice shooting from different spots on the court. Focus on proper shooting form, accuracy, and shooting from various distances and angles.",
+        "muscle_groups": ["Arms", "Shoulders"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 193,
+        "name": "Tennis Serve Practice",
+        "description": "Set up a tennis court and practice serving the ball from different positions. Focus on proper technique, accuracy, and generating power with your serve.",
+        "muscle_groups": ["Arms", "Shoulders"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 194,
+        "name": "Golf Swing Drills",
+        "description": "Set up a golf mat or go to a driving range and practice your golf swing. Focus on proper technique, generating power, and maintaining balance throughout the swing.",
+        "muscle_groups": ["Arms", "Shoulders", "Core"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 195,
+        "name": "Swimming Sprints",
+        "description": "Head to a swimming pool and perform short, high-intensity sprints. Focus on maintaining proper swimming technique and generating power with each stroke.",
+        "muscle_groups": ["Full Body"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 196,
+        "name": "Cycling Hill Climbs",
+        "description": "Find a hilly terrain or use a stationary bike with adjustable resistance. Perform hill climbs, focusing on maintaining a steady cadence and generating power to conquer the incline.",
+        "muscle_groups": ["Legs"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 197,
+        "name": "Baseball Batting Practice",
+        "description": "Set up a batting cage or find an open space to practice your batting skills. Focus on proper batting technique, timing, and hitting the ball with power and accuracy.",
+        "muscle_groups": ["Arms", "Shoulders"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 198,
+        "name": "Boxing Pad Work",
+        "description": "Partner up with someone and practice boxing combinations on focus pads. Focus on proper technique, speed, and accuracy with each punch.",
+        "muscle_groups": ["Arms", "Shoulders", "Core"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 199,
+        "name": "Martial Arts Kicks",
+        "description": "Practice a variety of martial arts kicks, such as roundhouse kicks, front kicks, and side kicks. Focus on proper technique, balance, and power with each kick.",
+        "muscle_groups": ["Legs"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    },
+    {
+        "id": 200,
+        "name": "Football Passing Drills",
+        "description": "Set up a football field or open space and practice various passing drills. Focus on proper throwing technique, accuracy, and throwing from different distances and angles.",
+        "muscle_groups": ["Arms", "Shoulders"],
+        "time": "10-15 minutes",
+        "level": "Advanced",
+        "goal": "Sports Specific Training"
+    }
+]
