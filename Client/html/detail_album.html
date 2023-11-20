@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> Detail Album</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- link font-iconbox  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/detail_album.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <!-- @include('layout.user.sidebar') -->
+            <div class="col-sm-2" id="sidebar">
+                <aside>
+                    <!-- sidebar -->
+                    <div class="logo">
+                        <a href="#" id="logo">
+                            <i class='bx bxl-spotify bx-lg'></i>
+                            <b>Spytifo</b>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <h6>Menu</h6>
+                        <a id="home" href="homepage.html" class="menu_title">
+                            <i class='bx bxs-home-alt-2 bx-sm'></i>
+                            <b class="title">Home</b>
+                        </a>
+                        <a id="album" href="" class="menu_title">
+                            <i class='bx bxs-book-bookmark bx-sm'></i>
+                            <b class="title">Album</b>
+                        </a>
+                        <a id="songs" href="" class="menu_title">
+                            <i class='bx bxs-music bx-sm'></i>
+                            <b class="title">Songs</b>
+                        </a>
+                    </div>
+
+                    <div class="menu">
+                        <h6>Playlist</h6>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist1</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist2</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist3</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist4</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist5</b>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            
+            <div class="col-sm-10" id="header_content_footer">
+                <!-- @include('layout.user.header') -->
+                <header>
+                    <div class="back_next ">
+                        <a href=""><i class='bx bx-chevron-left bx-md'></i></a>
+                        <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
+                    </div>
+                    <div class="search" style="width: 70%;">
+                        <i id="searchIcon" class='bx bx-search bx-sm' style="color: rgb(153, 153, 153); "></i>
+                        <form action="#" method="get">
+                            <input type="text" id="search" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="user_profile" style="width: 20%;">
+                        <div class="userName">Username</div>
+                        <div class="userImg"><img src="" alt=""><i class='bx bxs-user-circle bx-md'></i></div>
+                        <div class="opt">
+                            <div class="dropdown">
+                                <a id="myDropdownToggle" class="btn dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-chevron-down bx-md'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </header>
+
+                <body>
+                    <div class="main_body row">
+                        <div class="col-sm-6 left_body">
+                            <div class="img_body">
+                                <img src="../img/banner_album.jpg" alt="">
+                            </div>
+
+                            <br>
+
+                            <div class="title_album row">
+                                <div class="col-sm-7 left_title_album">
+                                    <h2> Life kit : Selfcare</h2>
+                                    <p> by Helen Mobile <span>  7 episodes </span></p>
+                                </div>
+                                <div class="col-sm-5 right_title_album">
+                                    <button class="button_follow"> Follow </button>
+                                    <button class="button_share"> Share </button>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div>
+                                <h3> About</h3>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sunt vel voluptates, a quidem dignissimos assumenda velit obcaecati commodi sapiente, distinctio odit hic asperiores. Iusto omnis provident ea tempora neque?
+                            </div>
+
+                                
+                        </div>
+
+                        <div class="col-sm-6 right_body">
+                            <div class="title">
+                                <h3><a href="">All the song </a></h3>
+                                <!-- <a href=""><i class='bx bx-chevron-right bx-md'></i></a> -->
+                            </div>
+
+                            <div class="content row">
+                                <div class="col-sm-4 image p-0">
+                                    <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                                </div>
+                                <a href="" class="col-sm-6 detail">
+                                    <h5> Tại vì sao ?</h5>
+                                    <h6> RPT MCK</h6>
+                                </a>
+                                <div class="col-sm-2 btn_group">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                            <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn_play">
+                                        <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="content row">
+                                <div class="col-sm-4 image p-0">
+                                    <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                                </div>
+                                <a href="" class="col-sm-6 detail">
+                                    <h5> Tại vì sao ?</h5>
+                                    <h6> RPT MCK</h6>
+                                </a>
+                                <div class="col-sm-2 btn_group">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                            <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn_play">
+                                        <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="content row">
+                                <div class="col-sm-4 image p-0">
+                                    <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                                </div>
+                                <a href="" class="col-sm-6 detail">
+                                    <h5> Tại vì sao ?</h5>
+                                    <h6> RPT MCK</h6>
+                                </a>
+                                <div class="col-sm-2 btn_group">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                            <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn_play">
+                                        <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="content row">
+                                <div class="col-sm-4 image p-0">
+                                    <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                                </div>
+                                <a href="" class="col-sm-6 detail">
+                                    <h5> Tại vì sao ?</h5>
+                                    <h6> RPT MCK</h6>
+                                </a>
+                                <div class="col-sm-2 btn_group">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                            <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn_play">
+                                        <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="content row">
+                                <div class="col-sm-4 image p-0">
+                                    <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                                </div>
+                                <a href="" class="col-sm-6 detail">
+                                    <h5> Tại vì sao ?</h5>
+                                    <h6> RPT MCK</h6>
+                                </a>
+                                <div class="col-sm-2 btn_group">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #fff;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                            <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                        </svg>
+                                    </button>
+
+                                    <button class="btn_play">
+                                        <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </body>
+
+                <footer>
+                    <!-- place footer here -->
+                    <!-- <div class="col-sm-2 footer_left">
+
+                    </div> -->
+                    <!-- <div class="col-sm-10 footer_right"> -->
+                        <div class="contact">
+                            <div class="company">
+                                <div class="title">
+                                    <h5>Company</h5>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="">About</a><br>
+                                    <a href="">Jobs</a><br>
+                                    <a href="">For the Record</a>
+                                </div>
+                            </div>
+                            <div class="communities">
+                                <div class="title">
+                                    <h5>Communities</h5>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="">For Artists</a><br>
+                                    <a href="">Developers</a><br>
+                                    <a href="">Advertising</a><br>
+                                    <a href="">Investors</a><br>
+                                    <a href="">For the Record</a>
+                                </div>
+                            </div>
+                            <div class="useful">
+                                <div class="title">
+                                    <h5>Useful link</h5>
+                                </div>
+                                <div class="subtitle">
+                                    <a href="">Support</a><br>
+                                    <a href="">Free Mobile App</a><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social row">
+                            <div class="col-sm-4">
+                                <a href="" class="twitter">
+                                    <i class='bx bxl-twitter bx-sm'></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="" class="insta">
+                                    <i class='bx bxl-instagram-alt bx-sm'></i>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="" class="facebook">
+                                    <i class='bx bxl-facebook-circle bx-sm'></i>
+                                </a>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
