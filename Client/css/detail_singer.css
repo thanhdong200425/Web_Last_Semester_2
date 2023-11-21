@@ -1,0 +1,448 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x:hidden;
+}
+a {
+    color: #000 ;
+    text-decoration: none;
+}
+i {
+    color: #000;
+}
+
+header a i:hover, main .title a i:hover {
+    border-radius: 100%;
+    transition: ease-out .3s;
+    background: #fff;
+}
+
+
+header, aside {
+    padding: 20px;
+    
+}
+footer,header {
+    padding: 10px 20px;
+    background: #dbdada;
+}
+main {
+    padding: 0;
+}
+
+#wrapperRow {
+    display: flex;
+    align-items: start;
+}
+
+.title h3 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* 
+
+===========================
+Side bar
+===========================
+
+*/
+.menu a {
+    border-radius: 10px;
+}
+
+aside .menu a:hover {
+    color: green;
+    background: #fff;
+    transition: ease-out .3s;
+}
+
+#sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: rgb(197, 193, 184);
+    border: 1px solid rgb(197, 193, 184);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+#logo:hover {
+    color: #000;
+}
+#logo b {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    
+}
+
+/* menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu h6 {
+    margin: 20px 0;
+    font-weight: bold;
+    color: grey;
+}
+.menu_title {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+}
+.menu_title b {
+    padding-left: 10px;
+}
+
+
+
+/*
+
+===========================
+Header
+===========================
+
+*/
+
+#header_content_footer {
+    background: rgb(197, 193, 184);
+    border: 1px solid rgb(197, 193, 184);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+/* iteams's header  */
+.back_next {
+    display: flex;
+    width: 10%;
+}
+.search {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+
+#search{
+    width: 260%;
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+#searchIcon {
+    position: relative;
+    top: 2px;
+    left: 35px;
+}
+
+.user_profile {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#myDropdownToggle::after {
+    display: none;
+}
+
+/*
+
+===========================
+Main
+===========================
+
+*/
+main .wrapper-in4_singer {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbdada;
+}
+
+
+main .in4_singer .img_singer {
+    margin-right: 40px;
+    width: 180px;
+    height: 180px;
+}
+main .in4_singer .img_singer img {
+    border-radius: 100%;
+}
+
+main .in4_singer .name-follows .name p {
+    height: 100px;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+main .in4_singer .name-follows .follows{
+    display: flex;
+
+}
+main .in4_singer .name-follows .follows p {
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+main .in4_singer .name-follows  button.follow,
+.name-follows_maybelike  button.follow {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid #cccccc;
+    background: transparent;
+    height: 28px;
+    padding: 4px 20px;
+    font-size: 16px;
+    margin-left: 20px ;
+    transition: ease .3s;
+}
+main .in4_singer .name-follows  button.follow:hover {
+    color:  #757575 ;
+}
+main .in4_singer .name-follows  button.follow:hover .bx-user-plus {
+    color:  #757575 ;
+}
+
+
+/* Featured Songs */
+.container-main {
+    padding: 30px;
+    background: #a0a0a0;
+}
+
+.container_song {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+.container_song::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 83, 83, 0.3); /* Màu nền mờ */
+    z-index: 1; /* Đảm bảo lớp layout mờ hiển thị phía trước */
+    opacity: 0; /* Ẩn lớp layout mờ ban đầu */
+    transition: 0.3s ease;
+}
+.container_song:hover::before {
+    opacity: 1; /* Hiển thị lớp layout mờ khi hover vào */
+}
+  
+.song {
+    position: relative;
+    z-index: 2; /* Đảm bảo nội dung bài hát hiển thị phía trên lớp layout mờ */
+}
+ .song .title {
+    font-weight: 800;
+}
+.song .singers a {
+    font-size: 14px;
+
+}
+.container-main .content .song .image_song {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.container-main .content .song .image_song img {
+    border-radius: 10px;
+}
+.container-main .content .song a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Wrapper albumns */
+.wrapper-albumn .content {
+    margin-top: 20px;
+    display: flex;
+}
+.wrapper-albumn .content img {
+    border-radius: 5px;
+}
+.wrapper-albumn .info_albumn a {
+    font-weight: 700;
+}
+.wrapper-albumn .content .imgage_album {
+    position: relative;
+}
+.wrapper-albumn .content .imgage_album::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
+    z-index: 1; /* Đảm bảo lớp layout mờ hiển thị phía trước */
+    opacity: 0; /* Ẩn lớp layout mờ ban đầu */
+    transition: 0.3s ease;
+}
+.wrapper-albumn .content .imgage_album:hover::before {
+    opacity: 1; /* Hiển thị lớp layout mờ khi hover vào */
+}
+
+
+/* Maybe like */
+
+.name-follows_maybelike a p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.name-follows_maybelike a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+.name-follows_maybelike p {
+    height: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wrapper-maybelike .content .img_singer {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.name-follows_maybelike p {
+    text-align: center;
+}
+.name-follows_maybelike .follows {
+    margin-top: 30px;
+}
+.name-follows_maybelike  button.follow {
+    margin: auto;
+   
+}
+.name-follows_maybelike  button.follow:hover {
+    color:  #757575 ;
+}
+.name-follows_maybelike  button.follow:hover .bx-user-plus {
+    color:  #757575 ;
+}
+
+
+/* wrapper about */
+.wrapper-about .pic {
+    width: 30%;
+    margin-right: 30px;
+}
+.wrapper-about .pic img {
+    border-radius: 10px;
+
+}
+.wrapper-about .desc {
+    width: 40%;
+    height: 100%;
+    font-weight: 500;
+}
+.wrapper-about .desc p.info {
+    height: 70%;
+}
+.wrapper-about .desc p.followers {
+    height: 30%;
+    position: relative;
+    top: 30px;
+}
+.wrapper-about .desc p.followers b {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/* 
+
+===========================
+Footer
+===========================
+
+*/
+
+footer {
+    background: #272727;
+    display: flex;
+    justify-content: space-between;
+    max-height: 30vh;
+    
+}
+/* social */
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+.social > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444444;
+    background: #444444;
+    border-radius: 100%;
+    margin: 0 10px;
+    transition: ease .3s;
+}
+.social >div > a > i {
+    padding: 10px;
+    color: #fff;
+}
+
+/* hover  social */
+.social a.facebook:hover {
+    border: 1px solid blue;
+    background: blue;
+}
+.social a.insta:hover {
+    border: 1px solid palevioletred;
+    background: palevioletred;
+}
+.social a.twitter:hover {
+    border: 1px solid royalblue;
+    background: royalblue;
+}
+
+
+/* contact */
+.contact {
+    display: flex;
+}
+.contact > div.communities {
+    padding: 0 70px;
+}
+.contact .title {
+    color: #fff;
+}
+.contact .subtitle a {
+    color: #a8a8a8;
+}
+.contact .subtitle a:hover {
+    text-decoration: underline;
+}
+
+
