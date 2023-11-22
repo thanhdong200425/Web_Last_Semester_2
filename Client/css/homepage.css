@@ -24,9 +24,9 @@ header, aside {
     padding: 20px;
     
 }
-main,footer,header {
+main,footer {
     padding: 10px 20px;
-    background: #dbdada;
+    background: #A7CDCC;
 }
 
 .wrapper .row {
@@ -48,20 +48,17 @@ Side bar
 }
 
 aside .menu a:hover {
-    color: green;
-    background: #fff;
+    color: #000;
+    background: #A7CDCC;
     transition: ease-out .3s;
 }
 
 #sidebar {
+    padding: 5px 20px;
     position: sticky;
     top: 0;
     height: 100vh;
-    background: rgb(197, 193, 184);
-    border: 1px solid rgb(197, 193, 184);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    
+    background:#96B6C5 ; 
 }
 
 #logo {
@@ -85,7 +82,7 @@ aside .menu a:hover {
 .menu h6 {
     margin: 20px 0;
     font-weight: bold;
-    color: grey;
+    color: #000;
 }
 .menu_title {
     display: flex;
@@ -107,15 +104,12 @@ Header
 */
 
 #header_content_footer {
-    background: rgb(197, 193, 184);
-    border: 1px solid rgb(197, 193, 184);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     padding: 0;
 }
 
 
 header {
+    background: #A7CDCC;
     position: sticky;
     top: 0;
     display: flex;
@@ -223,7 +217,7 @@ main .songs_foryou .item:hover #icon_play {
     background: #ebe1e1;
 
 }
-#icon_play i:hover{
+#icon_play:hover i.bx-play{
     rotate: z 360deg;
     transition: ease-out .3s;
     border-radius: 100%;
@@ -234,11 +228,11 @@ main .songs_foryou .item:hover #icon_play {
 /* active */
 #home {
     border-radius: 10px;
-    color: rgb(55, 219, 55);
+    color: #000;
     background: #fff;
 }
 #home i {
-    color: rgb(55, 219, 55);
+    color: #000;
 }
 
 /*Countinue and trending  */
@@ -294,7 +288,7 @@ Footer
 */
 
 footer {
-    background: #272727;
+    background: #303841;
     display: flex;
     justify-content: space-between;
     max-height: 30vh;
