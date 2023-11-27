@@ -351,3 +351,148 @@ footer {
 }
 
 
+/* Play music */
+.play_music {
+    position: sticky;
+    bottom: 0;
+    background: #080705;
+    z-index: 10;
+}
+.play_music .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.play_music .wrapper i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Left */
+.play_music .wrapper .left {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.play_music .wrapper .left .desc .singers a {
+    font-size: 12px;
+    color: #a1a1a1;
+    
+}
+.play_music .wrapper .left .desc .singers a:hover {
+    color: #fff;
+    text-decoration: underline;
+    
+}
+
+.play_music .wrapper .left .image_music {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.play_music .wrapper .left .image_music img {
+    border-radius: 5px;
+}
+
+/* mid */
+.play_music .wrapper .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.play_music .wrapper .mid .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.play_music .wrapper .mid .controls i.bx-shuffle,
+.play_music .wrapper .mid .controls i.bx-repost {
+    font-size: 22px;
+}
+.play_music .wrapper .mid .controls i {
+    font-size: 30px;
+}
+.play_music .wrapper .mid .times {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.play_music .wrapper .mid .times .left_time,
+.play_music .wrapper .mid .times .right_time,
+.play_music .wrapper .mid .times .play_bar
+{
+    height: 4px;
+    font-size: 12px;
+}
+.play_music .wrapper .mid .times .play_bar {
+    width: 400px;
+    border: 1px solid #5c5c5c;
+    background: #5c5c5c;
+    border-radius: 10px;
+    position: relative;
+}
+.play_music .wrapper .mid .times .play_bar .circle {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+}
+.play_music .wrapper .mid .times .play_bar .circle i {
+    font-size: 14px;
+    display: none;  
+}
+
+.play_music .wrapper .mid .times .play_bar:hover #circle_times{
+    display: block;
+}
+
+
+/* right */
+.play_music .wrapper .right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.volume_bar {
+    width: 100px;
+    height: 3px;
+    border: 1px solid #5c5c5c;
+    background: #5c5c5c;
+    border-radius: 10px;
+    position: relative;
+}
+
+.play_music .wrapper .right .volume_bar .circle {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+}
+.play_music .wrapper .right .volume_bar .circle i {
+    font-size: 14px;
+    display: none;  
+}
+
+.play_music .wrapper .right .volume_bar:hover #circle_times_volume{
+    display: block;
+}
+
+.play_music .wrapper .right .volume_and_bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play_music .wrapper .right i {
+    font-size: 22px;
+}
