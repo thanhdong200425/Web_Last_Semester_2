@@ -4,37 +4,30 @@
 }
 body {
     overflow-x:hidden;
+    background: #fff;
 }
 a {
-    color: #000 ;
+    color: #fff ;
     text-decoration: none;
 }
 i {
-    color: #000;
+    color: #fff;
 }
 
 header a i:hover, main .title a i:hover {
     border-radius: 100%;
     transition: ease-out .3s;
-    background: #fff;
-}
-
-
-header, aside {
-    padding: 20px;
-    
+    background: #176C6A;
 }
 main,footer {
     padding: 10px 20px;
-    background: #A7CDCC;
+
 }
 
 .wrapper .row {
     display: flex;
     align-items: start;
 }
-
-
 
 /* 
 
@@ -43,22 +36,28 @@ Side bar
 ===========================
 
 */
+
 .menu a {
     border-radius: 10px;
 }
 
 aside .menu a:hover {
     color: #000;
-    background: #A7CDCC;
+    background: #176C6A;
     transition: ease-out .3s;
+}
+aside .menu a:hover i {
+    color: #000;
+
 }
 
 #sidebar {
-    padding: 5px 20px;
+    padding:10px 30px;
     position: sticky;
     top: 0;
     height: 100vh;
-    background:#96B6C5 ; 
+    background:#080705 ;
+    /* border-top-right-radius: 20px; */
 }
 
 #logo {
@@ -66,7 +65,7 @@ aside .menu a:hover {
     align-items: center;
 }
 #logo:hover {
-    color: #000;
+    color: #fff;
 }
 #logo b {
     font-size: 1.5rem;
@@ -82,7 +81,7 @@ aside .menu a:hover {
 .menu h6 {
     margin: 20px 0;
     font-weight: bold;
-    color: #000;
+    color: #fff;
 }
 .menu_title {
     display: flex;
@@ -109,16 +108,19 @@ Header
 
 
 header {
-    background: #A7CDCC;
+    background: #080705;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
     z-index: 1;
 
 }
-
+.userName {
+    color: #fff;
+}
 /* iteams's header  */
 .back_next {
     display: flex;
@@ -162,12 +164,15 @@ main
 ===========================
 
 */
-
+main {
+    position: sticky;
+    background: #151829;
+}
 .foryou, .continue_trending {
     margin-bottom: 30px;
 }
 .foryou a {
-    color: #000;
+    color: #fff;
 }
 
 .title {
@@ -178,16 +183,15 @@ main
 }
 .title a:hover {
     text-decoration: underline;
-    color: #000;
-
+    color: #fff;
 }
 main .songs_foryou .item {
     padding: 20px;
     border-radius: 10px;
-    background: #ffffff9a;
+    background: #013B44;
 }
 main .songs_foryou .item:hover {
-    background: #fff;
+    background: #176C6A;
     transition: ease-out .2s;
 
 }
@@ -214,22 +218,22 @@ main .songs_foryou .item:hover #icon_play {
     bottom: 20px;
     right: 20px;
     scale: 1;
-    background: #ebe1e1;
+    background: #191414;
 
 }
 #icon_play:hover i.bx-play{
     rotate: z 360deg;
     transition: ease-out .3s;
     border-radius: 100%;
-    background: rgb(55, 219, 55);
-    border: 1px solid rgb(55, 219, 55);
+    background: #176C6A;
+    color: #191414;
 }
 
 /* active */
 #home {
     border-radius: 10px;
     color: #000;
-    background: #fff;
+    background: #176C6A;
 }
 #home i {
     color: #000;
@@ -288,7 +292,7 @@ Footer
 */
 
 footer {
-    background: #303841;
+    background: #080705;
     display: flex;
     justify-content: space-between;
     max-height: 30vh;
