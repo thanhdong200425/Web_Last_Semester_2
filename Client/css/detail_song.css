@@ -1,0 +1,218 @@
+body{
+    background: #272727;  
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s ease;
+}
+
+header.hidden, footer.hidden {
+    opacity: 0;
+}
+
+/* ------------------------------ HEADER----------------------------- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px; 
+
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: opacity 0.9s ease;
+}
+
+.header_left {
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+.nav_bar{
+    display: flex;
+    margin-top: 1%;
+}
+
+.nav_bar ul {
+    list-style-type: none; 
+    padding: 5px 70px;
+    display: flex; 
+}
+
+.nav_bar li {
+    margin-right: 50px;
+}
+
+.nav_bar li a {
+    padding: 7px 40px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    background-color: #FF59C7;;
+    border-radius: 25px;
+    display: block;
+}
+
+.nav_bar li:last-child {
+    margin-right: 0; 
+}
+
+.nav_bar li a:hover,
+.nav_bar li a.active {
+    background-color: #FF76D8; 
+}
+
+.header_right {
+    display: flex;
+}
+
+.btn_container {
+    display: flex;
+}
+
+.header_right .btn_setting,
+.header_right .btn_full_scr,
+.header_right .btn_exit {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FF59C7;
+    margin-top: -15px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_right .btn_setting a,
+.header_right .btn_full_scr a,
+.header_right .btn_exit a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn_full_scr {
+    cursor: pointer;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: 272727;
+    z-index: 1; 
+    padding-top: 80px;
+}
+
+/* ------------------------------ BODY ------------------------------- */
+
+.body_left{
+    text-align: center;
+    float: left;
+}
+
+.body_left img{
+    border: none;
+}
+
+.body_right{
+    text-align: center;
+    /* margin-top: 2%; */
+    float: right;
+}
+
+.body_right p{
+    border: none;
+    margin-right: 20%;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    text-align: justify;
+    white-space: pre-line; 
+    word-wrap: break-word; 
+
+    overflow: hidden; 
+    max-height: 420px; 
+}
+
+
+
+/* ------------------------------ FOOTER ----------------------------- */
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    z-index: 1000;
+    transition: opacity 0.9s ease;
+}
+
+/* ------- Title Box-------- */
+
+.song_title, .artist_title, .space{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+/* ------- Progress Bar-------- */
+.current_time, .duration_time{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+}
+.progress-wrapper {
+    border-radius: 0%; 
+    overflow: hidden;   
+}
+
+progress {
+    width: 40%;
+    height: 10px;
+    appearance: none;
+    border: none;
+    background-color: white;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+    background-color: #FF59C7;
+}
+/* ------------------ Group Button--------------- */
+.group_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #f23ab4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+button.btn_pause_run{
+    width: 50px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #FF76D8;
+}
+

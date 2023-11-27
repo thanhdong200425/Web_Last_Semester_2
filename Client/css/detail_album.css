@@ -14,18 +14,23 @@ p{
 body {
     overflow-x:hidden;
 }
-a {
-    color: #000 ;
+a{
+    color: white ;
     text-decoration: none;
 }
+
+a:hover{
+    color: #FF59C7;
+}
+
 i {
-    color: #000;
+    color: white;
 }
 
 header a i:hover, main .title a i:hover {
     border-radius: 100%;
     transition: ease-out .3s;
-    background: #fff;
+    background: #FF59C7;
 }
 
 
@@ -35,7 +40,7 @@ header, aside {
 }
 main,footer,header {
     padding: 10px 20px;
-    background: #dbdada;
+    background: #191414;
 }
 
 .wrapper .row {
@@ -57,8 +62,8 @@ Side bar
 }
 
 aside .menu a:hover {
-    color: green;
-    background: #fff;
+    color: #FF59C7;
+    background: FF59C7;
     transition: ease-out .3s;
 }
 
@@ -66,8 +71,7 @@ aside .menu a:hover {
     position: sticky;
     top: 0;
     height: 100vh;
-    background: rgb(197, 193, 184);
-    border: 1px solid rgb(197, 193, 184);
+    background: #272727;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     
@@ -78,7 +82,7 @@ aside .menu a:hover {
     align-items: center;
 }
 #logo:hover {
-    color: #000;
+    color: #FF59C7;
 }
 #logo b {
     font-size: 1.5rem;
@@ -94,7 +98,7 @@ aside .menu a:hover {
 .menu h6 {
     margin: 20px 0;
     font-weight: bold;
-    color: grey;
+    color: white;
 }
 .menu_title {
     display: flex;
@@ -107,11 +111,15 @@ aside .menu a:hover {
 
 #album {
     border-radius: 10px;
-    color: rgb(55, 219, 55);
+    color: #FF59C7;
     background: #fff;
 }
 #album i {
-    color: rgb(55, 219, 55);
+    color: #FF59C7;
+}
+
+div.menu a i:hover{
+    color: #FF59C7;
 }
 
 
@@ -124,8 +132,7 @@ Header
 */
 
 #header_content_footer {
-    background: rgb(197, 193, 184);
-    border: 1px solid rgb(197, 193, 184);
+    background: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 0;
@@ -176,6 +183,9 @@ header {
     display: none;
 }
 
+div.userName{
+    color: white;
+}
 
 
 
@@ -187,7 +197,7 @@ main
 */
 
 .main_body{
-    background: #dbdada;
+    background: #191414;
     padding: 20px;
 }
 
@@ -210,12 +220,19 @@ div.img_body img:hover{
 div.left_title_album span{
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
-    color: #444444;
+    color: #ffffff;
     margin-left: 10px;
 }
 
 div.left_title_album h2{
     font-family: serif;
+    color: white;
+}
+
+
+div.left_title_album p{
+    font-family: serif;
+    color: white;
 }
 
 button.button_follow{
@@ -224,7 +241,7 @@ button.button_follow{
     border: none;
     border-radius: 7px;
     color: white;
-    background-color: #ff7f50;
+    background-color: #FF59C7;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -235,19 +252,19 @@ button.button_share{
     border: none;
     border-radius: 7px;
     color: white;
-    background-color: darkcyan;
+    background-color: #FF59C7;
 }
 
 button.button_follow:hover{
-    background-color: #df6336;
+    background-color: #FF76D8;
 }
 
 button.button_share:hover{
-    background-color: rgb(3, 98, 98);
+    background-color: #FF76D8;
 }
 
 .right_body .content {
-    background-color: #fff;
+    background-color: #272727;
     border-radius: 10px;
     padding: 10px;
     width: 98%;
@@ -279,7 +296,7 @@ button.btn_more:hover{
 .content .btn_group button.btn_play{
     width: 45px;
     height: 45px;
-    background-color: #ff751a;
+    background-color: #FF59C7;
     border-radius: 50%;
     border: none;
     display: flex;
@@ -289,16 +306,28 @@ button.btn_more:hover{
 }
 
 .content .btn_group button.btn_play:hover{
-    background-color: red;
+    background-color: #FF76D8;
     transform: scale(1.1);
 }
 
-.content a h5:hover, .content a h6:hover{
+.content a h5:hover{
+    color: #FF59C7;
+}
+
+.content a h6:hover{
     font-style: italic;
 } 
 
 .content a h6{
     color: #a8a8a8;
+}
+
+div.About_box{
+    color: white;
+}
+
+.btn_group{
+    color: white;
 }
 
 /* 
@@ -324,8 +353,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #444444;
-    background: #444444;
+    border: 1px solid #FF59C7;
+    background: #FF59C7;
     border-radius: 100%;
     margin: 0 10px;
     transition: ease .3s;
@@ -337,16 +366,16 @@ footer {
 
 /* hover  social */
 .social a.facebook:hover {
-    border: 1px solid blue;
-    background: blue;
+    border: 1px solid #FF76D8;
+    background: #FF76D8;
 }
 .social a.insta:hover {
-    border: 1px solid palevioletred;
-    background: palevioletred;
+    border: 1px solid #FF76D8;
+    background: #FF76D8;
 }
 .social a.twitter:hover {
-    border: 1px solid royalblue;
-    background: royalblue;
+    border: 1px solid #FF76D8;
+    background: #FF76D8;
 }
 
 

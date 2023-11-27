@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Detail_Song</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/detail_song.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header_left">
+                <nav class="nav_bar">
+                    <ul>
+                        <li style="width: 250px; text-align: center;"><a href="">Danh sách phát</a></li>
+                        <li style="width: 250px; text-align: center;"><a href="">Lời bài hát</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header_right">
+                <div class="btn_container">
+                    <div class="btn_full_scr" onclick="toggleFullscreen()">
+                        <a href=""><i class="fas fa-expand"></i></a>
+                    </div>
+
+                    <div class="btn_setting">
+                        <a href=""><i class="fas fa-gear"></i></a>
+                    </div>
+
+                    <div class="btn_exit">
+                        <a href="./homepage.html"><i class="fas fa-xmark fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <body>
+            <div class="col-sm-6 body_left">
+                <img src="../img/X_Album.jpg" alt="" width="60%" height="60%">
+            </div>
+            <div class="col-sm-6 body_right">
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut dignissimos provident quidem.
+
+                    Magnam odio esse fugit animi dolores incidunt aliquid neque saepe minus? 
+
+                    Inventore expedita perspiciatis dicta sit voluptatem necessitatibus!
+
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    
+                    Aut dignissimos provident quidem.
+
+                    Magnam odio esse fugit animi dolores incidunt aliquid neque saepe minus? 
+
+                    Inventore expedita perspiciatis dicta sit voluptatem necessitatibus!
+
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut dignissimos provident quidem.
+
+                    Magnam odio esse fugit animi dolores incidunt aliquid neque saepe minus? 
+
+                    Inventore expedita perspiciatis dicta sit voluptatem necessitatibus!
+                </p>
+            </div>
+        </body>
+
+        <footer>
+            <div class="songtitle_wrapper">
+                <span class="song_title">Photograph</span>
+                <span class="space"> - </span>
+                <span class="artist_title">Ed Sheeran</span>
+            </div>
+
+            <div class="progress-wrapper">
+                <span class="current_time">0:00</span>
+                <progress id="myProgressBar" value="0" max="100"></progress>
+                <span class="duration_time">0:00</span>
+            </div>
+
+            <div class="group_button">
+                <button class="btn_replay">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </button>
+
+                <button class="btn_pre_song">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+
+                <button class="btn_pause_run">
+                    <i class="fa-regular fa-circle-pause fa-xl"></i>
+                    <i class="fa-regular fa-circle-play fa-xl" style="display: none;"></i>
+                </button>
+
+                <button class="btn_next_song">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+
+                <button class="btn_random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="../js/detail_song.js"></script>
+</body>
+</html>
