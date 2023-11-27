@@ -24,107 +24,62 @@ function Header() {
     };
 
     return (
-        <header className="container mx-auto text-xl px-2 py-5 md:px-0 md:flex md:justify-between md:items-center">
-            <div className="flex justify-between text-center">
-                <Link to="/" className="flex items-center text-3xl font-bold">
-                    <span className="border border-red-600 rounded px-2">
-                        fit
-                    </span>
-                    <span className="text-red-600">HE</span>
-                </Link>
-                <div onClick={navhandle} className="menu-icon md:hidden">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-10 h-10"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                        />
-                    </svg>
+        <header>
+            <div className="back_next ">
+                <a href="">
+                    <i className="bx bx-chevron-left bx-md"></i>
+                </a>
+                <a href="">
+                    <i className="bx bx-chevron-right bx-md"></i>
+                </a>
+            </div>
+            <div className="search w-[70%]">
+                <i
+                    id="searchIcon"
+                    className="bx bx-search bx-sm text-[rgb(153,153,153)]"
+                ></i>
+                <form action="#" method="get">
+                    <input type="text" id="search" placeholder="Search" />
+                </form>
+            </div>
+            <div className="user_profile w-1/5">
+                <div className="userName">Username</div>
+                <div className="userImg">
+                    <img src="" alt="" />
+                    <i className="bx bxs-user-circle bx-md"></i>
                 </div>
-                <div
-                    onClick={navhandle}
-                    className="close-icon hidden md:hidden"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="w-10 h-10"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M6 18L18 6M6 6l12 12"
-                        />
-                    </svg>
+                <div className="opt">
+                    <div className="dropdown">
+                        <a
+                            id="myDropdownToggle"
+                            className="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            <i className="bx bx-chevron-down bx-md"></i>
+                        </a>
+                        <ul className="dropdown-menu">
+                            <li>
+                                <a className="dropdown-item" href="#">
+                                    My profile
+                                </a>
+                            </li>
+                            <li>
+                                <a className="dropdown-item" href="#">
+                                    Logout
+                                </a>
+                            </li>
+                            <li>
+                                <a className="dropdown-item" href="#">
+                                    Something else here
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <nav className="text-center mt-5 hidden md:block md:mt-0">
-                <ul className="block md:flex md:items-center md:gap-5">
-                    <li className="my-1">
-                        <Link
-                            className={
-                                'hover:border-b-2  border-white ' +
-                                (path === '/' ? 'border-b-2' : '')
-                            }
-                            to="/"
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li className="my-1">
-                        <Link
-                            className={
-                                'hover:border-b-2  border-white ' +
-                                (path.includes('/training') ? 'border-b-2' : '')
-                            }
-                            to="/training"
-                        >
-                            Training
-                        </Link>
-                    </li>
-                    <li className="my-1">
-                        <Link
-                            className={
-                                'hover:border-b-2  border-white ' +
-                                (path.includes('/forum') ? 'border-b-2' : '')
-                            }
-                            to="/forum"
-                        >
-                            Forum
-                        </Link>
-                    </li>
-                    <li>
-                        {localStorage.getItem('assessToken') ? (
-                            <div className='flex justify-center items-center gap-3'>
-                                <img
-                                    src={localStorage.getItem('user_avatar')}
-                                    class="w-10 rounded-full"
-                                    alt="Avatar"
-                                />
-                                <div className='cursor-pointer' onClick={logoutHandle}>Logout</div>
-                            </div>
-                        ) : (
-                            <Link
-                                to="/login"
-                                className="flex justify-center items-center gap-3"
-                            >
-                                <i className="fa-solid fa-user"></i>
-                                <span>Log In</span>
-                            </Link>
-                        )}
-                    </li>
-                </ul>
-            </nav>
         </header>
     );
 }

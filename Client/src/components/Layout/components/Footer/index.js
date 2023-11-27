@@ -1,38 +1,68 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <>
-            <div className="container px-2 md:px-0 py-5 md:flex md:justify-between">
-                <div className="text-center md:text-left md:flex md:gap-20">
-                    <Link to='/' className="flex justify-center items-center text-3xl font-bold">
-                        <span className='border border-red-600 rounded px-2'>fit</span>
-                        <span className="text-red-500">HE</span>
-                    </Link>
-                    <div className="py-5 md:py-0">
-                        <div>Email: linhnv.22ite@vku.udn.vn</div>
-                        <div>Number phone: 0398426736</div>
-                        <div>
-                            Welcom to fitHe that is website support workout at
-                            home.
-                        </div>
+        <footer>
+            {/* <!-- place footer here --> */}
+            <div className="contact">
+                <div className="company">
+                    <div className="title">
+                        <h5>Company</h5>
+                    </div>
+                    <div className="subtitle">
+                        <a href="">About</a>
+                        <br />
+                        <a href="">Jobs</a>
+                        <br />
+                        <a href="">For the Record</a>
                     </div>
                 </div>
-                <div className="flex justify-around md:block">
-                    <a href="./">
-                        <i className="fa-brands fa-facebook" />
+                <div className="communities">
+                    <div className="title">
+                        <h5>Communities</h5>
+                    </div>
+                    <div className="subtitle">
+                        <a href="">For Artists</a>
+                        <br />
+                        <a href="">Developers</a>
+                        <br />
+                        <a href="">Advertising</a>
+                        <br />
+                        <a href="">Investors</a>
+                        <br />
+                        <a href="">For the Record</a>
+                    </div>
+                </div>
+                <div className="useful">
+                    <div className="title">
+                        <h5>Useful link</h5>
+                    </div>
+                    <div className="subtitle">
+                        <a href="">Support</a>
+                        <br />
+                        <a href="">Free Mobile App</a>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div className="social row">
+                <div className="col-sm-4">
+                    <a href="" className="twitter">
+                        <i className="bx bxl-twitter bx-sm"></i>
                     </a>
-                    <br />
-                    <a href="./">
-                        <i className="fa-brands fa-youtube" />
+                </div>
+                <div className="col-sm-4">
+                    <a href="" className="insta">
+                        <i className="bx bxl-instagram-alt bx-sm"></i>
                     </a>
-                    <br />
-                    <a href="./">
-                        <i className="fa-brands fa-tiktok" />
+                </div>
+                <div className="col-sm-4">
+                    <a href="" className="facebook">
+                        <i className="bx bxl-facebook-circle bx-sm"></i>
                     </a>
                 </div>
             </div>
-        </>
+        </footer>
     );
 }
 

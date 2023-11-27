@@ -1,6 +1,5 @@
 import Home from '~/pages/Home';
-import Training from '~/pages/Training';
-import Forum from '~/pages/Forum';
+import DetailSinger from '~/pages/DetailSinger';
 import Login from '~/pages/Login';
 import Signup from '~/pages/Signup';
 import Practice from '~/pages/Practice';
@@ -12,12 +11,8 @@ const publicRoutes = [
         component: Home,
     },
     {
-        path: '/training',
-        component: Training,
-    },
-    {
-        path: '/forum',
-        component: Forum,
+        path: '/detail_singer',
+        component: DetailSinger,
     },
     {
         path: '/login',

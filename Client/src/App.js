@@ -10,7 +10,6 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <div className="toast fixed top-8 right-8"></div>
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         let Layout = DefaultLayout;
