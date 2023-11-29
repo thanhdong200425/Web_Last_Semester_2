@@ -2,7 +2,7 @@ const btnplay = document.querySelector('.btn-play');
 const btnmute = document.querySelector('.bxs-volume-full');
 const iconVolume = document.getElementById('iconVolume');
 const inputVolume = document.getElementById('inputVolume');
-
+const navbar = document.getElementById('header-navbar');
 
 //Hieu ung play-pause
 btnplay.addEventListener('click', ()=> {
@@ -33,3 +33,14 @@ iconVolume.addEventListener('click', ()=> {
         currentval = 0;
     }
 });
+
+// Hieu ung scroll navbar
+window.addEventListener('scroll', ()=> {
+    var scrolled = window.scrollY > 0;
+
+    if (scrolled) {
+        navbar.classList.add('scrolled');
+    }else {
+        navbar.classList.remove('scrolled');
+    }
+})

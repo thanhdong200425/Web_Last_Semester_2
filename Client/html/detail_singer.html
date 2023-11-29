@@ -67,7 +67,7 @@
             </div>
             <div class="col-sm-10 p-0" id="header_content_footer">
                 <!-- @include('layout.user.header') -->
-                <header>
+                <header id="header-navbar">
                     <div class="back_next ">
                         <a href=""><i class='bx bx-chevron-left bx-md'></i></a>
                         <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="follows">
                                     <p>77.449 followers</p>
-                                    <button class="follow">
+                                    <button class="follow text-white">
                                         <i class='bx bx-user-plus bx-sm'></i>
                                         <span>Follow</span>
                                     </button>
@@ -431,7 +431,7 @@
                         </div>
 
                         <!-- Mayybe like another singer -->
-                        <div class="wrapper-maybelike mt-5">
+                        <div class="wrapper-maybelike mt-5 ">
                             <div class="title d-flex justify-content-between aglin-item-center">
                                 <h3><a href="">Maybe Like</a></h3>
                                 <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
@@ -613,10 +613,72 @@
                     </div>
                 </footer>
             </div>
+            <div class="container-fluid play_music">
+                <div class="wrapper">
+                    <div class="left">
+                        <div class="image_music">
+                            <a href="">
+                                <img src="../img/albumn_99.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="">Tại Vì Sao</a>
+                            </div>
+                            <div class="singers">
+                                <a href="">RPT MCK</a>
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class='bx bxs-heart' id="heart" onclick="changeColor()"></i>
+                        </div>
+
+                    </div>
+                    <div class="mid">
+                        <div class="controls">
+                            <button class="shuffle">
+                                <i class='bx bx-shuffle'></i>
+                            </button>
+                            <button class="skip_back">
+                                <i class='bx bx-skip-previous'></i>
+                            </button>
+                            <button class="btn-play">
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <button class="skip_next">
+                                <i class='bx bx-skip-next'></i>
+                            </button>
+                            <button class="reload">
+                                <i class='bx bx-repost'></i>
+                            </button>
+                        </div>
+                        <div class="times">
+                            <p class="left_time">0:00</p>
+                            <input type="range" value="0" class="seek_bar">
+                            <p class="right_time">3:14</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="lyric">
+                            <i class='bx bx-microphone'></i>
+                        </div>
+                        <div class="volume_and_bar">
+                            <div class="volume">
+                                <i class='bx bxs-volume-full' id="iconVolume"></i>
+                            </div>
+                            <input type="range" value="0" class="volume_bar" id="inputVolume">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
     <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="../js/homepage.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
