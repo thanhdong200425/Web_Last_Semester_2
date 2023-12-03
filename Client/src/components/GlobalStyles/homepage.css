@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x:hidden;
+}
+a {
+    color: #000 ;
+    text-decoration: none;
+}
+i {
+    color: #000;
+}
+
+header a i:hover, main .title a i:hover {
+    border-radius: 100%;
+    transition: ease-out .3s;
+    background: #fff;
+}
+
+
+header, aside {
+    padding: 20px;
+    
+}
+main,footer {
+    padding: 10px 20px;
+    background: #A7CDCC;
+}
+
+.wrapper .row {
+    display: flex;
+    align-items: start;
+}
+
+
+
+/* 
+
+===========================
+Side bar
+===========================
+
+*/
+.menu a {
+    border-radius: 10px;
+}
+
+aside .menu a:hover {
+    color: #000;
+    background: #A7CDCC;
+    transition: ease-out .3s;
+}
+
+#sidebar {
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background:#96B6C5 ; 
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+#logo:hover {
+    color: #000;
+}
+#logo b {
+    font-size: 1.5rem;
+    padding-left: 10px;
+    
+}
+
+/* menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu h6 {
+    margin: 20px 0;
+    font-weight: bold;
+    color: #000;
+}
+.menu_title {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+}
+.menu_title b {
+    padding-left: 10px;
+}
+
+
+
+/*
+
+===========================
+Header
+===========================
+
+*/
+
+#header_content_footer {
+    padding: 0;
+}
+
+
+header {
+    background: #A7CDCC;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+}
+
+/* iteams's header  */
+.back_next {
+    display: flex;
+    width: 10%;
+}
+.search {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+
+#search{
+    width: 260%;
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+#searchIcon {
+    position: relative;
+    top: 2px;
+    left: 35px;
+}
+
+.user_profile {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#myDropdownToggle::after {
+    display: none;
+}
+
+
+
+
+/*
+===========================
+main  
+===========================
+
+*/
+
+.foryou, .continue_trending {
+    margin-bottom: 30px;
+}
+.foryou a {
+    color: #000;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.title a:hover {
+    text-decoration: underline;
+    color: #000;
+
+}
+main .songs_foryou .item {
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff9a;
+}
+main .songs_foryou .item:hover {
+    background: #fff;
+    transition: ease-out .2s;
+
+}
+main .songs_foryou img {
+    border-radius: 10px;
+    width: 100%;
+}
+main .songs_foryou .item .img {
+    position: relative;
+    
+}
+#icon_play {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 100%;
+    scale: 0;
+    transition: ease .3s;
+}
+/* hover  play icon */
+main .songs_foryou .item:hover #icon_play { 
+    bottom: 20px;
+    right: 20px;
+    scale: 1;
+    background: #ebe1e1;
+
+}
+#icon_play:hover i.bx-play{
+    rotate: z 360deg;
+    transition: ease-out .3s;
+    border-radius: 100%;
+    background: rgb(55, 219, 55);
+    border: 1px solid rgb(55, 219, 55);
+}
+
+/* active */
+#home {
+    border-radius: 10px;
+    color: #000;
+    background: #fff;
+}
+#home i {
+    color: #000;
+}
+
+/*Countinue and trending  */
+
+.continue_listening {
+    padding: 0 20px;
+}
+.continue_listening .content {
+    background: #fff;
+    border-radius: 10px;
+}
+.continue_listening .image img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.continue_listening .detail {
+    padding-top: 10px;
+}
+.continue_listening .detail h5 {
+    color: #000;
+}
+.continue_listening .detail h6{
+    color: #a8a8a8;
+}
+.continue_listening .detail h5:hover {
+    text-decoration: underline;
+}
+.continue_listening .detail h6:hover {
+    text-decoration: underline;
+}
+
+/* continue trending singers */
+.trending_singers .image img {
+    border-radius: 100%;
+}
+.trending_singers .singer_name {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    color: #000;
+}
+.trending_singers .singer_name a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+/* 
+
+===========================
+Footer
+===========================
+
+*/
+
+footer {
+    background: #303841;
+    display: flex;
+    justify-content: space-between;
+    max-height: 30vh;
+    
+}
+/* social */
+.social {
+    display: flex;
+    justify-content: space-around;
+}
+.social > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444444;
+    background: #444444;
+    border-radius: 100%;
+    margin: 0 10px;
+    transition: ease .3s;
+}
+.social >div > a > i {
+    padding: 10px;
+    color: #fff;
+}
+
+/* hover  social */
+.social a.facebook:hover {
+    border: 1px solid blue;
+    background: blue;
+}
+.social a.insta:hover {
+    border: 1px solid palevioletred;
+    background: palevioletred;
+}
+.social a.twitter:hover {
+    border: 1px solid royalblue;
+    background: royalblue;
+}
+
+
+/* contact */
+.contact {
+    display: flex;
+}
+.contact > div.communities {
+    padding: 0 70px;
+}
+.contact .title {
+    color: #fff;
+}
+.contact .subtitle a {
+    color: #a8a8a8;
+}
+.contact .subtitle a:hover {
+    text-decoration: underline;
+}
+
+

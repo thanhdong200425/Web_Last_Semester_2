@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "goal": "Arm Definition",
+        "image": "https://fitgearplan.com/wp-content/uploads/2020/01/How-To-Get-Definition-In-Arms-.jpeg"
+    },
+    {
+        "id": 2,
+        "goal": "Lower Body Strength",
+        "image": "https://gymmembershipfees.com/wp-content/uploads/2020/01/Leg-and-Knee-Post-injury-Closed-Chain-Exercises-1024x682.jpeg"
+    },
+    {
+        "id": 3,
+        "goal": "Core Strength",
+        "image": "https://images.pexels.com/photos/14240049/pexels-photo-14240049.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    },
+    {
+        "id": 4,
+        "goal": "Core Stability",
+        "image": "https://i.pinimg.com/originals/1f/a2/98/1fa29866719e2bf753892789a35bd083.jpg"
+    },
+    {
+        "id": 5,
+        "goal": "Cardiovascular Endurance",
+        "image": "https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 6,
+        "goal": "Core and Upper Body Strength",
+        "image": "https://images.pexels.com/photos/50597/man-male-boy-a-person-50597.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 7,
+        "goal": "Flexibility",
+        "image": "https://images.pexels.com/photos/6648591/pexels-photo-6648591.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    },
+    {
+        "id": 8,
+        "goal": "Balance and Stability",
+        "image": "https://images.pexels.com/photos/2294363/pexels-photo-2294363.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 9,
+        "goal": "Full Body Strength",
+        "image": "https://images.pexels.com/photos/5611633/pexels-photo-5611633.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 10,
+        "goal": "Muscle Building",
+        "image": "https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    },
+    {
+        "id": 11,
+        "goal": "Weight Loss",
+        "image": "https://images.pexels.com/photos/3076516/pexels-photo-3076516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 12,
+        "goal": "Strength and Power",
+        "image": "https://images.pexels.com/photos/4162548/pexels-photo-4162548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 13,
+        "goal": "Muscle Endurance",
+        "image": "https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 14,
+        "goal": "Agility and Speed",
+        "image": "https://images.pexels.com/photos/6008980/pexels-photo-6008980.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 15,
+        "goal": "HIIT and Circuit Training",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/bare-chested-caucasian-man-with-hands-on-hips-royalty-free-image-148249078-1544129428.jpg?crop=1xw:1xh;center,top&resize=980:*"
+    },
+    {
+        "id": 16,
+        "goal": "Plyometrics",
+        "image": "https://media.gq.com/photos/5ebe98c2a46438436d8229f0/16:9/w_2560%2Cc_limit/GQ-Plyo-051520.jpg"
+    },
+    {
+        "id": 17,
+        "goal": "Olympic Lifting",
+        "image": "https://images.pexels.com/photos/720456/pexels-photo-720456.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 18,
+        "goal": "Functional Training",
+        "image": "https://images.pexels.com/photos/416747/pexels-photo-416747.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id": 19,
+        "goal": "Sports Specific Training",
+        "image": "http://tcboost.com/wp-content/uploads/2015/05/TCBOOST3-1318.jpg"
+    }
+]
