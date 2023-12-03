@@ -19,6 +19,7 @@
 <body>
     <div class="wrapper">
         <div class="row">
+            <audio src="../audios/taivisao-mck.mp3" id="audio"></audio>
             <!-- @include('layout.user.sidebar') -->
             <div class="col-sm-2" id="sidebar">
                 <aside>
@@ -402,7 +403,7 @@
                     <div class="left">
                         <div class="image_music">
                             <a href="">
-                                <img src="../img/albumn_99.jpg" alt="" width="100%">
+                                <img class="image_song" src="../img/albumn_99.jpg" alt="" width="100%">
                             </a>
                         </div>
                         <div class="desc">
@@ -438,9 +439,9 @@
                             </button>
                         </div>
                         <div class="times">
-                            <p class="left_time">0:00</p>
+                            <span class="left_time"></span>
                             <input type="range" value="0" class="seek_bar">
-                            <p class="right_time">3:14</p>
+                            <span class="right_time"></span>
                         </div>
                     </div>
                     <div class="right">
@@ -459,7 +460,7 @@
         </div>
     </div>
 
-    <script src="../js/homepage.js"></script>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -468,6 +469,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+    <script src="../js/playmusic.js"></script>
+    <script src="../js/songs.js"></script>
+    <script src="../js/homepage.js"></script>
 </body>
 
 </html>
