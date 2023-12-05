@@ -11,10 +11,10 @@ const navbar = document.getElementById('header-navbar');
 // });
 
 // Doi mau trai tim
-function changeColor() {
-    var heart = document.getElementById("heart");
-    heart.classList.toggle("clicked");
-}
+// function changeColor() {
+//     var heart = document.getElementById("heart");
+//     heart.classList.toggle("clicked");
+// }
 
 //Hieu ung mute
 btnmute.addEventListener('click', ()=> {
@@ -35,12 +35,12 @@ iconVolume.addEventListener('click', ()=> {
 });
 
 // Hieu ung scroll navbar
-window.addEventListener('scroll', ()=> {
-    var scrolled = window.scrollY > 0;
-    console.log('scroll');
-    if (scrolled) {
-        navbar.classList.add('scrolled');
-    }else {
-        navbar.classList.remove('scrolled');
-    }
-})
+// window.addEventListener('scroll', ()=> {
+//     var scrolled = window.scrollY > 0;
+
+//     if (scrolled) {
+//         navbar.classList.add('scrolled');
+//     }else {
+//         navbar.classList.remove('scrolled');
+//     }
+// })

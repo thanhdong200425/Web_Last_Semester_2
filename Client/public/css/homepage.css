@@ -102,6 +102,8 @@ Header
 
 */
 
+
+
 #header_content_footer {
     padding: 0;
     background: #151829;
@@ -131,6 +133,7 @@ header.scrolled {
     width: 10%;
 }
 .search {
+    color: rgb(153, 153, 153);
     width: 70%;
     display: flex;
     align-items: center;
@@ -138,6 +141,7 @@ header.scrolled {
 
 
 #search{
+    outline: none;
     width: 260%;
     background: #fff;
     border: 1px solid #fff;
@@ -148,6 +152,7 @@ header.scrolled {
     position: relative;
     top: 2px;
     left: 35px;
+    color: rgb(153, 153, 153);
 }
 
 .user_profile {
@@ -196,6 +201,10 @@ main .songs_foryou .item {
 main .songs_foryou .item:hover {
     background: #176C6A;
     transition: ease-out .2s;
+
+}
+main .songs_foryou .item:hover img {
+    box-shadow: 0 4px 60px rgba(0,0,0,.5);
 
 }
 main .songs_foryou img {
@@ -283,7 +292,7 @@ main .songs_foryou .item:hover #icon_play {
     color: #000;
 }
 .trending_singers .singer_name a:hover {
-    color: #000;
+    color: #fff;
     text-decoration: underline;
 }
 /* 
@@ -373,6 +382,23 @@ footer {
 }
 
 /* Left */
+.left {
+    position: relative;
+}
+.heart::before {
+    content: 'Save to Library';
+    position: absolute;
+    padding: 0px 20px;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    top: -10px;
+    left: 60px;
+    border-radius: 10px;
+    /* scale: 0; */
+    transition: ease .3s;
+
+}
 #heart.clicked {
     transition: .5s;
     color: #176C6A;
@@ -451,6 +477,7 @@ footer {
     border-radius: 50%;
     background: coral;
     cursor: pointer;
+    outline: none;
     border: none;
 }
 
@@ -538,13 +565,29 @@ input[type="range"].volume_bar {
 
 }
 .play_music .wrapper .right {
+    position: relative;
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
-
+.play_music .wrapper .right .lyric::before {
+    content: 'Lyric';
+    position: absolute;
+    padding: 0px 20px;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    top: -10px;
+    left: 30px;
+    border-radius: 10px;
+    scale: 0;
+    transition: ease .3s;
+}
+.play_music .wrapper .right .lyric:hover::before{
+    scale: 1;
+}
 .volume_bar {
     width: 100px;
     height: 3px;
@@ -576,4 +619,11 @@ input[type="range"].volume_bar {
 
 .play_music .wrapper .right i {
     font-size: 22px;
+}
+
+.root {
+    --cam:  #ff8c6b;
+    --trang : #fff;
+    --den : #151111;
+    --xanh : #8371fd;
 }

@@ -1,9 +1,4 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import moment from 'moment/moment';
 
-import SubmitPost from '~/components/pages/forum/SubmitPost';
-import getPostList from '~/services/api-calls/getPostList';
 
 function DetailSinger() {
     return (

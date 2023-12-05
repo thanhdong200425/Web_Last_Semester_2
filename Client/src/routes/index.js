@@ -4,6 +4,8 @@ import Login from '~/pages/Login';
 import Signup from '~/pages/Signup';
 import Practice from '~/pages/Practice';
 import Post from '~/pages/Post';
+import Singers from '~/pages/Singers';
+
 
 const publicRoutes = [
     {
@@ -13,6 +15,10 @@ const publicRoutes = [
     {
         path: '/detail_singer',
         component: DetailSinger,
+    },
+    {
+        path: '/singers',
+        component: Singers,
     },
     {
         path: '/login',

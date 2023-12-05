@@ -7,14 +7,14 @@ import getGoalList from '~/services/api-calls/getGoalList';
 function Home() {
     return (
         <main>
-            {/* <!-- songs for you  --> */}
+            {/* songs for you  */}
             <div id="foryou" className="foryou">
                 <div className="title">
                     <h3>
                         <a href="">For you</a>
                     </h3>
                     <a href="">
-                        <i className="bx bx-chevron-right bx-md"></i>
+                        <i className="bx bx-chevron-right bx-md" />
                     </a>
                 </div>
                 <div className="songs_foryou row">
@@ -23,12 +23,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_99.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -46,12 +43,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_99.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -69,12 +63,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_99.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -92,12 +83,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_99.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -112,8 +100,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-
-            {/* <!-- Countinue listening - Trending Singers --> */}
+            {/* Countinue listening - Trending Singers */}
             <div className="continue_trending row">
                 <div className="col-sm-6 continue_listening">
                     <div className="title">
@@ -121,7 +108,7 @@ function Home() {
                             <a href="">Continue listening</a>
                         </h3>
                         <a href="">
-                            <i className="bx bx-chevron-right bx-md"></i>
+                            <i className="bx bx-chevron-right bx-md" />
                         </a>
                     </div>
                     <div className="content row">
@@ -130,7 +117,6 @@ function Home() {
                                 src="../img/taivisao_mck.jpg"
                                 alt="taivisao_mck"
                                 width="100%"
-                                height="150"
                             />
                         </div>
                         <a href="" className="col-sm-8 detail">
@@ -140,71 +126,59 @@ function Home() {
                     </div>
                 </div>
                 <div className="col-sm-6 trending_singers">
-                    <div className="title">
+                    <div className="title ">
                         <h3>
-                            <a href="">Trending singers</a>
+                            <a href="singers.html">Trending singers</a>
                         </h3>
-                        <a href="">
-                            <i className="bx bx-chevron-right bx-md"></i>
+                        <a href="singers.html">
+                            <i className="bx bx-chevron-right bx-md" />
                         </a>
                     </div>
                     <div className="content row">
                         <div className="col-sm-3">
-                            <a href="" className="image">
-                                <img
-                                    src="../img/HIEUTHUHAI.jpg"
-                                    alt=""
-                                    width="100%"
-                                />
+                            <a href="detail_singer.html" className="image">
+                                <img src="../img/HIEUTHUHAI.jpg" alt="" width="100%" />
                             </a>
                             <div className="singer_name">
-                                <a href="">HIEUTHUHAI</a>
+                                <a href="detail_singer.html">HIEUTHUHAI</a>
                             </div>
                         </div>
                         <div className="col-sm-3">
-                            <a href="" className="image">
+                            <a href="detail_singer.html" className="image">
                                 <img src="../img/MCK.jpg" alt="" width="100%" />
                             </a>
                             <div className="singer_name">
-                                <a href="">RPT MCK</a>
+                                <a href="detail_singer.html">RPT MCK</a>
                             </div>
                         </div>
                         <div className="col-sm-3">
-                            <a href="" className="image">
-                                <img
-                                    src="../img/OBITO.jpg"
-                                    alt=""
-                                    width="100%"
-                                />
+                            <a href="detail_singer.html" className="image">
+                                <img src="../img/OBITO.jpg" alt="" width="100%" />
                             </a>
                             <div className="singer_name">
-                                <a href="">Obito</a>
+                                <a href="detail_singer.html">Obito</a>
                             </div>
                         </div>
                         <div className="col-sm-3">
-                            <a href="" className="image">
-                                <img
-                                    src="../img/SONTUNGMTP.jpg"
-                                    alt=""
-                                    width="100%"
-                                />
+                            <a href="detail_singer.html" className="image">
+                                <img src="../img/SONTUNGMTP.jpg" alt="" width="100%" />
                             </a>
                             <div className="singer_name">
-                                <a href="">Sơn Tùng MTP</a>
+                                <a href="detail_singer.html">Sơn Tùng MTP</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            {/* <!-- Latest songs  --> */}
+            
+            {/* Latest songs  */}
             <div id="latestsongs" className="foryou">
                 <div className="title">
                     <h3>
                         <a href="">Latest Songs</a>
                     </h3>
                     <a href="">
-                        <i className="bx bx-chevron-right bx-md"></i>
+                        <i className="bx bx-chevron-right bx-md" />
                     </a>
                 </div>
                 <div className="songs_foryou row">
@@ -213,12 +187,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -236,12 +207,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -259,12 +227,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -282,12 +247,9 @@ function Home() {
                             <div className="item">
                                 <div className="img">
                                     <div id="icon_play">
-                                        <i className="bx bx-play bx-lg"></i>
+                                        <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
+                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -303,6 +265,7 @@ function Home() {
                 </div>
             </div>
         </main>
+
     );
 }
 

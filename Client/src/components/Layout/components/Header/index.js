@@ -1,30 +1,26 @@
-import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
-
-import logoutHandle from '~/services/api-handle/logoutHandle';
+import { Link } from 'react-router-dom';
+import { useLayoutEffect, useRef, useState } from 'react';
 
 function Header() {
-    let path = useLocation().pathname;
+    const navbar = useRef(null);
+    useLayoutEffect(() => {
+        const handleScroll = () => {
+            const scrolled = window.scrollY > 0;
+            if (scrolled) {
+                navbar.current.className = 'scrolled';
+            } else {
+                navbar.current.className = '';
+            }
+        };
 
-    const [isMenu, setIsMenu] = useState(true);
-    const navhandle = () => {
-        let menu = document.querySelector('.menu-icon');
-        let close = document.querySelector('.close-icon');
-        let nav = document.querySelector('nav');
-        if (isMenu) {
-            menu.classList.add('hidden');
-            nav.classList.remove('hidden');
-            close.classList.remove('hidden');
-        } else {
-            menu.classList.remove('hidden');
-            nav.classList.add('hidden');
-            close.classList.add('hidden');
-        }
-        setIsMenu(!isMenu);
-    };
+        window.addEventListener('scroll', handleScroll);
 
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <header>
+        <><header ref={navbar} id="header-navbar">
             <div className="back_next ">
                 <a href="">
                     <i className="bx bx-chevron-left bx-md"></i>
@@ -33,16 +29,16 @@ function Header() {
                     <i className="bx bx-chevron-right bx-md"></i>
                 </a>
             </div>
-            <div className="search w-[70%]">
-                <i
-                    id="searchIcon"
-                    className="bx bx-search bx-sm text-[rgb(153,153,153)]"
-                ></i>
+            <div className="search">
                 <form action="#" method="get">
+                    <button type='submit'
+                        id="searchIcon"
+                        className="bx bx-search bx-sm text-[rgb(153,153,153)]"
+                    ></button>
                     <input type="text" id="search" placeholder="Search" />
                 </form>
             </div>
-            <div className="user_profile w-1/5">
+            <div className="user_profile">
                 <div className="userName">Username</div>
                 <div className="userImg">
                     <img src="" alt="" />
@@ -81,6 +77,8 @@ function Header() {
                 </div>
             </div>
         </header>
+        </>
+
     );
 }
 
