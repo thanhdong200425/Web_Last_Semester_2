@@ -1,7 +1,7 @@
-const inputs = document.querySelectorAll(".input-field");
-const toggle_btn = document.querySelectorAll(".toggle");
+const inputs = document.querySelectorAll(".input_field");
+const toggle_btn = document.querySelectorAll(".toggle_button");
 const main = document.querySelector("main");
-const bullets = document.querySelectorAll(".bullets span");
+const bullets = document.querySelectorAll(".bullets_bt span");
 const images = document.querySelectorAll(".image");
 
 inputs.forEach((inp) => {
@@ -27,7 +27,7 @@ function moveSlider() {
   images.forEach((img) => img.classList.remove("show"));
   currentImage.classList.add("show");
 
-  const textSlider = document.querySelector(".text-group");
+  const textSlider = document.querySelector(".text_group");
   textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
 
   bullets.forEach((bull) => bull.classList.remove("active"));
@@ -37,3 +37,4 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
+
