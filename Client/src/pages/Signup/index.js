@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 import signupHandle from '~/services/api-handle/signupHandle';
 
@@ -11,17 +12,17 @@ function Signup() {
     const repw = useRef(null);
     function handleLogin() {
         // Kiểm tra nếu tên đăng nhập và mật khẩu hợp lệ
-        if (true) {
-            // Nếu hợp lệ, chuyển hướng sang trang khác
-            alert('đăng nhập thành công!');
-            window.location.pathname = '/blog';
-        } else {
-            // Nếu không hợp lệ, hiển thị thông báo lỗi
-            alert('Tên đăng nhập hoặc mật khẩu không đúng!');
+        const regex =
+            /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]+$/;
+        if (!regex.test(pw)) {
+            toast.error(
+                'Mật khẩu phải bao gồm tối thiểu ít nhất 1 chữ cái viết hoa, 1 ký tự đặc biệt và 1 số!',
+            );
+            return;
         }
     }
     return (
-        <main className='main_login_signup'>
+        <main className="main_login_signup">
             <div className="box">
                 <div className="inner-box">
                     <div className="forms-wrap">

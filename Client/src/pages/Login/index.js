@@ -8,21 +8,33 @@ function Login() {
     const username = useRef(null);
     const password = useRef(null);
     const handleLogin = async () => {
+        const regex =
+            /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]+$/;
+        if (!regex.test(password)) {
+            toast.error(
+                'Mật khẩu phải bao gồm tối thiểu ít nhất 1 chữ cái viết hoa, 1 ký tự đặc biệt và 1 số!',
+            );
+            return;
+        }
+        
         const data = await authApi.login({
             username: username.current.value,
             password: password.current.value,
         });
         console.log(data);
-        data.success && toast.success(data.message);
-        !data.success && toast.error(data.message);
+        data.status && toast.success('Đăng nhập thành công!');
+        !data.status && toast.error('Tài khoản hoặc mật khẩu sai!');
     };
 
     return (
-        <main className='main_login_signup'>
+        <main className="main_login_signup">
             <div className="box">
                 <div className="inner-box">
                     <div className="forms-wrap">
-                        <form autocomplete="off" className="sign-in-form form_login_signup">
+                        <form
+                            autoComplete="off"
+                            className="sign-in-form form_login_signup"
+                        >
                             <div className="logo">
                                 <img src="../img/JoySongpng.png" />
                             </div>

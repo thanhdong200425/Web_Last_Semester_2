@@ -480,7 +480,7 @@ footer {
 .play_music .wrapper .mid .times .left_time,
 .play_music .wrapper .mid .times .right_time
 {
-    height: 5px;
+    /* height: 5px; */
     font-size: 12px;
 }
 .play_music .wrapper .mid .btn-play {

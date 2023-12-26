@@ -1,13 +1,14 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
 
+import SeekSlider from './components/SeekSlider';
+
 function Seekbar() {
     const [play, setPlay] = useState('pause');
     const [heart, setHeart] = useState('');
     const [currentVolume, setCurrentVolume] = useState(0);
     const [volume, setVolume] = useState('mute');
     const audio = useRef();
-    const seakSlider = useRef();
 
     const handlePlay = (event) => {
         if (play === 'pause') {
@@ -34,13 +35,8 @@ function Seekbar() {
         }
     };
 
-    useEffect(()=>{
-        const interval = setInterval(()=> {}, 1000)
-        return clearInterval(interval);
-    },[])
-
     return (
-        <div className="container-fluid play_music">
+        <div className="container-fluid play_music pb-4">
             <audio ref={audio} src="./audios/taivisao-mck.mp3"></audio>
             <div className="wrapper">
                 <div className="left">
@@ -92,11 +88,9 @@ function Seekbar() {
                             <i className="bx bx-repost"></i>
                         </button>
                     </div>
-                    <div className="times">
-                        <span className="left_time"></span>
-                        <input ref={seakSlider} type="range" className="seek_bar" />
-                        <span className="right_time"></span>
-                    </div>
+                    {audio?.current?.currentTime >= 0 && (
+                        <SeekSlider audio={audio} />
+                    )}
                 </div>
                 <div className="right">
                     <div className="lyric">
