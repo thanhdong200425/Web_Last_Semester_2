@@ -512,3 +512,8 @@ input[type="range"].volume_bar {
     font-size: 22px;
 }
 
+
+
+input[type="file"] {
+    height: 300px;
+}

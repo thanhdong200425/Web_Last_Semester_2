@@ -63,9 +63,7 @@ aside a:hover i {
     display: flex;
     align-items: center;
 }
-#logo:hover {
-    color: #fff;
-}
+
 #logo b {
     font-size: 1.5rem;
     padding-left: 10px;

@@ -2,9 +2,9 @@ function Sibar() {
     return (
         <aside>
             {/* sidebar */}
-            <div className="logo">
+            <div className="logo ">
                 <a href="homepage.html" id="logo">
-                    <i className="bx bxl-spotify bx-lg" />
+                    <i id="icon_logo" className="bx bxl-spotify bx-lg text-white" />
                     <b>Spytifo</b>
                 </a>
             </div>

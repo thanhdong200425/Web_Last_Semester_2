@@ -37,7 +37,199 @@ function DetailSinger() {
                             <i className="bx bx-chevron-right bx-md"></i>
                         </a>
                     </div>
-                    <div className="row songs-detail_singer">
+                    <div className="list_playlist py-3 ">
+                        <table className="table table-border table-hover">
+                            <thead>
+                                <tr className="text-gray-300">
+                                    <td>
+                                        <div className="px-4 flex gap-4">
+                                            <span>#</span>
+                                            <span>Title</span>
+                                        </div>
+                                    </td>
+                                    <td><span>Views</span></td>
+                                    <td><span>Date</span></td>
+                                    <td><span><i class='bx bx-time-five text-gray-300' ></i></span></td>
+                                </tr>
+                            </thead>
+                            <tbody className="">
+                                <tr>
+                                    <td>
+                                        <a href="" className="text-white flex items-center gap-3">
+                                            <div className="stt">
+                                                <span>1</span>
+                                                <i class='bx bx-play bx-md'></i>
+                                            </div>
+                                            <div className="img_song img_song_playlist">
+                                                <img
+                                                    className="h-10 w-10 rounded-md"
+                                                    src="../img/taivisao_mck.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="name_song name_song_playlist">
+                                                <p className="font-bold">Tại vì sao</p>
+                                                <span className="singer_song singer_song_playlist text-xs text-gray-400">
+                                                    MCK
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" className="text-gray-400 name_albumn name_album_playlist">
+                                            <span>12.343.000</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div className="date_create_playlist text-white">
+                                            <p>12/11/2023</p>
+                                        </div>
+                                    </td>
+                                    <td><span className="times text-white">3:14</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="" className="text-white flex items-center gap-3">
+                                            <div className="stt">
+                                                <span>1</span>
+                                                <i class='bx bx-play bx-md'></i>
+                                            </div>
+                                            <div className="img_song img_song_playlist">
+                                                <img
+                                                    className="h-10 w-10 rounded-md"
+                                                    src="../img/taivisao_mck.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="name_song name_song_playlist">
+                                                <p className="font-bold">Tại vì sao</p>
+                                                <span className="singer_song singer_song_playlist text-xs text-gray-400">
+                                                    MCK
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" className="text-gray-400 name_albumn name_album_playlist">
+                                            <span>12.343.000</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div className="date_create_playlist text-white">
+                                            <p>12/11/2023</p>
+                                        </div>
+                                    </td>
+                                    <td><span className="times text-white">3:14</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="" className="text-white flex items-center gap-3">
+                                            <div className="stt">
+                                                <span>1</span>
+                                                <i class='bx bx-play bx-md'></i>
+                                            </div>
+                                            <div className="img_song img_song_playlist">
+                                                <img
+                                                    className="h-10 w-10 rounded-md"
+                                                    src="../img/taivisao_mck.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="name_song name_song_playlist">
+                                                <p className="font-bold">Tại vì sao</p>
+                                                <span className="singer_song singer_song_playlist text-xs text-gray-400">
+                                                    MCK
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" className="text-gray-400 name_albumn name_album_playlist">
+                                            <span>12.343.000</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div className="date_create_playlist text-white">
+                                            <p>12/11/2023</p>
+                                        </div>
+                                    </td>
+                                    <td><span className="times text-white">3:14</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="" className="text-white flex items-center gap-3">
+                                            <div className="stt">
+                                                <span>1</span>
+                                                <i class='bx bx-play bx-md'></i>
+                                            </div>
+                                            <div className="img_song img_song_playlist">
+                                                <img
+                                                    className="h-10 w-10 rounded-md"
+                                                    src="../img/taivisao_mck.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="name_song name_song_playlist">
+                                                <p className="font-bold">Tại vì sao</p>
+                                                <span className="singer_song singer_song_playlist text-xs text-gray-400">
+                                                    MCK
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" className="text-gray-400 name_albumn name_album_playlist">
+                                            <span>12.343.000</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div className="date_create_playlist text-white">
+                                            <p>12/11/2023</p>
+                                        </div>
+                                    </td>
+                                    <td><span className="times text-white">3:14</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="" className="text-white flex items-center gap-3">
+                                            <div className="stt">
+                                                <span>1</span>
+                                                <i class='bx bx-play bx-md'></i>
+                                            </div>
+                                            <div className="img_song img_song_playlist">
+                                                <img
+                                                    className="h-10 w-10 rounded-md"
+                                                    src="../img/taivisao_mck.jpg"
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <div className="name_song name_song_playlist">
+                                                <p className="font-bold">Tại vì sao</p>
+                                                <span className="singer_song singer_song_playlist text-xs text-gray-400">
+                                                    MCK
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="" className="text-gray-400 name_albumn name_album_playlist">
+                                            <span>12.343.000</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div className="date_create_playlist text-white">
+                                            <p>12/11/2023</p>
+                                        </div>
+                                    </td>
+                                    <td><span className="times text-white">3:14</span></td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    {/* <div className="row songs-detail_singer">
                         <div className="col-sm-12">
                             <div className="container_song flex items-center justify-between">
 
@@ -492,7 +684,7 @@ function DetailSinger() {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -682,7 +874,7 @@ function DetailSinger() {
                                         />
                                     </div>
                                     <div className="name-follows_maybelike">
-                                    <div className="name flex flex-col items-center gap-3">
+                                        <div className="name flex flex-col items-center gap-3">
                                             <a href="">
                                                 Obito
                                             </a>
@@ -707,7 +899,7 @@ function DetailSinger() {
                                         />
                                     </div>
                                     <div className="name-follows_maybelike">
-                                    <div className="name flex flex-col items-center gap-3">
+                                        <div className="name flex flex-col items-center gap-3">
                                             <a href="">
                                                 HIEUTHUHAI
                                             </a>
@@ -732,7 +924,7 @@ function DetailSinger() {
                                         />
                                     </div>
                                     <div className="name-follows_maybelike">
-                                    <div className="name flex flex-col items-center gap-3">
+                                        <div className="name flex flex-col items-center gap-3">
                                             <a href="">
                                                 Sơn Tùng MTP
                                             </a>
