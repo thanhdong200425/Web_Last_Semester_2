@@ -171,7 +171,7 @@ Main
 main {
     padding: 0;
 }
-main .wrapper-in4_singer {
+main .wrapper-in4_playlist {
     min-height: 40vh;
     display: flex;
     align-items: center;
@@ -181,346 +181,45 @@ main .wrapper-in4_singer {
 
 }
 
-main .wrapper-in4_singer .in4_singer {
+main .wrapper-in4_playlist .in4_playlist {
     display: flex;
     position: absolute;
     left: 50px;
 }
-main .in4_singer .img_singer {
+main .in4_playlist .img_playlist {
     margin-right: 40px;
     width: 180px;
-    height: 180px;
+    height: 100%;
 }
-main .in4_singer .img_singer img {
-    border-radius: 100%;
+main .in4_playlist .img_playlist img {
     box-shadow: 0 4px 60px rgba(0,0,0,.5);
 }
-
-main .in4_singer .name-follows .name p {
-    height: 120px;
-    font-size: 5.5rem;
-    font-weight: 900;
-}
-
-main .in4_singer .name-follows .follows{
-    display: flex;
-
-}
-main .in4_singer .name-follows .follows p {
-    font-size: 16px;
-    font-weight: 600;
-    
-}
-main .in4_singer .name-follows  button.follow,
-.name-follows_maybelike  button.follow {
-    display: flex;
-    align-items: center;
-    border-radius: 100px;
-    border: 1px solid #cccccc;
-    background: transparent;
-    height: 28px;
-    padding: 4px 20px;
-    font-size: 16px;
-    margin-left: 20px ;
-    transition: ease .3s;
-}
-main .in4_singer .name-follows  button.follow:hover {
-    color:  #757575 ;
-}
-
-
-/* Featured Songs */
-.container-main {
-    padding: 30px;
-    background: #151829;
-    color: #fff;
-}
-.container-main a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-.container_song {
+main .in4_playlist .title-playlist {
     position: relative;
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #000;
-    padding: 10px;
+    bottom: -70px;
 }
-.container_song::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(29, 27, 27, 0.5); /* Màu nền mờ */
-    z-index: 1; /* Đảm bảo lớp layout mờ hiển thị phía trước */
-    opacity: 0; /* Ẩn lớp layout mờ ban đầu */
-    transition: 0.3s ease;
-}
-.container_song:hover::before {
-    opacity: 1; /* Hiển thị lớp layout mờ khi hover vào */
-}
-.container_song .time {
-    opacity: 1;
-}
-.container_song:hover .time {
-    opacity: 0;
-}
-.container_song .play {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border:none;
-    opacity: 0;
-    z-index: 2;
-}
-.container_song:hover .play {
-    opacity: 1;
-}
-.container_song .buttons {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    z-index: 2;
-    opacity: 0;
-}
-.container_song:hover .buttons {
-    opacity: 1;
-}
-.container_song .buttons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-    margin: 0 10px;
-    font-size: 18px;
-}
-.container_song .buttons button{
-    border: none;
-    background: transparent;
-    color: #fff;
-    transition: ease .3s;
-}
- 
-.container_song .buttons button:hover {
-    background: #A7CDCC;
-}
-.container_song .content_song {
-    z-index: 2;
-}
-.song {
-    position: relative;
-}
- .song .title {
-    font-weight: 800;
-}
-.song .singers a {
+main .in4_playlist .title-playlist p.subtitle {
     font-size: 14px;
-
-}
-.container-main .content .song .image_song {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-.container-main .content .song .image_song img {
-    border-radius: 10px;
-}
-.container-main .content .song a:hover {
-    color: #000;
-    text-decoration: underline;
 }
 
-/* Wrapper albumns */
-.wrapper-albumn .buttons,
-.wrapper-playlist .buttons {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 12%;
-    z-index: 2;
-    opacity: 0;
-}
-.wrapper-albumn .content .imgage_album:hover .buttons,
-.wrapper-playlist .content .imgage_album:hover .buttons {
-    transition: ease .3s;
-    opacity: 1;
-}
-.wrapper-albumn .content .imgage_album:hover img,
-.wrapper-playlist .content .imgage_album:hover img {
-    transform: scale(1.2);
-}
-
-
-.wrapper-albumn .buttons button,
-.wrapper-playlist .buttons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border-radius: 100%;
-    transition: ease .3s;
-    
-
-}
-.wrapper-albumn .buttons button.play,
-.wrapper-playlist button.play {
-    border: 1px solid #fff;
-    width: 45px;
-    height: 45px;
-    font-size: 35px;
-    margin: 0 20px;
-}
-.wrapper-albumn .buttons button.play:hover,
-.wrapper-playlist .buttons button.play:hover {
-    border: 1px solid #A7CDCC;
-}
-.wrapper-albumn .buttons button.play:hover i,
-.wrapper-playlist .buttons button.play:hover i {
-    color: #A7CDCC;
-}
-
-.wrapper-albumn .buttons button.heart,
-.wrapper-albumn .buttons button.more,
-.wrapper-playlist .buttons button.heart,
-.wrapper-playlist .buttons button.more{
-    border: none;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-}
-.wrapper-albumn .buttons button.heart:hover,
-.wrapper-albumn .buttons button.more:hover,
-.wrapper-playlist .buttons button.heart:hover,
-.wrapper-playlist .buttons button.more:hover {
-    background: #A7CDCC;
-}
-.wrapper-albumn .buttons button i,
-.wrapper-playlist .buttons button i {
-    color: #fff;
-}
-
-
-.wrapper-albumn .content,
-.wrapper-playlist .content {
-    margin-top: 20px;
-    display: flex;
-}
-.wrapper-albumn .content img,
-.wrapper-playlist .content img {
-    border-radius: 5px;
-    transition: ease 0.3s;
-}
-.wrapper-albumn .info_albumn a,
-.wrapper-playlist .info_albumn a  {
-    font-weight: 700;
-}
-.wrapper-albumn .content .imgage_album,
-.wrapper-playlist .content .imgage_album {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
-}
-.wrapper-albumn .content .imgage_album::before,
-.wrapper-playlist .content .imgage_album::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
-    z-index: 1; /* Đảm bảo lớp layout mờ hiển thị phía trước */
-    opacity: 0; /* Ẩn lớp layout mờ ban đầu */
-    transition: 0.3s ease;
-}
-.wrapper-albumn .content .imgage_album:hover::before,
-.wrapper-playlist .content .imgage_album:hover::before {
-    opacity: 1; /* Hiển thị lớp layout mờ khi hover vào */
-    border-radius: 5px;
-
-}
-
-
-
-/* Maybe like */
-
-.name-follows_maybelike a p {
-    margin-top: 10px;
-    font-size: 20px;
+main .in4_playlist .title-playlist p.title {
+    font-size: 62px;
+    line-height: 70px;
     font-weight: bold;
 }
-.name-follows_maybelike a:hover {
-    text-decoration: underline;
-    color: #fff;
-}
-.name-follows_maybelike p {
-    height: 10px;
+
+main .in4_playlist .title-playlist div.author {
+    display: flex;
+    gap: 20px;
     font-size: 14px;
-    font-weight: 500;
-    
 }
-
-.wrapper-maybelike .content .img_singer {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-}
-.name-follows_maybelike p {
-    text-align: center;
-}
-.name-follows_maybelike .follows span {
+main .in4_playlist .title-playlist div.author a.author:hover {
     color: #fff;
+    text-decoration: underline;
 }
-.name-follows_maybelike .follows {
-    margin-top: 30px;
+main .in4_playlist .title-playlist div.author .time {
+    color: #a8a8a8;
 }
-.name-follows_maybelike  button.follow {
-    margin: auto;
-   
-}
-
-
-
-/* wrapper about */
-.wrapper-about .pic {
-    width: 30%;
-    margin-right: 30px;
-}
-.wrapper-about .pic img {
-    border-radius: 10px;
-
-}
-.wrapper-about .desc {
-    width: 40%;
-    height: 100%;
-    font-weight: 500;
-}
-.wrapper-about .desc p.info {
-    height: 70%;
-}
-.wrapper-about .desc p.followers {
-    height: 30%;
-    position: relative;
-    top: 30px;
-}
-.wrapper-about .desc p.followers b {
-    font-size: 20px;
-    font-weight: 900;
-}
-
-
 /* 
 
 ===========================
@@ -607,7 +306,7 @@ footer {
 }
 
 /* Left */
-#heart.clicked {
+.clicked {
     transition: .5s;
     color: #176C6A;
 }
@@ -619,12 +318,12 @@ footer {
 }
 
 
-.play_music .wrapper .left .desc .singers a {
+.play_music .wrapper .left .desc .playlist a {
     font-size: 12px;
     color: #a1a1a1;
     
 }
-.play_music .wrapper .left .desc .singers a:hover {
+.play_music .wrapper .left .desc .playlist a:hover {
     color: #fff;
     text-decoration: underline;
     
@@ -813,3 +512,8 @@ input[type="range"].volume_bar {
     font-size: 22px;
 }
 
+
+
+input[type="file"] {
+    height: 300px;
+}

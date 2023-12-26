@@ -106,8 +106,9 @@ Header
 
 #header_content_footer {
     padding: 0;
-    background: #013B44;
+    background: #151829;
 }
+
 
 header {
     background: transparent;
@@ -117,7 +118,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 10;
+    z-index: 1;
 }
 header.scrolled {
     background: #1518297c;
@@ -132,6 +133,7 @@ header.scrolled {
     width: 10%;
 }
 .search {
+    color: rgb(153, 153, 153);
     width: 70%;
     display: flex;
     align-items: center;
@@ -139,6 +141,7 @@ header.scrolled {
 
 
 #search{
+    outline: none;
     width: 260%;
     background: #fff;
     border: 1px solid #fff;
@@ -161,366 +164,63 @@ header.scrolled {
     display: none;
 }
 
-/*
 
+
+
+/*
 ===========================
-Main
+main  
 ===========================
 
 */
 main {
-    padding: 0;
-}
-main .wrapper-in4_singer {
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-    background: #176C6A;
-    color: #fff;
-    position: relative;
-
-}
-
-main .wrapper-in4_singer .in4_singer {
-    display: flex;
-    position: absolute;
-    left: 50px;
-}
-main .in4_singer .img_singer {
-    margin-right: 40px;
-    width: 180px;
-    height: 180px;
-}
-main .in4_singer .img_singer img {
-    border-radius: 100%;
-    box-shadow: 0 4px 60px rgba(0,0,0,.5);
-}
-
-main .in4_singer .name-follows .name p {
-    height: 120px;
-    font-size: 5.5rem;
-    font-weight: 900;
-}
-
-main .in4_singer .name-follows .follows{
-    display: flex;
-
-}
-main .in4_singer .name-follows .follows p {
-    font-size: 16px;
-    font-weight: 600;
-    
-}
-main .in4_singer .name-follows  button.follow,
-.name-follows_maybelike  button.follow {
-    display: flex;
-    align-items: center;
-    border-radius: 100px;
-    border: 1px solid #cccccc;
-    background: transparent;
-    height: 28px;
-    padding: 4px 20px;
-    font-size: 16px;
-    margin-left: 20px ;
-    transition: ease .3s;
-}
-main .in4_singer .name-follows  button.follow:hover {
-    color:  #757575 ;
-}
-
-
-/* Featured Songs */
-.container-main {
-    padding: 30px;
     background: #151829;
-    color: #fff;
 }
-.container-main a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-.container_song {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #000;
-    padding: 10px;
-}
-.container_song::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(29, 27, 27, 0.5); /* Màu nền mờ */
-    z-index: 1; /* Đảm bảo lớp layout mờ hiển thị phía trước */
-    opacity: 0; /* Ẩn lớp layout mờ ban đầu */
-    transition: 0.3s ease;
-}
-.container_song:hover::before {
-    opacity: 1; /* Hiển thị lớp layout mờ khi hover vào */
-}
-.container_song .time {
-    opacity: 1;
-}
-.container_song:hover .time {
-    opacity: 0;
-}
-.container_song .play {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border:none;
-    opacity: 0;
-    z-index: 2;
-}
-.container_song:hover .play {
-    opacity: 1;
-}
-.container_song .buttons {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    z-index: 2;
-    opacity: 0;
-}
-.container_song:hover .buttons {
-    opacity: 1;
-}
-.container_song .buttons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-    margin: 0 10px;
-    font-size: 18px;
-}
-.container_song .buttons button{
-    border: none;
-    background: transparent;
-    color: #fff;
-    transition: ease .3s;
-}
- 
-.container_song .buttons button:hover {
-    background: #A7CDCC;
-}
-.container_song .content_song {
-    z-index: 2;
-}
-.song {
-    position: relative;
-}
- .song .title {
-    font-weight: 800;
-}
-.song .singers a {
-    font-size: 14px;
-
-}
-.container-main .content .song .image_song {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-.container-main .content .song .image_song img {
-    border-radius: 10px;
-}
-.container-main .content .song a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
-/* Wrapper albumns */
-.wrapper-albumn .buttons,
-.wrapper-playlist .buttons {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 12%;
-    z-index: 2;
-    opacity: 0;
-}
-.wrapper-albumn .content .imgage_album:hover .buttons,
-.wrapper-playlist .content .imgage_album:hover .buttons {
-    transition: ease .3s;
-    opacity: 1;
-}
-.wrapper-albumn .content .imgage_album:hover img,
-.wrapper-playlist .content .imgage_album:hover img {
-    transform: scale(1.2);
-}
-
-
-.wrapper-albumn .buttons button,
-.wrapper-playlist .buttons button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border-radius: 100%;
-    transition: ease .3s;
-    
-
-}
-.wrapper-albumn .buttons button.play,
-.wrapper-playlist button.play {
-    border: 1px solid #fff;
-    width: 45px;
-    height: 45px;
-    font-size: 35px;
-    margin: 0 20px;
-}
-.wrapper-albumn .buttons button.play:hover,
-.wrapper-playlist .buttons button.play:hover {
-    border: 1px solid #A7CDCC;
-}
-.wrapper-albumn .buttons button.play:hover i,
-.wrapper-playlist .buttons button.play:hover i {
-    color: #A7CDCC;
-}
-
-.wrapper-albumn .buttons button.heart,
-.wrapper-albumn .buttons button.more,
-.wrapper-playlist .buttons button.heart,
-.wrapper-playlist .buttons button.more{
-    border: none;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-}
-.wrapper-albumn .buttons button.heart:hover,
-.wrapper-albumn .buttons button.more:hover,
-.wrapper-playlist .buttons button.heart:hover,
-.wrapper-playlist .buttons button.more:hover {
-    background: #A7CDCC;
-}
-.wrapper-albumn .buttons button i,
-.wrapper-playlist .buttons button i {
-    color: #fff;
-}
-
-
-.wrapper-albumn .content,
-.wrapper-playlist .content {
-    margin-top: 20px;
-    display: flex;
-}
-.wrapper-albumn .content img,
-.wrapper-playlist .content img {
-    border-radius: 5px;
-    transition: ease 0.3s;
-}
-.wrapper-albumn .info_albumn a,
-.wrapper-playlist .info_albumn a  {
+main .title {
+    padding-top: 5px;
+    font-size: 24px;
     font-weight: 700;
 }
-.wrapper-albumn .content .imgage_album,
-.wrapper-playlist .content .imgage_album {
-    position: relative;
-    overflow: hidden;
-    width: 80%;
+.trending_singers .card {
+    background: #013B44;
+    width: 85%;
 }
-.wrapper-albumn .content .imgage_album::before,
-.wrapper-playlist .content .imgage_album::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
-    z-index: 1; /* Đảm bảo lớp layout mờ hiển thị phía trước */
-    opacity: 0; /* Ẩn lớp layout mờ ban đầu */
-    transition: 0.3s ease;
-}
-.wrapper-albumn .content .imgage_album:hover::before,
-.wrapper-playlist .content .imgage_album:hover::before {
-    opacity: 1; /* Hiển thị lớp layout mờ khi hover vào */
-    border-radius: 5px;
+.trending_singers .card:hover img {
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
 
 }
-
-
-
-/* Maybe like */
-
-.name-follows_maybelike a p {
+.trending_singers img {
+    height: 170px;
+    width: 170px;
+    margin: auto;
+    border-radius: 100%;
     margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
 }
-.name-follows_maybelike a:hover {
-    text-decoration: underline;
-    color: #fff;
-}
-.name-follows_maybelike p {
-    height: 10px;
-    font-size: 14px;
-    font-weight: 500;
-    
+.card-body .card-text {
+    line-height: 10px;
 }
 
-.wrapper-maybelike .content .img_singer {
-    width: 80%;
-    height: 80%;
-    margin: auto;
+#icon_play {
+    font-size: 35px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+    border-radius: 100%;
+    scale: 0;
+    transition: ease .3s;
 }
-.name-follows_maybelike p {
-    text-align: center;
+#icon_play:hover {
+    border: 1px solid #176C6A;
+    transition: 0s;
 }
-.name-follows_maybelike .follows span {
-    color: #fff;
-}
-.name-follows_maybelike .follows {
-    margin-top: 30px;
-}
-.name-follows_maybelike  button.follow {
-    margin: auto;
-   
-}
-
-
-
-/* wrapper about */
-.wrapper-about .pic {
-    width: 30%;
-    margin-right: 30px;
-}
-.wrapper-about .pic img {
-    border-radius: 10px;
+.trending_singers .card:hover #icon_play { 
+    scale: 1;
+    background: #176C6A;
 
 }
-.wrapper-about .desc {
-    width: 40%;
-    height: 100%;
-    font-weight: 500;
-}
-.wrapper-about .desc p.info {
-    height: 70%;
-}
-.wrapper-about .desc p.followers {
-    height: 30%;
-    position: relative;
-    top: 30px;
-}
-.wrapper-about .desc p.followers b {
-    font-size: 20px;
-    font-weight: 900;
-}
-
-
 /* 
 
 ===========================
@@ -530,7 +230,6 @@ Footer
 */
 
 footer {
-    padding: 10px 20px;
     background: #080705;
     display: flex;
     justify-content: space-between;
@@ -588,6 +287,8 @@ footer {
 .contact .subtitle a:hover {
     text-decoration: underline;
 }
+
+
 /* Play music */
 .play_music {
     position: sticky;
@@ -812,4 +513,3 @@ input[type="range"].volume_bar {
 .play_music .wrapper .right i {
     font-size: 22px;
 }
-

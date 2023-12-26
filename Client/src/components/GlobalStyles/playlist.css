@@ -1,0 +1,105 @@
+main.playlist_container {
+    padding: 0;
+}
+
+main .wrapper-in4_playlist {
+    min-height: 40vh;
+    height: 50vh;
+}
+
+main .wrapper-in4_playlist .in4_playlist {
+    display: flex;
+    position: absolute;
+    left: 50px;
+}
+
+main .in4_playlist .img_playlist img {
+    box-shadow: 0 4px 60px rgba(0,0,0,.5);
+}
+
+.container-main_playlist .btn-play {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: coral;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.container-main_playlist .btn-play span {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 20px;
+    border-radius: 2px;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: .3s;
+}
+
+.container-main_playlist .btn-play span:nth-child(2) {
+    left: 55%;
+    transform-origin: center;
+}
+.container-main_playlist .btn-play.pause span:nth-child(2) {
+    transform: translateY(-50%) scaleY(0);
+}
+.container-main_playlist .btn-play.pause span:nth-child(1) {
+    width: 25%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+.list_playlist table tbody tr:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+.list_playlist table tbody tr:hover .name_albumn{
+    color: #fff;
+}
+.list_playlist table tbody tr {
+}
+.list_playlist table tbody tr td {
+    border: none;
+}
+.list_playlist table tbody tr td .stt {
+    width: 5%;
+    position: relative;
+    padding: 0 20px;
+}
+.list_playlist table tbody tr td .stt .bx-play {
+    position: absolute;
+    bottom: -8px;
+    left: 10px;
+    display: none;
+}
+.list_playlist table tbody tr:hover .bx.bx-play.bx-md {
+    display: block;
+}
+
+
+/* =========================================== */
+/* create playlist css */
+/* =========================================== */
+.create_playlist_container .search_song_playlist form {
+    position: relative;
+}
+.create_playlist_container .search_song_playlist input  {
+    width: 500px;
+    height: 35px;
+    background: #000;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 30px;
+    outline: none;
+}
+.create_playlist_container .search_song_playlist form i {
+    font-size: 20px;
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+}
