@@ -4,8 +4,6 @@ import Login from '~/pages/Login';
 import Signup from '~/pages/Signup';
 import DetailAlbum from '~/pages/DetailAlbum';
 import DetailSong from '~/pages/DetailSong';
-import Practice from '~/pages/Practice';
-import Post from '~/pages/Post';
 import Singers from '~/pages/Singers';
 import Playlist from '~/pages/Playlist';
 import Create_playlist from '~/pages/Create_playlist';
