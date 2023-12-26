@@ -2,16 +2,31 @@
 
 namespace App\Models;
 
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class User extends Authenticatable
 {
     use HasFactory;
     protected $fillable = [
-        'user_name',
+        'username',
         'password',
         'email',
-        'role'
+        'role',
+        'phone_number',
+        'gender',
+        'dob',
+        'country',
+        'is_active',
+        'refresh_token',
+        'access_token',
+        'facebook',
+        'instagram',
+        'twitter',
+        'tiktok',
+        'youtube',
+        'remember_token',
+        'origin_password',
     ];
 }

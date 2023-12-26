@@ -2,8 +2,8 @@ import Home from '~/pages/Home';
 import DetailSinger from '~/pages/DetailSinger';
 import Login from '~/pages/Login';
 import Signup from '~/pages/Signup';
-import Practice from '~/pages/Practice';
-import Post from '~/pages/Post';
+import DetailAlbum from '~/pages/DetailAlbum';
+import DetailSong from '~/pages/DetailSong';
 
 const publicRoutes = [
     {
@@ -25,16 +25,17 @@ const publicRoutes = [
         layout: null,
     },
     {
-        path: '/target/:id',
-        component: Practice,
+        path: '/detail_album',
+        component: DetailAlbum,
+    },
+    {
+        path: '/detail_song',
+        component: DetailSong,
+        layout: null
     },
 ];
 
 const privateRoutes = [
-    {
-        path: '/post/:id',
-        component: Post,
-    },
 ];
 
 export { publicRoutes, privateRoutes };

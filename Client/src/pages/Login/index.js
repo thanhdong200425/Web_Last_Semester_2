@@ -1,71 +1,119 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Loading from '~/components/Layout/components/Loading';
+import { toast } from 'react-toastify';
 
-import loginHandle from '~/services/api-handle/loginHandle';
+import * as authApi from '~/apis/auth.api';
 
 function Login() {
-    const [isShowPw, setShowPw] = useState(false);
     const username = useRef(null);
-    const pw = useRef(null);
+    const password = useRef(null);
+    const handleLogin = async () => {
+        const data = await authApi.login({
+            username: username.current.value,
+            password: password.current.value,
+        });
+        console.log(data);
+        data.success && toast.success(data.message);
+        !data.success && toast.error(data.message);
+    };
 
     return (
-        <div className="flex justify-center items-center w-full h-screen">
-            <div className="w-full md:w-[600px] p-5 shadow md:shadow-white">
-                <center>
-                    <h1 className="m-0 font-bold text-red-600">Log in</h1>
-                </center>
-                <div className="my-5">
-                    <i className="far fa-user -mr-4" />
-                    <input
-                        ref={username}
-                        type="text"
-                        className="w-full h-10 bg-transparent px-8 outline-none border-b-2 border-white"
-                        placeholder="Username"
-                        id="us"
-                    />
+        <main className='main_login_signup'>
+            <div className="box">
+                <div className="inner-box">
+                    <div className="forms-wrap">
+                        <form autocomplete="off" className="sign-in-form form_login_signup">
+                            <div className="logo">
+                                <img src="../img/JoySongpng.png" />
+                            </div>
+
+                            <div className="heading">
+                                <h2>Xin chào !</h2>
+                                <h6>Bạn mới tham gia JoySong?</h6>
+                                <a href="/signup" className="toggle">
+                                    Đăng ký ngay
+                                </a>
+                                <br />
+                                <br />
+                            </div>
+
+                            <div className="actual-form">
+                                <div className="input-wrap">
+                                    <input
+                                        ref={username}
+                                        type="text"
+                                        minlength="4"
+                                        className="input-field"
+                                        autocomplete="off"
+                                        required
+                                        placeholder="Tài khoản"
+                                    />
+                                </div>
+
+                                <div className="input-wrap">
+                                    <input
+                                        ref={password}
+                                        type="password"
+                                        minlength="4"
+                                        className="input-field"
+                                        autocomplete="off"
+                                        required
+                                        placeholder="Mật khẩu"
+                                    />
+                                </div>
+
+                                <input
+                                    onClick={handleLogin}
+                                    value="Đăng nhập"
+                                    className="sign-btn text-center"
+                                />
+
+                                <p className="text">
+                                    Bạn đã quên mật khẩu ?
+                                    <a href="#">Trợ giúp</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div className="carousel">
+                        <div className="images-wrapper">
+                            <img
+                                src="../img/image1.png"
+                                className="image_login_signup image img-1 show"
+                                alt=""
+                            />
+                            <img
+                                src="../img/image2.png"
+                                className="image_login_signup image img-2"
+                                alt=""
+                            />
+                            <img
+                                src="../img/image3.png"
+                                className="image_login_signup image img-3"
+                                alt=""
+                            />
+                        </div>
+
+                        <div className="text-slider">
+                            <div className="text-wrap">
+                                <div className="text-group">
+                                    <h2>Nghe nhạc mọi lúc mọi nơi</h2>
+                                    <h2>Tạo danh sách phát của riêng bạn</h2>
+                                    <h2>Nghe nhạc không sợ quảng cáo</h2>
+                                </div>
+                            </div>
+
+                            <div className="bullets">
+                                <span className="active" data-value="1"></span>
+                                <span data-value="2"></span>
+                                <span data-value="3"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="relative my-5">
-                    <i className="fas fa-key -mr-4" />
-                    <input
-                        ref={pw}
-                        type={isShowPw ? 'text' : 'password'}
-                        className="relative w-full h-10 bg-transparent px-8 outline-none border-b-2 border-white"
-                        placeholder="Password"
-                        id="us"
-                    />
-                    <i
-                        className={
-                            (isShowPw ? 'fa-eye-slash' : 'fa-eye') +
-                            ' far absolute right-1 top-4 cursor-pointer'
-                        }
-                        onClick={() => setShowPw(!isShowPw)}
-                    />
-                </div>
-                <Link to="/" className="text-red-600 hover:underline">
-                    Forgot password?
-                </Link>
-                <div className="my-5">
-                    You don't have an account yet?{' '}
-                    <Link to="/signup" className="text-red-600 hover:underline">
-                        Sign up now.
-                    </Link>
-                </div>
-                <Link to="/">
-                    <button className="inline-block px-6 py-3 font-semibold tracking-wide border border-red-600 rounded">
-                        Go back
-                    </button>
-                </Link>
-                <button
-                    onClick={() => {
-                        loginHandle(username.current.value, pw.current.value);
-                    }}
-                    className="float-right inline-flex items-center justify-center px-6 py-3 font-semibold tracking-wide bg-red-600 rounded"
-                >
-                    Log in
-                </button>
             </div>
-        </div>
+        </main>
     );
 }
 

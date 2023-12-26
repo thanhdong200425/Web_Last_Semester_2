@@ -10,18 +10,31 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function index(){
+    public function index()
+    {
+        $user = session('admin');
+        $username = $user['username'];
+        $token = $user['_token'];
         $albumnQuantity = Albumn::count();
         $singerQuantity = Singer::count();
         $songQuantity = Song::count();
         $userQuantity = User::count();
-        $singersList = Singer::paginate(5);
+        $singersList = Singer::orderBy('country', 'asc')->paginate(5);
         return view('pages.dashboard')->with([
             'albumnQuantity' => $albumnQuantity,
             'singerQuantity' => $singerQuantity,
             'songQuantity' => $songQuantity,
             'userQuantity' => $userQuantity,
             'singersList' => $singersList,
+            'username' => $username,
+            'token' => $token,
         ]);
+    }
+
+    public function delete(Request $request)
+    {
+        $singer = Singer::find($request->singer_id);
+        $singer->delete();
+        return redirect()->route('dashboard');
     }
 }

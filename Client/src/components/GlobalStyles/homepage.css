@@ -26,7 +26,7 @@ header, aside {
 }
 main,footer {
     padding: 10px 20px;
-    background: #A7CDCC;
+    /* background: #A7CDCC; */
 }
 
 .wrapper .row {

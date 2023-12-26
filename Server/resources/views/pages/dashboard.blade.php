@@ -1,4 +1,9 @@
+@php 
+    $user = session('admin');
+    $username = strtoupper($user['username']);
+@endphp
 @extends('layouts.app')
+@section('User name', $username)
 @section('title', 'Dashboard')
 @section('main-content')
     {{-- Overview --}}
@@ -81,7 +86,7 @@
 
         {{-- Start of Row --}}
         <div class="card-box pb-10">
-            <div class="h4 pd-20 mb-0">Top Singers</div>
+            <div class="h4 pd-20 mb-0">Singer List</div>
             <table class="data-table table nowrap">
                 <thead>
                     <tr>
@@ -124,7 +129,15 @@
                             <td>
                                 <div class="table-actions">
                                     <a href="#" data-color="#265ed7"><i class="icon-copy dw dw-edit2"></i></a>
-                                    <a href="#" data-color="#e95959"><i class="icon-copy dw dw-delete-3"></i></a>
+                                    <form id="deleteSinger{{$singer->singer_id}}"
+                                        action="{{ route('dashboard.delete-singer', ['singer_id' => $singer->singer_id]) }}"
+                                        method="post">
+                                        @csrf
+                                        @method('delete')
+                                        <a class="ml-2" style="cursor: pointer" data-color="#e95959" onclick="event.preventDefault(); document.getElementById('deleteSinger{{$singer->singer_id}}').submit();">
+                                            <i class="icon-copy dw dw-delete-3"></i>
+                                        </a>
+                                    </form>
                                 </div>
                             </td>
                         </tr>

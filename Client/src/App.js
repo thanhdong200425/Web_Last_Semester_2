@@ -4,12 +4,14 @@ import { publicRoutes, privateRoutes } from './routes';
 import { DefaultLayout } from './components/Layout';
 import { Fragment } from 'react';
 
-import Toast from './components/Layout/components/Toast';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
     return (
         <Router>
             <div className="App">
+                <ToastContainer />
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         let Layout = DefaultLayout;

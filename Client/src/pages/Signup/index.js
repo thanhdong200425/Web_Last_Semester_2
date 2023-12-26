@@ -21,77 +21,114 @@ function Signup() {
         }
     }
     return (
-        <div className="flex justify-center items-center w-full h-screen">
-            <div className="w-full md:w-[600px] p-5 shadow md:shadow-white">
-                <center>
-                    <h1 className="m-0 font-bold text-red-600">Sign up</h1>
-                </center>
-                <div className="my-5">
-                    <i className="far fa-user -mr-4" />
-                    <input
-                        ref={username}
-                        type="text"
-                        className="w-full h-10 bg-transparent px-8 outline-none border-b-2 border-white"
-                        placeholder="Username"
-                    />
+        <main className='main_login_signup'>
+            <div className="box">
+                <div className="inner-box">
+                    <div className="forms-wrap">
+                        <form
+                            action="index.html"
+                            autocomplete="off"
+                            className="sign-up-form form_login_signup"
+                        >
+                            <div className="logo">
+                                <img src="../img/JoySongpng.png" />
+                            </div>
+
+                            <div className="heading">
+                                <h2>Sự bắt đầu mới</h2>
+                                <h6>Bạn đã có tài khoản?</h6>
+                                <a href="/login" className="toggle">
+                                    Đăng nhập ngay
+                                </a>
+                                <br />
+                                <br />
+                            </div>
+
+                            <div className="actual-form">
+                                <div className="input-wrap">
+                                    <input
+                                        type="text"
+                                        minlength="4"
+                                        className="input-field"
+                                        autocomplete="off"
+                                        required
+                                    />
+                                    <label>Tài khoản</label>
+                                </div>
+
+                                <div className="input-wrap">
+                                    <input
+                                        type="email"
+                                        className="input-field"
+                                        autocomplete="off"
+                                        required
+                                    />
+                                    <label>Email</label>
+                                </div>
+
+                                <div className="input-wrap">
+                                    <input
+                                        type="password"
+                                        minlength="4"
+                                        className="input-field"
+                                        autocomplete="off"
+                                        required
+                                    />
+                                    <label>Mật khẩu</label>
+                                </div>
+
+                                <input
+                                    value="Đăng ký"
+                                    className="sign-btn text-center"
+                                />
+
+                                <p className="text">
+                                    Bằng cách đăng ký, tôi đồng ý với
+                                    <a href="#">Điều khoản dịch vụ </a> và
+                                    <a href="#">Chính sách bảo mật</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div className="carousel">
+                        <div className="images-wrapper">
+                            <img
+                                src="../img/image1.png"
+                                className="image_login_signup image img-1 show"
+                                alt=""
+                            />
+                            <img
+                                src="../img/image2.png"
+                                className="image_login_signup image img-2"
+                                alt=""
+                            />
+                            <img
+                                src="../img/image3.png"
+                                className="image_login_signup image img-3"
+                                alt=""
+                            />
+                        </div>
+
+                        <div className="text-slider">
+                            <div className="text-wrap">
+                                <div className="text-group">
+                                    <h2>Nghe nhạc mọi lúc mọi nơi</h2>
+                                    <h2>Tạo danh sách phát của riêng bạn</h2>
+                                    <h2>Nghe nhạc không sợ quảng cáo</h2>
+                                </div>
+                            </div>
+
+                            <div className="bullets">
+                                <span className="active" data-value="1"></span>
+                                <span data-value="2"></span>
+                                <span data-value="3"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="relative my-5">
-                    <i className="fas fa-key -mr-4" />
-                    <input
-                        ref={pw}
-                        type={isShowPw ? 'text' : 'password'}
-                        className="relative w-full h-10 bg-transparent px-8 outline-none border-b-2 border-white"
-                        placeholder="Password"
-                    />
-                    <i
-                        className={
-                            (isShowPw ? 'fa-eye-slash' : 'fa-eye') +
-                            ' far absolute right-1 top-4 cursor-pointer'
-                        }
-                        onClick={() => setShowPw(!isShowPw)}
-                    />
-                </div>
-                <div className="relative my-5">
-                    <i className="fas fa-key -mr-4" />
-                    <input
-                        ref={repw}
-                        type={isShowRePw ? 'text' : 'password'}
-                        className="relative w-full h-10 bg-transparent px-8 outline-none border-b-2 border-white"
-                        placeholder="Enter password again"
-                    />
-                    <i
-                        className={
-                            (isShowRePw ? 'fa-eye-slash' : 'fa-eye') +
-                            ' far absolute right-1 top-4 cursor-pointer'
-                        }
-                        onClick={() => setShowRePw(!isShowRePw)}
-                    />
-                </div>
-                <div className="my-5">
-                    Do you already have an account?{' '}
-                    <Link to="/login" className="text-red-600 hover:underline">
-                        Log in here.
-                    </Link>
-                </div>
-                <Link to="/">
-                    <button className="inline-block px-6 py-3 font-semibold tracking-wide border border-red-600 rounded">
-                        Go back
-                    </button>
-                </Link>
-                <button
-                    onClick={() =>
-                        signupHandle(
-                            username.current.value,
-                            pw.current.value,
-                            repw.current.value,
-                        )
-                    }
-                    className="float-right inline-flex items-center justify-center px-6 py-3 font-semibold tracking-wide bg-red-600 rounded"
-                >
-                    Sign up
-                </button>
             </div>
-        </div>
+        </main>
     );
 }
 
