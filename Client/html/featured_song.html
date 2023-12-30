@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- link font-iconbox  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/featured_song.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <!-- <audio src="../audios/taivisao-mck.mp3" id="audio"></audio> -->
+            <!-- @include('layout.user.sidebar') -->
+            <div class="col-sm-2" id="sidebar">
+                <aside>
+                    <!-- sidebar -->
+                    <div class="logo">
+                        <a href="homepage.html" id="logo">
+                            <i class='bx bxl-spotify bx-lg'></i>
+                            <b>Spytifo</b>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <h6>Menu</h6>
+                        <a id="home" href="homepage.html" class="menu_title">
+                            <i class='bx bxs-home-alt-2 bx-sm'></i>
+                            <b class="title">Home</b>
+                        </a>
+                        <a id="albumns" href="" class="menu_title">
+                            <i class='bx bxs-book-bookmark bx-sm'></i>
+                            <b class="title">Albumns</b>
+                        </a>
+                        <a id="songs" href="" class="menu_title">
+                            <i class='bx bxs-music bx-sm'></i>
+                            <b class="title">Songs</b>
+                        </a>
+                    </div>
+
+                    <div class="menu">
+                        <h6>Playlist</h6>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist1</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist2</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist3</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist4</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist5</b>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-sm-10" id="header_content_footer">
+                <!-- @include('layout.user.header') -->
+                <header id="header-navbar">
+                    <div class="back_next">
+                        <a href=""><i class='bx bx-chevron-left bx-md'></i></a>
+                        <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
+                    </div>
+                    <div class="search" >
+                        <i id="searchIcon" class='bx bx-search bx-sm'></i>
+                        <form action="#" method="get">
+                            <input type="text" id="search" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="user_profile">
+                        <div class="userName">Username</div>
+                        <div class="userImg"><img src="" alt=""><i class='bx bxs-user-circle bx-md'></i></div>
+                        <div class="opt">
+                            <div class="dropdown">
+                                <a id="myDropdownToggle" class="btn dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-chevron-down bx-md'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </header>
+
+                <!-- @yeild('content') -->
+                <main>
+                    <div class="main_body row">
+                        <div class="title">
+                            <h3><a href="">Best of 2023 VietNam</a></h3>
+                        </div>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>1</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>2</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>3</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>4</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>5</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row hidden-content">
+                            <div class="col-sm-1 numb">
+                                <h1>6</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>7</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>8</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>9</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>10</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>11</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>12</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>13</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>14</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="content row">
+                            <div class="col-sm-1 numb">
+                                <h1>15</h1>
+                            </div>
+                            <div class="col-sm-3 image p-0">
+                                <img src="../img/taivisao_mck.jpg" alt="taivisao_mck" width="80%" height="120">
+                            </div>
+                            <a href="" class="col-sm-6 detail">
+                                <h5> Tại vì sao ?</h5>
+                                <h6> RPT MCK</h6>
+                            </a>
+                            <div class="col-sm-2 btn_group">
+                                <button class="btn_play">
+                                    <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" >
+                                        <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </button>
+
+                                <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
+                                        <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="show_more">
+                            <button class="btn_show_more">
+                                Top 15 
+                            </button>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- @include('layout.user.footer') -->
+                <footer>
+                    <!-- place footer here -->
+                    <div class="contact">
+                        <div class="company">
+                            <div class="title">
+                                <h5>Company</h5>
+                            </div>
+                            <div class="subtitle">
+                                <a href="">About</a><br>
+                                <a href="">Jobs</a><br>
+                                <a href="">For the Record</a>
+                            </div>
+                        </div>
+                        <div class="communities">
+                            <div class="title">
+                                <h5>Communities</h5>
+                            </div>
+                            <div class="subtitle">
+                                <a href="">For Artists</a><br>
+                                <a href="">Developers</a><br>
+                                <a href="">Advertising</a><br>
+                                <a href="">Investors</a><br>
+                                <a href="">For the Record</a>
+                            </div>
+                        </div>
+                        <div class="useful">
+                            <div class="title">
+                                <h5>Useful link</h5>
+                            </div>
+                            <div class="subtitle">
+                                <a href="">Support</a><br>
+                                <a href="">Free Mobile App</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social row">
+                        <div class="col-sm-4">
+                            <a href="" class="twitter">
+                                <i class='bx bxl-twitter bx-sm'></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="" class="insta">
+                                <i class='bx bxl-instagram-alt bx-sm'></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="" class="facebook">
+                                <i class='bx bxl-facebook-circle bx-sm'></i>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <div class="container-fluid play_music">
+                <div class="wrapper">
+                    <div class="left">
+                        <div class="image_music">
+                            <a href="">
+                                <img class="image_song" src="../img/albumn_99.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="">Tại Vì Sao</a>
+                            </div>
+                            <div class="singers">
+                                <a href="">RPT MCK</a>
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class='bx bxs-heart' id="heart" onclick="changeColor()"></i>
+                        </div>
+
+                    </div>
+                    <div class="mid">
+                        <div class="controls">
+                            <button class="shuffle">
+                                <i class='bx bx-shuffle'></i>
+                            </button>
+                            <button class="skip_back">
+                                <i class='bx bx-skip-previous'></i>
+                            </button>
+                            <button class="btn-play">
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <button class="skip_next">
+                                <i class='bx bx-skip-next'></i>
+                            </button>
+                            <button class="reload">
+                                <i class='bx bx-repost'></i>
+                            </button>
+                        </div>
+                        <div class="times">
+                            <span class="left_time"></span>
+                            <input type="range" value="0" class="seek_bar">
+                            <span class="right_time"></span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="lyric">
+                            <i class='bx bx-microphone'></i>
+                        </div>
+                        <div class="volume_and_bar">
+                            <div class="volume">
+                                <i class='bx bxs-volume-full' id="iconVolume"></i>
+                            </div>
+                            <input type="range" value="0" class="volume_bar" id="inputVolume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="../../js/homepage.js"></script>
+
+</body>
+</html>
