@@ -16,7 +16,7 @@
         color: #fff;
     }
 
-    header a i:hover, main .title a i:hover {
+    header a i:hover, main .fs_title a i:hover {
         border-radius: 100%;
         transition: ease-out .3s;
         background: #176C6A;
@@ -26,7 +26,7 @@
 
     }
 
-    .wrapper .row {
+    .fs_wrapper .row {
         display: flex;
         align-items: start;
     }
@@ -39,16 +39,16 @@
 
     */
 
-    .menu a {
+    .fs_menu a {
         border-radius: 10px;
     }
 
-    aside .menu a:hover {
+    aside .fs_menu a:hover {
         color: #000;
         background: #176C6A;
         transition: ease-out .3s;
     }
-    aside .menu a:hover i {
+    aside .fs_menu a:hover i {
         color: #000;
 
     }
@@ -62,35 +62,35 @@
         /* border-top-right-radius: 20px; */
     }
 
-    #logo {
+    #fs_logo {
         display: flex;
         align-items: center;
     }
-    #logo:hover {
+    #fs_logo:hover {
         color: #fff;
     }
-    #logo b {
+    #fs_logo b {
         font-size: 1.5rem;
         padding-left: 10px;
         
     }
 
     /* menu */
-    .menu {
+    .fs_menu {
         display: flex;
         flex-direction: column;
     }
-    .menu h6 {
+    .fs_menu h6 {
         margin: 20px 0;
         font-weight: bold;
         color: #fff;
     }
-    .menu_title {
+    .fs_menu_title {
         display: flex;
         align-items: center;
         padding: 10px 5px;
     }
-    .menu_title b {
+    .fs_menu_title b {
         padding-left: 10px;
     }
 
@@ -123,20 +123,20 @@
     }
     
 
-    #header_content_footer {
+    #fs_header_content_footer {
         padding: 0;
         background: #151829;
     }
 
-    .userName {
+    .fs_userName {
         color: #fff;
     }
     /* iteams's header  */
-    .back_next {
+    .fs_back_next {
         display: flex;
         width: 10%;
     }
-    .search {
+    .fs_search {
         color: rgb(153, 153, 153);
         width: 70%;
         display: flex;
@@ -144,7 +144,7 @@
     }
 
 
-    #search{
+    #fs_search{
         outline: none;
         width: 260%;
         background: #fff;
@@ -152,14 +152,14 @@
         padding: 5px 50px;
         border-radius: 20px;
     }
-    #searchIcon {
+    #fs_searchIcon {
         position: relative;
         top: 2px;
         left: 35px;
         color: rgb(153, 153, 153);
     }
 
-    .user_profile {
+    .fs_user_profile {
         display: flex;
         align-items: center;
         justify-content: end;
@@ -177,18 +177,18 @@
     ===========================
     */
 
-    .main_body{
+    .fs_main_body{
         background: #151829;
         padding: 20px;
     }
 
-    .content .numb h1{
+    .fs_content .fs_numb h1{
         font-family: Pacifico;
         color: white;
         margin-left: 25%;
     }
 
-    .main_body .title h3{
+    .fs_main_body .fs_title h3{
         font-family: Lilita One;
     }
 
@@ -204,20 +204,20 @@
         transform: scale(1.03);
     }
 
-    div.left_title_album span{
+    div.fs_left_title_album span{
         font-size: larger;
         font-family: 'Times New Roman', Times, serif;
         color: #ffffff;
         margin-left: 10px;
     }
 
-    div.left_title_album h2{
+    div.fs_left_title_album h2{
         font-family: serif;
         color: white;
     }
 
 
-    div.left_title_album p{
+    div.fs_left_title_album p{
         font-family: serif;
         color: white;
     }
@@ -250,7 +250,7 @@
         background-color: #176C6A;
     }
 
-    .content {
+    .fs_content {
         background-color: #013B44;
         border-radius: 10px;
         padding: 10px;
@@ -258,7 +258,7 @@
         margin: 10px;
     }
 
-    .content .image img{
+    .fs_content .fs_image img{
         display: block;
         transition: all .3s ease;
         border-radius: 7px;
@@ -266,21 +266,21 @@
         height: 20%;
     }
 
-    .content .image img:hover{
+    .fs_content .fs_image img:hover{
         transform: scale(1.06);
     }
 
-    .content a{
+    .fs_content a{
         display: flex;
         padding: 10px;
         margin-top: 5px;
     }
 
-    .content a h5{
+    .fs_content a h5{
         margin-left: -25%;
     }
 
-    .content a h6{
+    .fs_content a h6{
         margin-left: 50%;
         margin-top: 5px;
     }
@@ -295,7 +295,7 @@
         transform: scale(1.2);
     }
 
-    .btn_group button.btn_play{
+    .fs_btn_group button.fs_btn_play{
         width: 35px;
         height: 35px;
         background-color: black;
@@ -306,20 +306,20 @@
         transition: all .3s ease;
     }
 
-    .content .btn_group button.btn_play:hover{
+    .fs_content .fs_btn_group button.fs_btn_play:hover{
         background-color: #176C6A;
         transform: scale(1.1);
     }
 
-    .content a h5:hover{
+    .fs_content a h5:hover{
         color: #accbcf;
     }
 
-    .content a h6:hover{
+    .fs_content a h6:hover{
         font-style: italic;
     } 
 
-    .content a h6{
+    .fs_content a h6{
         color: #a8a8a8;
     }
 
@@ -327,7 +327,7 @@
         color: white;
     }
 
-    .btn_group{
+    .fs_btn_group{
         color: white;
     }
 
@@ -358,7 +358,7 @@
         background-color: #3a3a4a;
     }
 
-    .content.row:nth-last-child(-n+20) {
+    .fs_content.row:nth-last-child(-n+20) {
         display: none;
     }
 
@@ -378,11 +378,11 @@
         
     }
     /* social */
-    .social {
+    .fs_social {
         display: flex;
         justify-content: space-around;
     }
-    .social > div > a {
+    .fs_social > div > a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -392,67 +392,67 @@
         margin: 0 10px;
         transition: ease .3s;
     }
-    .social >div > a > i {
+    .fs_social >div > a > i {
         padding: 10px;
         color: #fff;
     }
 
     /* hover  social */
-    .social a.facebook:hover {
+    .fs_social a.facebook:hover {
         border: 1px solid blue;
         background: blue;
     }
-    .social a.insta:hover {
+    .fs_social a.insta:hover {
         border: 1px solid palevioletred;
         background: palevioletred;
     }
-    .social a.twitter:hover {
+    .fs_social a.twitter:hover {
         border: 1px solid royalblue;
         background: royalblue;
     }
 
 
     /* contact */
-    .contact {
+    .fs_contact {
         display: flex;
     }
-    .contact > div.communities {
+    .fs_contact > div.communities {
         padding: 0 70px;
     }
-    .contact .title {
+    .fs_contact .fs_title {
         color: #fff;
     }
-    .contact .subtitle a {
+    .fs_contact .fs_subtitle a {
         color: #a8a8a8;
     }
-    .contact .subtitle a:hover {
+    .fs_contact .fs_subtitle a:hover {
         text-decoration: underline;
     }
 
 
     /* Play music */
-    .play_music {
+    .fs_play_music {
         position: sticky;
         bottom: 0;
         background: #080705;
         z-index: 10;
     }
-    .play_music .wrapper {
+    .fs_play_music .fs_wrapper {
         display: flex;
         justify-content: space-between;
         height: 75px;
         padding: 0px 20px;
     }
-    .play_music .wrapper i {
+    .fs_play_music .fs_wrapper i {
         font-size: 20px;
         cursor: pointer;
     }
 
     /* Left */
-    .left {
+    .fs_left {
         position: relative;
     }
-    .heart::before {
+    .fs_heart::before {
         content: 'Save to Library';
         position: absolute;
         padding: 0px 20px;
@@ -466,11 +466,11 @@
         transition: ease .3s;
 
     }
-    #heart.clicked {
+    #fs_heart.clicked {
         transition: .5s;
         color: #176C6A;
     }
-    .play_music .wrapper .left {
+    .fs_play_music .fs_wrapper .fs_left {
         width: 25%;
         display: flex;
         align-items: center;
@@ -478,18 +478,18 @@
     }
 
 
-    .play_music .wrapper .left .desc .singers a {
+    .fs_play_music .fs_wrapper .fs_left .fs_desc .fs_singers a {
         font-size: 12px;
         color: #a1a1a1;
         
     }
-    .play_music .wrapper .left .desc .singers a:hover {
+    .fs_play_music .fs_wrapper .fs_left .fs_desc .fs_singers a:hover {
         color: #fff;
         text-decoration: underline;
         
     }
 
-    .play_music .wrapper .left .image_music {
+    .fs_play_music .fs_wrapper .fs_left .fs_image_music {
         width: 55px;
         height: 55px;
         display: flex;
@@ -497,47 +497,47 @@
         align-items: center;
 
     }
-    .play_music .wrapper .left .image_music img {
+    .fs_play_music .fs_wrapper .fs_left .fs_image_music img {
         border-radius: 5px;
     }
 
     /* mid */
-    .play_music .wrapper .mid {
+    .fs_play_music .fs_wrapper .fs_mid {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .play_music .wrapper .mid .controls {
+    .fs_play_music .fs_wrapper .fs_mid .fs_controls {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
     }
-    .play_music .wrapper .mid .controls button {
+    .fs_play_music .fs_wrapper .fs_mid .fs_controls button {
         background: transparent;
         border: none;
     }
-    .play_music .wrapper .mid .controls i.bx-shuffle,
-    .play_music .wrapper .mid .controls i.bx-repost {
+    .fs_play_music .fs_wrapper .fs_mid .fs_controls i.bx-shuffle,
+    .fs_play_music .fs_wrapper .fs_mid .fs_controls i.bx-repost {
         font-size: 22px;
     }
-    .play_music .wrapper .mid .controls i {
+    .fs_play_music .fs_wrapper .fs_mid .fs_controls i {
         font-size: 30px;
     }
-    .play_music .wrapper .mid .times {
+    .fs_play_music .fs_wrapper .fs_mid .fs_times {
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
-    .play_music .wrapper .mid .times .left_time,
-    .play_music .wrapper .mid .times .right_time
+    .fs_play_music .fs_wrapper .fs_mid .fs_times .fs_left_time,
+    .fs_play_music .fs_wrapper .fs_mid .fs_times .fs_right_time
     {
         height: 5px;
         font-size: 12px;
     }
-    .play_music .wrapper .mid .btn-play {
+    .fs_play_music .fs_wrapper .fs_mid .fs_btn-play {
         position: relative;
         width: 50px;
         height: 50px;
@@ -548,7 +548,7 @@
         border: none;
     }
 
-    .btn-play span {
+    .fs_btn-play span {
         position: absolute;
         top: 50%;
         left: 25%;
@@ -561,14 +561,14 @@
         transition: .3s;
     }
 
-    .btn-play span:nth-child(2) {
+    .fs_btn-play span:nth-child(2) {
         left: 55%;
         transform-origin: center;
     }
-    .btn-play.pause span:nth-child(2) {
+    .fs_btn-play.pause span:nth-child(2) {
         transform: translateY(-50%) scaleY(0);
     }
-    .btn-play.pause span:nth-child(1) {
+    .fs_btn-play.pause span:nth-child(1) {
         width: 35%;
         left: 53%;
         transform: translate(-50%,-50%);
@@ -576,7 +576,7 @@
         clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
     }
 
-    input[type="range"].seek_bar {
+    input[type="range"].fs_seek_bar {
         width: 450px;
         height: 5px;
         border-radius: 30px;
@@ -585,7 +585,7 @@
         -webkit-appearance: none;
         overflow: hidden;
     }
-    .seek_bar::-webkit-slider-thumb {
+    .fs_seek_bar::-webkit-slider-thumb {
         -webkit-appearance: none;
         width: 5px;
         height: 20px;
@@ -613,7 +613,7 @@
     .bxs-volume-full.mute::after {
         scale: 1;
     }
-    input[type="range"].volume_bar {
+    input[type="range"].fs_volume_bar {
         width: 100%;
         height: 4px;
         border: none;
@@ -623,7 +623,7 @@
         -webkit-appearance: none;
         overflow: hidden;
     }
-    .volume_bar::-webkit-slider-thumb {
+    .fs_volume_bar::-webkit-slider-thumb {
         -webkit-appearance: none;
         width: 5px;
         height: 20px;
@@ -631,7 +631,7 @@
         box-shadow: -400px 0 0 400px #176C6A;
 
     }
-    .play_music .wrapper .right {
+    .fs_play_music .fs_wrapper .fs_right {
         position: relative;
         width: 25%;
         display: flex;
@@ -639,7 +639,7 @@
         justify-content: center;
         gap: 30px;
     }
-    .play_music .wrapper .right .lyric::before {
+    .fs_play_music .fs_wrapper .fs_right .fs_lyric::before {
         content: 'Lyric';
         position: absolute;
         padding: 0px 20px;
@@ -652,10 +652,10 @@
         scale: 0;
         transition: ease .3s;
     }
-    .play_music .wrapper .right .lyric:hover::before{
+    .fs_play_music .fs_wrapper .fs_right .fs_lyric:hover::before{
         scale: 1;
     }
-    .volume_bar {
+    .fs_volume_bar {
         width: 100px;
         height: 3px;
         border: 1px solid #5c5c5c;
@@ -664,27 +664,27 @@
         position: relative;
     }
 
-    .play_music .wrapper .right .volume_bar .circle {
+    .fs_play_music .fs_wrapper .fs_right .fs_volume_bar .circle {
         position: absolute;
         top: -6px;
         left: -6px;
     }
-    .play_music .wrapper .right .volume_bar .circle i {
+    .fs_play_music .fs_wrapper .fs_right .fs_volume_bar .circle i {
         font-size: 14px;
         display: none;  
     }
 
-    .play_music .wrapper .right .volume_bar:hover #circle_times_volume{
+    .fs_play_music .fs_wrapper .fs_right .fs_volume_bar:hover #circle_times_volume{
         display: block;
     }
 
-    .play_music .wrapper .right .volume_and_bar {
+    .fs_play_music .fs_wrapper .fs_right .fs_volume_and_bar {
         display: flex;
         align-items: center;
         gap: 10px;
     }
 
-    .play_music .wrapper .right i {
+    .fs_play_music .fs_wrapper .fs_right i {
         font-size: 22px;
     }
 
