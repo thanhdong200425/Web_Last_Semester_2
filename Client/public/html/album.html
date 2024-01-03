@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- link font-iconbox  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/album.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <!-- <audio src="../audios/taivisao-mck.mp3" id="audio"></audio> -->
+            <!-- @include('layout.user.sidebar') -->
+            <div class="col-sm-2" id="sidebar">
+                <aside>
+                    <!-- sidebar -->
+                    <div class="logo">
+                        <a href="homepage.html" id="logo">
+                            <i class='bx bxl-spotify bx-lg'></i>
+                            <b>Spytifo</b>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <h6>Menu</h6>
+                        <a id="home" href="homepage.html" class="menu_title">
+                            <i class='bx bxs-home-alt-2 bx-sm'></i>
+                            <b class="title">Home</b>
+                        </a>
+                        <a id="albumns" href="" class="menu_title">
+                            <i class='bx bxs-book-bookmark bx-sm'></i>
+                            <b class="title">Albumns</b>
+                        </a>
+                        <a id="songs" href="" class="menu_title">
+                            <i class='bx bxs-music bx-sm'></i>
+                            <b class="title">Songs</b>
+                        </a>
+                    </div>
+
+                    <div class="menu">
+                        <h6>Playlist</h6>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist1</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist2</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist3</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist4</b>
+                        </a>
+                        <a href="" class="menu_title">
+                            <b class="title">Playlist5</b>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-sm-10" id="header_content_footer">
+                <!-- @include('layout.user.header') -->
+                <header id="header-navbar">
+                    <div class="back_next">
+                        <a href=""><i class='bx bx-chevron-left bx-md'></i></a>
+                        <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
+                    </div>
+                    <div class="search" >
+                        <i id="searchIcon" class='bx bx-search bx-sm'></i>
+                        <form action="#" method="get">
+                            <input type="text" id="search" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="user_profile">
+                        <div class="userName">Username</div>
+                        <div class="userImg"><img src="" alt=""><i class='bx bxs-user-circle bx-md'></i></div>
+                        <div class="opt">
+                            <div class="dropdown">
+                                <a id="myDropdownToggle" class="btn dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-chevron-down bx-md'></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </header>
+
+                <!-- @yeild('content') -->
+
+                <main>
+                    <!-- songs for you  -->
+                    
+                    <div id="foryou" class="foryou">
+
+                        <br>
+
+                        <div class="title">
+                            <h3><a href="">For you</a></h3>
+                            <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
+                        </div>
+                        <div class="songs_foryou row">
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 ">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mt-4">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mt-4">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mt-4">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mt-4">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_99.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- TOP 2023  -->
+                    <div id="latestsongs" class="foryou">
+                        <div class="title">
+                            <h3><a href="">VietNam time</a></h3>
+                            <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
+                        </div>
+                        <div class="songs_foryou row">
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="latestsongs" class="foryou">
+                        <div class="title">
+                            <h3><a href="">Best Album of 2023</a></h3>
+                            <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
+                        </div>
+                        <div class="songs_foryou row">
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="">
+                                    <div class="item">
+                                        <div class="img">
+                                            <div id="icon_play">
+                                                <i class='bx bx-play bx-lg'></i>
+                                            </div>
+                                            <img src="../img/albumn_obito.jpg" alt="albumn_99%">
+                                        </div>
+                                        <div class="content">
+                                            <div class="title">
+                                                <h3>Title</h3>
+                                            </div>
+                                            <div class="desc">
+                                                <b>Description</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- @include('layout.user.footer') -->
+                <footer>
+                    <!-- place footer here -->
+                    <div class="contact">
+                        <div class="company">
+                            <div class="title">
+                                <h5>Company</h5>
+                            </div>
+                            <div class="subtitle">
+                                <a href="">About</a><br>
+                                <a href="">Jobs</a><br>
+                                <a href="">For the Record</a>
+                            </div>
+                        </div>
+                        <div class="communities">
+                            <div class="title">
+                                <h5>Communities</h5>
+                            </div>
+                            <div class="subtitle">
+                                <a href="">For Artists</a><br>
+                                <a href="">Developers</a><br>
+                                <a href="">Advertising</a><br>
+                                <a href="">Investors</a><br>
+                                <a href="">For the Record</a>
+                            </div>
+                        </div>
+                        <div class="useful">
+                            <div class="title">
+                                <h5>Useful link</h5>
+                            </div>
+                            <div class="subtitle">
+                                <a href="">Support</a><br>
+                                <a href="">Free Mobile App</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social row">
+                        <div class="col-sm-4">
+                            <a href="" class="twitter">
+                                <i class='bx bxl-twitter bx-sm'></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="" class="insta">
+                                <i class='bx bxl-instagram-alt bx-sm'></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="" class="facebook">
+                                <i class='bx bxl-facebook-circle bx-sm'></i>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <div class="container-fluid play_music">
+                <div class="wrapper">
+                    <div class="left">
+                        <div class="image_music">
+                            <a href="">
+                                <img class="image_song" src="../img/albumn_99.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="">Tại Vì Sao</a>
+                            </div>
+                            <div class="singers">
+                                <a href="">RPT MCK</a>
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class='bx bxs-heart' id="heart" onclick="changeColor()"></i>
+                        </div>
+
+                    </div>
+                    <div class="mid">
+                        <div class="controls">
+                            <button class="shuffle">
+                                <i class='bx bx-shuffle'></i>
+                            </button>
+                            <button class="skip_back">
+                                <i class='bx bx-skip-previous'></i>
+                            </button>
+                            <button class="btn-play">
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <button class="skip_next">
+                                <i class='bx bx-skip-next'></i>
+                            </button>
+                            <button class="reload">
+                                <i class='bx bx-repost'></i>
+                            </button>
+                        </div>
+                        <div class="times">
+                            <span class="left_time"></span>
+                            <input type="range" value="0" class="seek_bar">
+                            <span class="right_time"></span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="lyric">
+                            <i class='bx bx-microphone'></i>
+                        </div>
+                        <div class="volume_and_bar">
+                            <div class="volume">
+                                <i class='bx bxs-volume-full' id="iconVolume"></i>
+                            </div>
+                            <input type="range" value="0" class="volume_bar" id="inputVolume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="../../js/homepage.js"></script>
+</body>
+
+</html>

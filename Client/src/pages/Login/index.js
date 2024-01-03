@@ -1,31 +1,40 @@
-import { useRef, useState } from 'react';
+import { useRef, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import * as authApi from '~/apis/auth.api';
+import { AuthContext } from '~/context/AuthContext';
 
 function Login() {
     const username = useRef(null);
     const password = useRef(null);
+    const { loginContextHandle } = useContext(AuthContext);
     const handleLogin = async () => {
         const regex =
             /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]+$/;
-        if (!regex.test(password)) {
+        if (!regex.test(password.current.value)) {
             toast.error(
                 'Mật khẩu phải bao gồm tối thiểu ít nhất 1 chữ cái viết hoa, 1 ký tự đặc biệt và 1 số!',
             );
             return;
         }
-        
-        const data = await authApi.login({
-            username: username.current.value,
-            password: password.current.value,
-        });
-        console.log(data);
-        data.status && toast.success('Đăng nhập thành công!');
-        !data.status && toast.error('Tài khoản hoặc mật khẩu sai!');
-    };
 
+        const request = await authApi
+            .login({
+                username: username.current.value,
+                password: password.current.value,
+            })
+            .then((data) => {
+                data.status && toast.success('Đăng nhập thành công!');
+                data.status && loginContextHandle(data.data);
+                !data.status && toast.error('Tài khoản hoặc mật khẩu sai!');
+                return data;
+            })
+            .then((data) => {
+                if (data.status) window.location.pathname = '/';
+            })
+            .catch((error) => console.log(error));
+    };
     return (
         <main className="main_login_signup">
             <div className="box">

@@ -1,7 +1,26 @@
-POST http://127.0.0.1:8000/api/sign-in
+POST http://127.0.0.1:8000/api/
 Content-Type: application/json
 
 {
-  "username": "your_username",
-  "password": "your_password"
+  "username": "admin",
+  "password": "@Linh1234"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/albumn/
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/albumn/1
+Content-Type: application/json
+
+###
+
+POST http://127.0.0.1:8000/api/albumn/1/add_song
+Content-Type: application/application/x-www-form-urlencoded
+
+{
+  "song_id": 1,
 }

@@ -1,9 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useContext } from 'react';
 
 import SeekSlider from './components/SeekSlider';
+import { SongContext } from '~/context/SongContext';
 
 function Seekbar() {
+    const { currentSongs, currentSongIndex } = useContext(SongContext);
     const [play, setPlay] = useState('pause');
     const [heart, setHeart] = useState('');
     const [currentVolume, setCurrentVolume] = useState(0);
@@ -37,7 +39,7 @@ function Seekbar() {
 
     return (
         <div className="container-fluid play_music pb-4">
-            <audio ref={audio} src="./audios/taivisao-mck.mp3"></audio>
+            <audio ref={audio} src="/audios/taivisao-mck.mp3"></audio>
             <div className="wrapper">
                 <div className="left">
                     <div className="image_music">

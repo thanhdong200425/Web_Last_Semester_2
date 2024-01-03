@@ -132,10 +132,10 @@ Header
 */
 
 #header_content_footer {
-    background: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 0;
+        /* background: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 0; */
 }
 
 
@@ -280,9 +280,9 @@ button.button_share:hover{
     transform: scale(1.06);
 }
 
-.content a{
+/* .content a{
     margin-top: 5%;
-}
+} */
 
 button.btn_more{
     margin: 8% 0 15% 30%;

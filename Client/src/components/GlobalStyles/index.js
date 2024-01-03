@@ -6,6 +6,7 @@ import './detail_album.css'
 import './login_register.css'
 import './singers.css';
 import './playlist.css';
+import './featured_song.css';
 
 
 function GlobalStyle({ children }) {

@@ -21,6 +21,7 @@ header a i:hover, main .title a i:hover {
 }
 main,footer {
     padding: 10px 20px;
+
 }
 
 .wrapper .row {
@@ -45,24 +46,27 @@ aside .menu a:hover {
     background: #176C6A;
     transition: ease-out .3s;
 }
-aside a:hover i {
+aside .menu a:hover i {
     color: #000;
 
 }
 
 #sidebar {
-    padding: 0px 10px;
+    padding:10px 30px;
     position: sticky;
     top: 0;
     height: 100vh;
-    background:#080705;
+    background:#080705 ;
+    /* border-top-right-radius: 20px; */
 }
 
 #logo {
     display: flex;
     align-items: center;
 }
-
+#logo:hover {
+    color: #fff;
+}
 #logo b {
     font-size: 1.5rem;
     padding-left: 10px;
@@ -107,11 +111,20 @@ header {
     align-items: center;
     padding: 10px 20px;
     z-index: 1;
+    backdrop-filter: blur(50px); 
 }
+
 header.scrolled {
     background: #1518297c;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px); 
 }
+
+
+#header_content_footer {
+    padding: 0;
+    background: #151829;
+}
+
 .userName {
     color: #fff;
 }
@@ -120,21 +133,20 @@ header.scrolled {
     display: flex;
     width: 10%;
 }
-
-.search form {
+.search {
+    color: rgb(153, 153, 153);
+    width: 70%;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 
 #search{
     outline: none;
-    width: 90%;
-    color: #000;
+    width: 260%;
     background: #fff;
     border: 1px solid #fff;
-    padding: 8px 50px;
+    padding: 5px 50px;
     border-radius: 20px;
 }
 #searchIcon {
@@ -155,7 +167,6 @@ header.scrolled {
 
 
 
-
 /*
 ===========================
 main  
@@ -165,20 +176,24 @@ main
 main {
     background: #151829;
 }
+
+.banner {
+    /* display: block; */
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.banner img{
+    width: 100%;
+
+}
+
 .foryou, .continue_trending {
     margin-bottom: 30px;
 }
-h3 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.title h3 a {
+
+.foryou a {
     color: #fff;
-}
-.title h3 a:hover {
-    color: #fff;
-    text-decoration: underline;
 }
 
 .title {
@@ -191,17 +206,14 @@ h3 {
     text-decoration: underline;
     color: #fff;
 }
-#foryou .songs_foryou .item,
-#latestsongs .item {
+main .songs_foryou .item {
     padding: 20px;
     border-radius: 10px;
     background: #013B44;
 }
-#foryou .songs_foryou .item:hover,
-#latestsongs .item:hover {
+main .songs_foryou .item:hover {
     background: #176C6A;
     transition: ease-out .2s;
-    color: #fff;
 
 }
 main .songs_foryou .item:hover img {
@@ -243,18 +255,17 @@ main .songs_foryou .item:hover #icon_play {
 }
 
 /* active */
-.sidebar-active {
+#albumns {
     border-radius: 10px;
     color: #000;
-    background: #176c6a;
+    background: #176C6A;
 }
-.sidebar-active i {
+#albumns i {
     color: #000;
 }
 
 /*Countinue and trending  */
-.continue_trending {
-}
+
 .continue_listening {
     padding: 0 20px;
 }
@@ -263,7 +274,6 @@ main .songs_foryou .item:hover #icon_play {
     border-radius: 10px;
 }
 .continue_listening .image img{
-    height: 150px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -272,14 +282,9 @@ main .songs_foryou .item:hover #icon_play {
     padding-top: 10px;
 }
 .continue_listening .detail h5 {
-    margin: 0 0 8px;
-    font-size: 1.25rem;
-    font-weight: 600;
     color: #000;
 }
 .continue_listening .detail h6{
-    font-size: 1rem;
-    font-weight: 600;
     color: #a8a8a8;
 }
 .continue_listening .detail h5:hover {
@@ -289,22 +294,6 @@ main .songs_foryou .item:hover #icon_play {
     text-decoration: underline;
 }
 
-/* continue trending singers */
-.trending_singers .image img {
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-}
-.trending_singers .singer_name {
-    font-weight: bold;
-    margin-top: 15px;
-    text-align: center;
-    color: #000;
-}
-.trending_singers .singer_name a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
 /* 
 
 ===========================
@@ -395,7 +384,6 @@ footer {
 .left {
     position: relative;
 }
-
 .heart::before {
     content: 'Save to Library';
     position: absolute;
@@ -404,13 +392,11 @@ footer {
     backdrop-filter: blur(5px);
     color: #fff;
     top: -10px;
-    left: 110px;
+    left: 60px;
     border-radius: 10px;
+    /* scale: 0; */
     transition: ease .3s;
-    scale: 0;
-}
-.heart:hover::before {
-    scale: 1;
+
 }
 #heart.clicked {
     transition: .5s;
@@ -480,7 +466,7 @@ footer {
 .play_music .wrapper .mid .times .left_time,
 .play_music .wrapper .mid .times .right_time
 {
-    /* height: 5px; */
+    height: 5px;
     font-size: 12px;
 }
 .play_music .wrapper .mid .btn-play {

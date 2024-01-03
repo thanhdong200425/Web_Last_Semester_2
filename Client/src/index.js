@@ -1,20 +1,26 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 
-import './tailwind.css'
+import './tailwind.css';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import Loading from './components/Layout/components/Loading';
+import { AuthContextProvider } from './context/AuthContext';
+import { SongContextProvider } from './context/SongContext';
 const App = lazy(() => import('./App'));
 const GlobalStyles = lazy(() => import('./components/GlobalStyles'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Suspense fallback={<Loading/>}>
+        <Suspense fallback={<Loading />}>
             <GlobalStyles>
-                <App />
+                <AuthContextProvider>
+                    <SongContextProvider>
+                        <App />
+                    </SongContextProvider>
+                </AuthContextProvider>
             </GlobalStyles>
         </Suspense>
     </React.StrictMode>,

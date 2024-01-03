@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function SeekSlider({ audio }) {
     const [currentTime, setCurrentTime] = useState(
-        (audio.current.currentTime * 100) / audio.current.duration,
+        (audio.current.currentTime * 100) / audio.current?.duration || 0,
     );
     useEffect(() => {
         const interval = setInterval(

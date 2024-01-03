@@ -1,10 +1,19 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Carousel, initTE } from 'tw-elements';
 
-import getGoalList from '~/services/api-calls/getGoalList';
+import { getAlbumns } from '~/apis/albumn';
+import { AuthContext } from '~/context/AuthContext';
 
 function Home() {
+    const [albumns, setAlbumns] = useState([]);
+    const { currentUser } = useContext(AuthContext);
+    useEffect(() => {
+        const callApi = async () => {
+            const request = await getAlbumns();
+            setAlbumns(request.data);
+        };
+        callApi();
+    }, []);
     return (
         <main>
             {/* songs for you  */}
@@ -18,90 +27,57 @@ function Home() {
                     </a>
                 </div>
                 <div className="songs_foryou row">
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
+                    {albumns.length > 0 &&
+                        albumns.map((albumn, index) => {
+                            if (index < 4)
+                                return (
+                                    <div
+                                        key={albumn.albumn_id}
+                                        className="col-md-3 col-sm-6 h-[350px]"
+                                    >
+                                        <Link
+                                            to={
+                                                '/detail_albumn/' +
+                                                albumn.albumn_id
+                                            }
+                                        >
+                                            <div className="item h-full">
+                                                <div className="img">
+                                                    <div id="icon_play">
+                                                        <i className="bx bx-play bx-lg" />
+                                                    </div>
+                                                    <img
+                                                        src={
+                                                            albumn.albumn_photo ||
+                                                            '../img/albumn_99.jpg'
+                                                        }
+                                                        alt="albumn_99%"
+                                                    />
+                                                </div>
+                                                <div className="content">
+                                                    <div className="title">
+                                                        <h3 className="text-xl">
+                                                            {albumn.albumn_name ||
+                                                                'Title'}
+                                                        </h3>
+                                                    </div>
+                                                    <div className="desc">
+                                                        {/* <b>
+                                                            {
+                                                                albumn.albumn_description
+                                                            }
+                                                        </b> */}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
                                     </div>
-                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
-                                    </div>
-                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
-                                    </div>
-                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
-                                    </div>
-                                    <img src="../img/albumn_99.jpg" alt="albumn_99%" />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                                );
+                        })}
                 </div>
             </div>
             {/* Countinue listening - Trending Singers */}
-            <div className="continue_trending row">
+            {/* <div className="continue_trending row">
                 <div className="col-sm-6 continue_listening">
                     <div className="title">
                         <h3>
@@ -137,7 +113,11 @@ function Home() {
                     <div className="content row">
                         <div className="col-sm-3">
                             <a href="detail_singer.html" className="image">
-                                <img src="../img/HIEUTHUHAI.jpg" alt="" width="100%" />
+                                <img
+                                    src="../img/HIEUTHUHAI.jpg"
+                                    alt=""
+                                    width="100%"
+                                />
                             </a>
                             <div className="singer_name">
                                 <a href="detail_singer.html">HIEUTHUHAI</a>
@@ -153,7 +133,11 @@ function Home() {
                         </div>
                         <div className="col-sm-3">
                             <a href="detail_singer.html" className="image">
-                                <img src="../img/OBITO.jpg" alt="" width="100%" />
+                                <img
+                                    src="../img/OBITO.jpg"
+                                    alt=""
+                                    width="100%"
+                                />
                             </a>
                             <div className="singer_name">
                                 <a href="detail_singer.html">Obito</a>
@@ -161,7 +145,11 @@ function Home() {
                         </div>
                         <div className="col-sm-3">
                             <a href="detail_singer.html" className="image">
-                                <img src="../img/SONTUNGMTP.jpg" alt="" width="100%" />
+                                <img
+                                    src="../img/SONTUNGMTP.jpg"
+                                    alt=""
+                                    width="100%"
+                                />
                             </a>
                             <div className="singer_name">
                                 <a href="detail_singer.html">Sơn Tùng MTP</a>
@@ -169,8 +157,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div> */}
+
             {/* Latest songs  */}
             <div id="latestsongs" className="foryou">
                 <div className="title">
@@ -189,7 +177,10 @@ function Home() {
                                     <div id="icon_play">
                                         <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
+                                    <img
+                                        src="../img/albumn_obito.jpg"
+                                        alt="albumn_99%"
+                                    />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -209,7 +200,10 @@ function Home() {
                                     <div id="icon_play">
                                         <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
+                                    <img
+                                        src="../img/albumn_obito.jpg"
+                                        alt="albumn_99%"
+                                    />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -229,7 +223,10 @@ function Home() {
                                     <div id="icon_play">
                                         <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
+                                    <img
+                                        src="../img/albumn_obito.jpg"
+                                        alt="albumn_99%"
+                                    />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -249,7 +246,10 @@ function Home() {
                                     <div id="icon_play">
                                         <i className="bx bx-play bx-lg" />
                                     </div>
-                                    <img src="../img/albumn_obito.jpg" alt="albumn_99%" />
+                                    <img
+                                        src="../img/albumn_obito.jpg"
+                                        alt="albumn_99%"
+                                    />
                                 </div>
                                 <div className="content">
                                     <div className="title">
@@ -265,7 +265,6 @@ function Home() {
                 </div>
             </div>
         </main>
-
     );
 }
 

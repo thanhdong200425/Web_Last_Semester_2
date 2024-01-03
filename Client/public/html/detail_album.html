@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title> Detail Album</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,12 +19,13 @@
 <body>
     <div class="wrapper">
         <div class="row">
+            <!-- <audio src="../audios/taivisao-mck.mp3" id="audio"></audio> -->
             <!-- @include('layout.user.sidebar') -->
             <div class="col-sm-2" id="sidebar">
                 <aside>
                     <!-- sidebar -->
                     <div class="logo">
-                        <a href="#" id="logo">
+                        <a href="homepage.html" id="logo">
                             <i class='bx bxl-spotify bx-lg'></i>
                             <b>Spytifo</b>
                         </a>
@@ -35,9 +36,9 @@
                             <i class='bx bxs-home-alt-2 bx-sm'></i>
                             <b class="title">Home</b>
                         </a>
-                        <a id="album" href="" class="menu_title">
+                        <a id="albumns" href="" class="menu_title">
                             <i class='bx bxs-book-bookmark bx-sm'></i>
-                            <b class="title">Album</b>
+                            <b class="title">Albumns</b>
                         </a>
                         <a id="songs" href="" class="menu_title">
                             <i class='bx bxs-music bx-sm'></i>
@@ -65,21 +66,20 @@
                     </div>
                 </aside>
             </div>
-            
             <div class="col-sm-10" id="header_content_footer">
                 <!-- @include('layout.user.header') -->
-                <header>
-                    <div class="back_next ">
+                <header id="header-navbar">
+                    <div class="back_next">
                         <a href=""><i class='bx bx-chevron-left bx-md'></i></a>
                         <a href=""><i class='bx bx-chevron-right bx-md'></i></a>
                     </div>
-                    <div class="search" style="width: 70%;">
-                        <i id="searchIcon" class='bx bx-search bx-sm' style="color: rgb(153, 153, 153); "></i>
+                    <div class="search" >
+                        <i id="searchIcon" class='bx bx-search bx-sm'></i>
                         <form action="#" method="get">
                             <input type="text" id="search" placeholder="Search">
                         </form>
                     </div>
-                    <div class="user_profile" style="width: 20%;">
+                    <div class="user_profile">
                         <div class="userName">Username</div>
                         <div class="userImg"><img src="" alt=""><i class='bx bxs-user-circle bx-md'></i></div>
                         <div class="opt">
@@ -100,7 +100,8 @@
 
                 </header>
 
-                <body>
+                <!-- @yeild('content') -->
+                <main>
                     <div class="main_body row">
                         <div class="col-sm-6 left_body">
                             <div class="img_body">
@@ -144,7 +145,7 @@
                                     <h6> RPT MCK</h6>
                                 </a>
                                 <div class="col-sm-2 btn_group">
-                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #272727; fill: white;">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
                                             <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
                                         </svg>
@@ -169,7 +170,7 @@
                                     <h6> RPT MCK</h6>
                                 </a>
                                 <div class="col-sm-2 btn_group">
-                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #272727; fill: white;">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
                                             <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
                                         </svg>
@@ -194,7 +195,7 @@
                                     <h6> RPT MCK</h6>
                                 </a>
                                 <div class="col-sm-2 btn_group">
-                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #272727; fill: white;">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
                                             <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
                                         </svg>
@@ -219,7 +220,7 @@
                                     <h6> RPT MCK</h6>
                                 </a>
                                 <div class="col-sm-2 btn_group">
-                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #272727; fill: white;">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
                                             <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
                                         </svg>
@@ -244,7 +245,7 @@
                                     <h6> RPT MCK</h6>
                                 </a>
                                 <div class="col-sm-2 btn_group">
-                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #272727; fill: white;">
+                                    <button class="btn_more" style="border: 0; height: 35px; background-color: #013B44; fill: white;">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512" style="float: right; width: 100%" >
                                             <path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" ></path>
                                         </svg>
@@ -259,72 +260,127 @@
                             </div>
                         </div>
                     </div>
+                </main>
 
-                </body>
-
+                <!-- @include('layout.user.footer') -->
                 <footer>
                     <!-- place footer here -->
-                    <!-- <div class="col-sm-2 footer_left">
-
-                    </div> -->
-                    <!-- <div class="col-sm-10 footer_right"> -->
-                        <div class="contact">
-                            <div class="company">
-                                <div class="title">
-                                    <h5>Company</h5>
-                                </div>
-                                <div class="subtitle">
-                                    <a href="">About</a><br>
-                                    <a href="">Jobs</a><br>
-                                    <a href="">For the Record</a>
-                                </div>
+                    <div class="contact">
+                        <div class="company">
+                            <div class="title">
+                                <h5>Company</h5>
                             </div>
-                            <div class="communities">
-                                <div class="title">
-                                    <h5>Communities</h5>
-                                </div>
-                                <div class="subtitle">
-                                    <a href="">For Artists</a><br>
-                                    <a href="">Developers</a><br>
-                                    <a href="">Advertising</a><br>
-                                    <a href="">Investors</a><br>
-                                    <a href="">For the Record</a>
-                                </div>
-                            </div>
-                            <div class="useful">
-                                <div class="title">
-                                    <h5>Useful link</h5>
-                                </div>
-                                <div class="subtitle">
-                                    <a href="">Support</a><br>
-                                    <a href="">Free Mobile App</a><br>
-                                </div>
+                            <div class="subtitle">
+                                <a href="">About</a><br>
+                                <a href="">Jobs</a><br>
+                                <a href="">For the Record</a>
                             </div>
                         </div>
-
-                        <div class="social row">
-                            <div class="col-sm-4">
-                                <a href="" class="twitter">
-                                    <i class='bx bxl-twitter bx-sm'></i>
-                                </a>
+                        <div class="communities">
+                            <div class="title">
+                                <h5>Communities</h5>
                             </div>
-                            <div class="col-sm-4">
-                                <a href="" class="insta">
-                                    <i class='bx bxl-instagram-alt bx-sm'></i>
-                                </a>
+                            <div class="subtitle">
+                                <a href="">For Artists</a><br>
+                                <a href="">Developers</a><br>
+                                <a href="">Advertising</a><br>
+                                <a href="">Investors</a><br>
+                                <a href="">For the Record</a>
                             </div>
-                            <div class="col-sm-4">
-                                <a href="" class="facebook">
-                                    <i class='bx bxl-facebook-circle bx-sm'></i>
-                                </a>
+                        </div>
+                        <div class="useful">
+                            <div class="title">
+                                <h5>Useful link</h5>
                             </div>
-                        <!-- </div> -->
+                            <div class="subtitle">
+                                <a href="">Support</a><br>
+                                <a href="">Free Mobile App</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social row">
+                        <div class="col-sm-4">
+                            <a href="" class="twitter">
+                                <i class='bx bxl-twitter bx-sm'></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="" class="insta">
+                                <i class='bx bxl-instagram-alt bx-sm'></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="" class="facebook">
+                                <i class='bx bxl-facebook-circle bx-sm'></i>
+                            </a>
+                        </div>
                     </div>
                 </footer>
+
+            </div>
+            <div class="container-fluid play_music">
+                <div class="wrapper">
+                    <div class="left">
+                        <div class="image_music">
+                            <a href="">
+                                <img class="image_song" src="../img/albumn_99.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <div class="title">
+                                <a href="">Tại Vì Sao</a>
+                            </div>
+                            <div class="singers">
+                                <a href="">RPT MCK</a>
+                            </div>
+                        </div>
+                        <div class="heart">
+                            <i class='bx bxs-heart' id="heart" onclick="changeColor()"></i>
+                        </div>
+
+                    </div>
+                    <div class="mid">
+                        <div class="controls">
+                            <button class="shuffle">
+                                <i class='bx bx-shuffle'></i>
+                            </button>
+                            <button class="skip_back">
+                                <i class='bx bx-skip-previous'></i>
+                            </button>
+                            <button class="btn-play">
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <button class="skip_next">
+                                <i class='bx bx-skip-next'></i>
+                            </button>
+                            <button class="reload">
+                                <i class='bx bx-repost'></i>
+                            </button>
+                        </div>
+                        <div class="times">
+                            <span class="left_time"></span>
+                            <input type="range" value="0" class="seek_bar">
+                            <span class="right_time"></span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="lyric">
+                            <i class='bx bx-microphone'></i>
+                        </div>
+                        <div class="volume_and_bar">
+                            <div class="volume">
+                                <i class='bx bxs-volume-full' id="iconVolume"></i>
+                            </div>
+                            <input type="range" value="0" class="volume_bar" id="inputVolume">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </div>
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -333,4 +389,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
+    <script src="../../js/homepage.js"></script>
 </body>
+
+</html>
