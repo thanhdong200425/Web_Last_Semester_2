@@ -22,7 +22,7 @@ function Playlist() {
         const callApi = async () => {
             const request = await getPlaylist(id);
             if (request?.status) setPlaylist(request.data);
-            else setPlaylist([]);
+            else setPlaylist(null);
         };
         callApi();
     }, [id]);
@@ -41,7 +41,7 @@ function Playlist() {
                     <div className="title-playlist h-full relative top-20">
                         <p className="subtitle text-sm">Playlist</p>
                         <h1 className="title w-full text-6xl font-bold my-6">
-                            {playlist?.playlist_name || 'Playlist thanh long'}
+                            {playlist?.playlist_name || "Playlist không có bài hát nào!"}
                         </h1>
                         <div className="author gap-x-4 flex text-sm">
                             <a className="author hover:text-white hover:underline">
@@ -51,9 +51,9 @@ function Playlist() {
                             <p className="songs">
                                 {playlist?.songs.length || 0} songs
                             </p>
-                            <p className="time text-gray-400">
+                            {/* <p className="time text-gray-400">
                                 about 1 hour ago
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ function Playlist() {
                                                     <img
                                                         className="h-10 w-10 rounded-md"
                                                         src={
-                                                            song.song_photo ||
+                                                            `../image/song/${song.song_photo}` ||
                                                             '../img/taivisao_mck.jpg'
                                                         }
                                                         alt=""

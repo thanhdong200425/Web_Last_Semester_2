@@ -1,10 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-import { getAllPlaylist } from '~/apis/playlist.api';
+import {
+    getAllPlaylist,
+    addPlaylist,
+    removePlaylist,
+} from '~/apis/playlist.api';
 
 function Sibar() {
     const [playlists, setPlaylists] = useState([]);
+    const playlistInp = useRef(null);
 
     useEffect(() => {
         const callApi = async () => {
@@ -13,6 +19,18 @@ function Sibar() {
         };
         callApi();
     }, []);
+
+    const addPlaylistHandle = async () => {
+        const response = await addPlaylist(playlistInp.current.value);
+        response?.status && toast.success('Added playlist');
+        !response?.status && toast.error('Cannot add playlist');
+    };
+
+    const removePlaylistHandle = async (playlist_id) => {
+        const response = await removePlaylist(playlist_id);
+        response?.status && toast.success('Removed playlist');
+        !response?.status && toast.error('Cannot remove playlist');
+    };
 
     return (
         <aside>
@@ -66,15 +84,38 @@ function Sibar() {
             </div>
             <div className="menu">
                 <h6>Playlist</h6>
+                <div className="flex justify-between items-center">
+                    <input
+                        ref={playlistInp}
+                        type="text"
+                        className="text-xl h-8 w-24"
+                    />
+                    <button onClick={addPlaylistHandle}>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
                 {playlists.length > 0 &&
                     playlists.map((playlist) => (
-                        <Link
+                        <div
                             key={playlist.playlist_id}
-                            to={`/playlist/${playlist.playlist_id}`}
-                            className="menu_title"
+                            className="flex justify-between"
                         >
-                            <b className="title">{playlist.playlist_name}</b>
-                        </Link>
+                            <Link
+                                to={`/playlist/${playlist.playlist_id}`}
+                                className="menu_title min-w-[90px]"
+                            >
+                                <b className="title">
+                                    {playlist.playlist_name}
+                                </b>
+                            </Link>
+                            <button
+                                onClick={() =>
+                                    removePlaylistHandle(playlist.playlist_id)
+                                }
+                            >
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
                     ))}
             </div>
         </aside>

@@ -25,7 +25,7 @@ function FeaturedSong() {
     useEffect(() => {
         const callApi = async () => {
             const request = await getAllPlaylist();
-            setPlaylists(request.data);
+            request?.status && setPlaylists(request.data);
         };
         callApi();
     }, []);
@@ -37,7 +37,6 @@ function FeaturedSong() {
     const addSongHandle = async (data) => {
         console.log('data', data);
         const request = await addSong(data);
-        console.log(request);
         request?.status && toast.success('Added song to ' + data.playlistId);
         !request?.status && toast.error('Can not song to ' + data.playlistId);
     };
@@ -60,7 +59,7 @@ function FeaturedSong() {
                             <div className="col-sm-3 image p-0">
                                 <img
                                     src={
-                                        song.song_photo ||
+                                        `../image/song/${song.song_photo}` ||
                                         '../img/taivisao_mck.jpg'
                                     }
                                     alt={song.song_name || 'taivisao_mck'}

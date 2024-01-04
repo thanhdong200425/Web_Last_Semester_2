@@ -81,7 +81,7 @@ function Seekbar() {
                 ref={audio}
                 src={
                     (currentSongs.length > 0 &&
-                        `/audios/${currentSongs[currentSongIndex]?.path}`) ||
+                        `/mp3/${currentSongs[currentSongIndex]?.path}`) ||
                     '/audios/taivisao-mck.mp3'
                 }
             ></audio>

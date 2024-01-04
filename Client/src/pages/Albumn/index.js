@@ -49,9 +49,10 @@ function Albumn() {
                                                 </div>
                                                 <img
                                                     src={
-                                                        albumn.albumn_photo ||
+                                                        `../image/album/${albumn?.albumn_photo}` ||
                                                         '../img/albumn_99.jpg'
                                                     }
+                                                    className='max-h-56 object-cover'
                                                     alt="albumn_99%"
                                                 />
                                             </div>

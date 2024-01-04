@@ -47,16 +47,24 @@ function DetailAlbumn() {
                     <div className="img_body">
                         <img
                             src={
-                                albumn?.albumn_photo ||
+                                `../image/album/${albumn?.albumn_photo}` ||
                                 '../img/banner_album.jpg'
                             }
                             alt=""
+                            className="w-40 max-h-96 object-cover"
                         />
                     </div>
 
                     <br />
 
-                    <div className="title_album row">
+                    <div className="About_box">
+                        <h3>{albumn?.albumn_name || 'Albumn'}</h3>
+                        <p className="pt-3 leading-6">
+                            {albumn?.albumn_description || 'Description'}
+                        </p>
+                    </div>
+
+                    <div className="title_album row mt-4">
                         <div className="col-sm-7 left_title_album">
                             {/* <h2> Life kit : Selfcare</h2> */}
                             <p>
@@ -71,11 +79,6 @@ function DetailAlbumn() {
                     </div>
 
                     <br />
-
-                    <div className="About_box">
-                        <h3>{albumn?.albumn_name || 'Albumn'}</h3>
-                        <p>{albumn?.albumn_description || 'Description'}</p>
-                    </div>
                 </div>
 
                 <div className="col-sm-6 right_body">
@@ -92,7 +95,7 @@ function DetailAlbumn() {
                                 <div className="col-sm-3 p-0">
                                     <img
                                         src={
-                                            song.song_photo ||
+                                            `../image/song/${song.song_photo}` ||
                                             '../img/taivisao_mck.jpg'
                                         }
                                         alt={song.song_name || 'taivisao_mck'}

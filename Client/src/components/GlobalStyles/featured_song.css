@@ -184,7 +184,7 @@ main
 div.img_body img {
     border-radius: 8px;
     display: block;
-    width: 105%;
+    width: 90%;
     height: 100%;
     transition: all 0.3s ease;
 }

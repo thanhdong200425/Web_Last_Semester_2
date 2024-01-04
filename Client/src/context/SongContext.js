@@ -2,11 +2,11 @@ import { createContext, useState } from 'react';
 
 const SongContext = createContext();
 
-const data = [
-    { path: 'Di-De-Tro-Ve-Soobin-Hoang-Son.mp3' },
-    { path: 'taivisao-mck.mp3' },
-    { path: 'taivisao-mck.mp3' },
-];
+// const data = [
+//     { path: 'Di-De-Tro-Ve-Soobin-Hoang-Son.mp3' },
+//     { path: 'taivisao-mck.mp3' },
+//     { path: 'taivisao-mck.mp3' },
+// ];
 
 const SongContextProvider = ({ children }) => {
     const [currentSongIndex, setCurrentSongIndex] = useState(
@@ -16,9 +16,9 @@ const SongContextProvider = ({ children }) => {
         JSON.parse(sessionStorage.getItem('currentSongs')) || [],
     );
     const setCurrentSongList = (songs, index = 0) => {
-        sessionStorage.setItem('currentSongs', JSON.stringify(data));
+        sessionStorage.setItem('currentSongs', JSON.stringify(songs));
         sessionStorage.setItem('currentSongIndex', JSON.stringify(index));
-        setCurrentSongs(data);
+        setCurrentSongs(songs);
         setCurrentSongIndex(index);
     };
     const setShuffleSongList = () => {

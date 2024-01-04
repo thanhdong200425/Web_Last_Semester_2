@@ -2,25 +2,45 @@ import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-import signupHandle from '~/services/api-handle/signupHandle';
+import * as authApi from '~/apis/auth.api';
 
 function Signup() {
     const [isShowPw, setShowPw] = useState(false);
     const [isShowRePw, setShowRePw] = useState(false);
     const username = useRef(null);
-    const pw = useRef(null);
-    const repw = useRef(null);
-    function handleLogin() {
+    const email = useRef(null);
+    const password = useRef(null);
+    const handleSignup = async () => {
         // Kiểm tra nếu tên đăng nhập và mật khẩu hợp lệ
         const regex =
             /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]+$/;
-        if (!regex.test(pw)) {
+        if (!regex.test(password.current.value)) {
             toast.error(
                 'Mật khẩu phải bao gồm tối thiểu ít nhất 1 chữ cái viết hoa, 1 ký tự đặc biệt và 1 số!',
             );
             return;
         }
-    }
+        const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        if (!regexEmail.test(email.current.value)) {
+            toast.error(
+                'Email không hợp lệ!',
+            );
+            return;
+        }
+        const data = {
+            username: username.current.value,
+            email: email.current.value,
+            password: password.current.value,
+        };
+        const request = await authApi
+            .signup(data)
+            .then((data) => {
+                data.status && toast.success('Đăng ký thành công!');
+                !data.status && toast.error('Không thể đăng ký!');
+                return data;
+            })
+            .catch((error) => console.log(error));
+    };
     return (
         <main className="main_login_signup">
             <div className="box">
@@ -48,37 +68,41 @@ function Signup() {
                             <div className="actual-form">
                                 <div className="input-wrap">
                                     <input
+                                        ref={username}
                                         type="text"
                                         minlength="4"
                                         className="input-field"
                                         autocomplete="off"
                                         required
+                                        placeholder={'Username'}
                                     />
-                                    <label>Tài khoản</label>
                                 </div>
 
                                 <div className="input-wrap">
                                     <input
+                                        ref={email}
                                         type="email"
                                         className="input-field"
                                         autocomplete="off"
                                         required
+                                        placeholder={'Email'}
                                     />
-                                    <label>Email</label>
                                 </div>
 
                                 <div className="input-wrap">
                                     <input
+                                        ref={password}
                                         type="password"
                                         minlength="4"
                                         className="input-field"
                                         autocomplete="off"
                                         required
+                                        placeholder={'Password'}
                                     />
-                                    <label>Mật khẩu</label>
                                 </div>
 
                                 <input
+                                    onClick={handleSignup}
                                     value="Đăng ký"
                                     className="sign-btn text-center"
                                 />

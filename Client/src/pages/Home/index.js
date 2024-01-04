@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import { getAlbumns } from '~/apis/albumn.api';
 import { getSongs } from '~/apis/song.api';
 import { AuthContext } from '~/context/AuthContext';
+import { SongContext } from '~/context/SongContext';
 
 function Home() {
     const { currentUser } = useContext(AuthContext);
+    const { setCurrentSongList, currentSongIndex } = useContext(SongContext);
     const [albumns, setAlbumns] = useState([]);
     const [songs, setSongs] = useState([]);
 
@@ -57,9 +59,10 @@ function Home() {
                                                     </div>
                                                     <img
                                                         src={
-                                                            albumn.albumn_photo ||
+                                                            `../image/album/${albumn.albumn_photo}` ||
                                                             '../img/albumn_99.jpg'
                                                         }
+                                                        className="max-h-56 object-cover"
                                                         alt="albumn_99%"
                                                     />
                                                 </div>
@@ -188,20 +191,28 @@ function Home() {
                                         className="col-md-3 col-sm-6"
                                     >
                                         <a>
-                                            <div className="item">
+                                            <div className="item h-[425px]">
                                                 <div className="img">
-                                                    <div id="icon_play">
+                                                    <div
+                                                        id="icon_play"
+                                                        onClick={() =>
+                                                            setCurrentSongList([
+                                                                song,
+                                                            ])
+                                                        }
+                                                        className="cursor-pointer"
+                                                    >
                                                         <i className="bx bx-play bx-lg" />
                                                     </div>
                                                     <img
                                                         src={
-                                                            song.song_photo ||
+                                                            `../image/song/${song.song_photo}` ||
                                                             '../img/albumn_obito.jpg'
                                                         }
                                                         alt="albumn_99%"
                                                     />
                                                 </div>
-                                                <div className="content">
+                                                <div className="content text-gray-200">
                                                     <div className="title">
                                                         <h3>
                                                             {song.song_name ||
