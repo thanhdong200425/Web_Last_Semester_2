@@ -10,7 +10,6 @@ import Create_playlist from '~/pages/Create_playlist';
 import FeaturedSong from '~/pages/FeaturedSong';
 import Albumn from '~/pages/Albumn';
 
-
 const publicRoutes = [
     {
         path: '/',
@@ -23,10 +22,6 @@ const publicRoutes = [
     {
         path: '/singers',
         component: Singers,
-    },
-    {
-        path: '/playlist',
-        component: Playlist,
     },
     {
         path: '/create_playlist',
@@ -49,7 +44,7 @@ const publicRoutes = [
     {
         path: '/detail_song',
         component: DetailSong,
-        layout: null
+        layout: null,
     },
     {
         path: '/featured_song',
@@ -62,6 +57,10 @@ const publicRoutes = [
 ];
 
 const privateRoutes = [
+    {
+        path: '/playlist/:id',
+        component: Playlist,
+    },
 ];
 
 export { publicRoutes, privateRoutes };

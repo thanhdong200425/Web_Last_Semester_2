@@ -8,7 +8,8 @@ function Header() {
     const logoutHandle = () => {
         Promise.resolve()
             .then(() => sessionStorage.removeItem('user'))
-            .then(window.location.reload());
+            .then(() => window.location.reload())
+            .then(() => (window.location.pathname = '/'));
     };
     useLayoutEffect(() => {
         const handleScroll = () => {

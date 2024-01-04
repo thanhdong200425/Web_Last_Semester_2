@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import { getAlbumns } from '~/apis/albumn';
+import { getAlbumns } from '~/apis/albumn.api';
 
 function Albumn() {
     const [albumns, setAlbumns] = useState([]);
@@ -34,10 +34,14 @@ function Albumn() {
                         albumns.map((albumn, index) => {
                             return (
                                 <div
-                                    key={albumn.id}
-                                    className="col-md-3 col-sm-6 mt-4 h-[350px]"
+                                    key={albumn.albumn_id}
+                                    className="col-md-3 col-sm-6 h-[350px]"
                                 >
-                                    <a href="/a">
+                                    <Link
+                                        to={
+                                            '/detail_albumn/' + albumn.albumn_id
+                                        }
+                                    >
                                         <div className="item h-full">
                                             <div className="img">
                                                 <div id="icon_play">
@@ -59,11 +63,15 @@ function Albumn() {
                                                     </h3>
                                                 </div>
                                                 <div className="desc">
-                                                    {/* <b>Description</b> */}
+                                                    {/* <b>
+                                                            {
+                                                                albumn.albumn_description
+                                                            }
+                                                        </b> */}
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             );
                         })}

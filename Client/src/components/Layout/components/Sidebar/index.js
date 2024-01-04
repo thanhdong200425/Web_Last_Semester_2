@@ -1,6 +1,19 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { getAllPlaylist } from '~/apis/playlist.api';
+
 function Sibar() {
+    const [playlists, setPlaylists] = useState([]);
+
+    useEffect(() => {
+        const callApi = async () => {
+            const request = await getAllPlaylist();
+            request?.status && setPlaylists(request.data);
+        };
+        callApi();
+    }, []);
+
     return (
         <aside>
             {/* sidebar */}
@@ -53,21 +66,16 @@ function Sibar() {
             </div>
             <div className="menu">
                 <h6>Playlist</h6>
-                <Link to="" className="menu_title">
-                    <b className="title">Playlist1</b>
-                </Link>
-                <Link to="" className="menu_title">
-                    <b className="title">Playlist2</b>
-                </Link>
-                <Link to="" className="menu_title">
-                    <b className="title">Playlist3</b>
-                </Link>
-                <Link to="" className="menu_title">
-                    <b className="title">Playlist4</b>
-                </Link>
-                <Link to="" className="menu_title">
-                    <b className="title">Playlist5</b>
-                </Link>
+                {playlists.length > 0 &&
+                    playlists.map((playlist) => (
+                        <Link
+                            key={playlist.playlist_id}
+                            to={`/playlist/${playlist.playlist_id}`}
+                            className="menu_title"
+                        >
+                            <b className="title">{playlist.playlist_name}</b>
+                        </Link>
+                    ))}
             </div>
         </aside>
     );

@@ -1,18 +1,27 @@
 import { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 
-import { getAlbumns } from '~/apis/albumn';
+import { getAlbumns } from '~/apis/albumn.api';
+import { getSongs } from '~/apis/song.api';
 import { AuthContext } from '~/context/AuthContext';
 
 function Home() {
-    const [albumns, setAlbumns] = useState([]);
     const { currentUser } = useContext(AuthContext);
+    const [albumns, setAlbumns] = useState([]);
+    const [songs, setSongs] = useState([]);
+
     useEffect(() => {
         const callApi = async () => {
             const request = await getAlbumns();
             setAlbumns(request.data);
         };
+        const callApi2 = async () => {
+            const request = await getSongs();
+            setSongs(request.data);
+        };
+
         callApi();
+        callApi2();
     }, []);
     return (
         <main>
@@ -170,98 +179,49 @@ function Home() {
                     </a>
                 </div>
                 <div className="songs_foryou row">
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
+                    {songs.length > 0 &&
+                        songs.map(
+                            (song, index) =>
+                                index < 4 && (
+                                    <div
+                                        key={index}
+                                        className="col-md-3 col-sm-6"
+                                    >
+                                        <a>
+                                            <div className="item">
+                                                <div className="img">
+                                                    <div id="icon_play">
+                                                        <i className="bx bx-play bx-lg" />
+                                                    </div>
+                                                    <img
+                                                        src={
+                                                            song.song_photo ||
+                                                            '../img/albumn_obito.jpg'
+                                                        }
+                                                        alt="albumn_99%"
+                                                    />
+                                                </div>
+                                                <div className="content">
+                                                    <div className="title">
+                                                        <h3>
+                                                            {song.song_name ||
+                                                                'Title'}
+                                                        </h3>
+                                                    </div>
+                                                    <div className="desc">
+                                                        <b>
+                                                            {song.singers?.map(
+                                                                (singer) =>
+                                                                    singer,
+                                                            ) || 'RPT MCK'}
+                                                        </b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
-                                    </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
-                                    </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-md-3 col-sm-6">
-                        <a href="">
-                            <div className="item">
-                                <div className="img">
-                                    <div id="icon_play">
-                                        <i className="bx bx-play bx-lg" />
-                                    </div>
-                                    <img
-                                        src="../img/albumn_obito.jpg"
-                                        alt="albumn_99%"
-                                    />
-                                </div>
-                                <div className="content">
-                                    <div className="title">
-                                        <h3>Title</h3>
-                                    </div>
-                                    <div className="desc">
-                                        <b>Description</b>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                                ),
+                        )}
                 </div>
             </div>
         </main>

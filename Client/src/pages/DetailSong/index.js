@@ -1,18 +1,13 @@
 import { useEffect, useState, useLayoutEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-import deleteComment from '~/services/api-calls/deleteComment';
-import getPost from '~/services/api-calls/getPost';
-import deletePostHandle from '~/services/api-handle/deletePostHandle';
-import getCommentHandle from '~/services/api-handle/getCommentHandle';
-import postCommentHandle from '~/services/api-handle/postCommentHandle';
-
 function DetailSong() {
+
     return (
         <>
             <main>
                 <div className="wrapper">
-                    <div className='DetaildSong_header'>
+                    <div className="DetaildSong_header">
                         <div className="header_left">
                             <nav className="nav_bar">
                                 <ul>
@@ -84,7 +79,7 @@ function DetailSong() {
                         </div>
                     </main>
 
-                    <div className='DetaildSong_footer'>
+                    <div className="DetaildSong_footer">
                         <div className="songtitle_wrapper">
                             <span className="song_title">Photograph</span>
                             <span className="space"> - </span>
@@ -112,9 +107,7 @@ function DetailSong() {
 
                             <button className="btn_pause_run">
                                 <i className="fa-regular fa-circle-pause fa-xl"></i>
-                                <i
-                                    className="fa-regular fa-circle-play fa-xl hidden"
-                                ></i>
+                                <i className="fa-regular fa-circle-play fa-xl hidden"></i>
                             </button>
 
                             <button className="btn_next_song">

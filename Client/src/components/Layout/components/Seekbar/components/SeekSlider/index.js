@@ -15,10 +15,11 @@ function SeekSlider({ audio }) {
         return () => clearInterval(interval);
     }, []);
 
-    const handleChange = (e) => {
-        audio.current.currentTime =
-            (e.target.value / 100) * audio.current.duration;
-        console.log(audio.current.currentTime);
+    const handleChange = (value) => {
+        audio.current.currentTime = (value / 100) * audio.current.duration;
+        setCurrentTime(
+            (audio.current.currentTime * 100) / audio.current?.duration,
+        );
     };
 
     let nowMinute = Math.floor(audio.current.currentTime / 60);
@@ -39,7 +40,7 @@ function SeekSlider({ audio }) {
             </span>
             <input
                 value={currentTime}
-                onChange={(e) => handleChange(e)}
+                onChange={(e) => handleChange(e.target.value)}
                 type="range"
                 className="seek_bar"
             />

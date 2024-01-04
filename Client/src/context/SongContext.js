@@ -21,6 +21,22 @@ const SongContextProvider = ({ children }) => {
         setCurrentSongs(data);
         setCurrentSongIndex(index);
     };
+    const setShuffleSongList = () => {
+        const shuffleSongs = [...currentSongs].sort(() => Math.random() - 0.5);
+        setCurrentSongs(shuffleSongs);
+        const index = shuffleSongs.findIndex(
+            (song) => song.path === currentSongs[currentSongIndex].path,
+        );
+        setCurrentSongIndex(index);
+    };
+    const resetSongList = () => {
+        const songs = JSON.parse(sessionStorage.getItem('currentSongs')) || [];
+        setCurrentSongs(songs);
+        const index = songs.findIndex(
+            (song) => song.path === currentSongs[currentSongIndex].path,
+        );
+        setCurrentSongIndex(index);
+    };
     const setCurrentSongI = (index) => {
         setCurrentSongIndex(index);
     };
@@ -31,6 +47,8 @@ const SongContextProvider = ({ children }) => {
                 setCurrentSongList,
                 currentSongIndex,
                 setCurrentSongI,
+                setShuffleSongList,
+                resetSongList,
             }}
         >
             {children}
