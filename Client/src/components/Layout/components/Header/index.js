@@ -39,14 +39,14 @@ function Header() {
                     </a>
                 </div>
                 <div className="search">
-                    <form action="#" method="get">
+                    {/* <form action="#" method="get">
                         <button
                             type="submit"
                             id="searchIcon"
                             className="bx bx-search bx-sm text-[rgb(153,153,153)]"
                         ></button>
                         <input type="text" id="search" placeholder="Search" />
-                    </form>
+                    </form> */}
                 </div>
                 {currentUser ? (
                     <div className="user_profile">

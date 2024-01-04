@@ -22,9 +22,7 @@ function Signup() {
         }
         const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         if (!regexEmail.test(email.current.value)) {
-            toast.error(
-                'Email không hợp lệ!',
-            );
+            toast.error('Email không hợp lệ!');
             return;
         }
         const data = {
@@ -37,9 +35,11 @@ function Signup() {
             .then((data) => {
                 data.status && toast.success('Đăng ký thành công!');
                 !data.status && toast.error('Không thể đăng ký!');
-                return data;
             })
-            .catch((error) => console.log(error));
+            .catch((error) => {
+                console.log(error);
+                toast.error('Email or usename is used');
+            });
     };
     return (
         <main className="main_login_signup">

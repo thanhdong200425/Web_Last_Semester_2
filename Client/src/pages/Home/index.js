@@ -33,9 +33,9 @@ function Home() {
                     <h3>
                         <a href="">For you</a>
                     </h3>
-                    <a href="">
+                    <Link to="/albumn">
                         <i className="bx bx-chevron-right bx-md" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="songs_foryou row">
                     {albumns.length > 0 &&
@@ -177,9 +177,9 @@ function Home() {
                     <h3>
                         <a href="">Latest Songs</a>
                     </h3>
-                    <a href="">
+                    <Link to="/featured_song">
                         <i className="bx bx-chevron-right bx-md" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="songs_foryou row">
                     {songs.length > 0 &&

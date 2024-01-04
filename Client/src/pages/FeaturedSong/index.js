@@ -5,10 +5,11 @@ import { SongContext } from '~/context/SongContext';
 import { getSongs } from '~/apis/song.api';
 import { getAllPlaylist } from '~/apis/playlist.api';
 import { addSong } from '~/apis/playlist.api';
+import { AuthContext } from '~/context/AuthContext';
 
 function FeaturedSong() {
     const { setCurrentSongList, currentSongIndex } = useContext(SongContext);
-
+    const { currentUser } = useContext(AuthContext);
     const [songs, setSongs] = useState([]);
     const [showPlaylistOption, setShowPlaylistOption] = useState(-1);
     const [playlists, setPlaylists] = useState([]);
@@ -92,52 +93,54 @@ function FeaturedSong() {
                                         <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
                                     </svg>
                                 </button>
-                                <button
-                                    onClick={() => {
-                                        if (showPlaylistOption === index) {
-                                            setShowPlaylistOption(-1);
-                                            setAddSongData(null);
-                                        } else {
-                                            setShowPlaylistOption(index);
-                                            setAddSongData({
-                                                songId: song?.song_id || 1,
-                                            });
+                                {currentUser && <p>
+                                    <button
+                                        onClick={() => {
+                                            if (showPlaylistOption === index) {
+                                                setShowPlaylistOption(-1);
+                                                setAddSongData(null);
+                                            } else {
+                                                setShowPlaylistOption(index);
+                                                setAddSongData({
+                                                    songId: song?.song_id || 1,
+                                                });
+                                            }
+                                        }}
+                                        className="btn_play text-2xl"
+                                    >
+                                        {showPlaylistOption === index ? (
+                                            <i class="fa-solid fa-minus"></i>
+                                        ) : (
+                                            <i class="fa-solid fa-plus"></i>
+                                        )}
+                                    </button>
+                                    <ul
+                                        className={
+                                            showPlaylistOption !== index
+                                                ? 'hidden '
+                                                : '' +
+                                                  'absolute top-10 z-50 bg-gray-600 px-4 py-2 rounded flex gap-2 flex-col'
                                         }
-                                    }}
-                                    className="btn_play text-2xl"
-                                >
-                                    {showPlaylistOption === index ? (
-                                        <i class="fa-solid fa-minus"></i>
-                                    ) : (
-                                        <i class="fa-solid fa-plus"></i>
-                                    )}
-                                </button>
-                                <ul
-                                    className={
-                                        showPlaylistOption !== index
-                                            ? 'hidden '
-                                            : '' +
-                                              'absolute top-10 z-50 bg-gray-600 px-4 py-2 rounded flex gap-2 flex-col'
-                                    }
-                                >
-                                    {playlists.length > 0 &&
-                                        playlists.map((playlist) => (
-                                            <li>
-                                                <div
-                                                    onClick={() =>
-                                                        addSongHandle({
-                                                            ...addSongData,
-                                                            playlistId:
-                                                                playlist.playlist_id,
-                                                        })
-                                                    }
-                                                    className="cursor-pointer"
-                                                >
-                                                    {playlist.playlist_name}
-                                                </div>
-                                            </li>
-                                        ))}
-                                </ul>
+                                    >
+                                        {playlists.length > 0 &&
+                                            playlists.map((playlist) => (
+                                                <li>
+                                                    <div
+                                                        onClick={() =>
+                                                            addSongHandle({
+                                                                ...addSongData,
+                                                                playlistId:
+                                                                    playlist.playlist_id,
+                                                            })
+                                                        }
+                                                        className="cursor-pointer"
+                                                    >
+                                                        {playlist.playlist_name}
+                                                    </div>
+                                                </li>
+                                            ))}
+                                    </ul>
+                                </p>}
 
                                 {/* <button
                             className="btn_more border-none h-[35px] bg-color-[#013B44] fill-white"

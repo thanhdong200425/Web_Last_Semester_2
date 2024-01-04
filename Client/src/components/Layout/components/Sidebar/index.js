@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -7,8 +7,10 @@ import {
     addPlaylist,
     removePlaylist,
 } from '~/apis/playlist.api';
+import { AuthContext } from '~/context/AuthContext';
 
 function Sibar() {
+    const {currentUser} = useContext(AuthContext);
     const [playlists, setPlaylists] = useState([]);
     const playlistInp = useRef(null);
 
@@ -82,7 +84,7 @@ function Sibar() {
                     <b className="title">Songs</b>
                 </Link>
             </div>
-            <div className="menu">
+            {currentUser && <div className="menu">
                 <h6>Playlist</h6>
                 <div className="flex justify-between items-center">
                     <input
@@ -117,7 +119,7 @@ function Sibar() {
                             </button>
                         </div>
                     ))}
-            </div>
+            </div>}
         </aside>
     );
 }
